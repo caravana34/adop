@@ -1,4 +1,4 @@
-<<!--?php 
+<!--?php 
     require "config/conexion.php";
     error_reporting(0);
     $identificacion = $_POST['Identificacion'];
@@ -71,7 +71,7 @@
         Contraseña             <input type="text" name="nombresUsuario" size="30" maxlength="50" placeholder="País de residencia"> <br><br>
         Confirma tu contraseña <input type="text" name="nombresUsuario" size="30" maxlength="50" placeholder="País de residencia"> <br><br>
         <input type="submit" name="btnGuardar" value="GUARDAR"></form></div>
-    <form  method="post" action="index.php">
+   <!-- <form  method="post" action="index.php">
         <label>identificacion</label>
         <input type="number" name="Identificacion" required>
         <label>nombres</label>
@@ -87,9 +87,9 @@
         <label>correo</label>
         <input type="varchar" name="correo" required>
         <input type="submit" name="btnGuardar" value="GUARDAR">
-    </form>
+    </form>-->
     <br><br>
-    <table border="1">
+    <!--<table border="1">
         <thead>
             <th>Identificacion</th>
             <th>Nombres</th>
@@ -100,25 +100,25 @@
             <th>correo</th>
 
 
-        </thead>
+        </thead>-->
         <!--
         <tbody>
-           <?php 
-                global $conexion;
-                $sql2 = "SELECT * FROM usuario";                
-                $ejecutar2 = $conexion->query($sql2);                
-                while ($row = mysqli_fetch_object($ejecutar2)){
-                    echo '<tr>
-                            <td>'.$row->identificacion.'</td>
-                            <td>'.$row->nombre.'</td>
-                            <td>'.$row->apellidos.'</td>
-                            <td>'.$row->correo.'</td>
-                            <td>'.$row->celular.'</td>
-                            <td>'.$row->direccion.'</td>
-                            <td>'.$row->correo.'</td>
-                        </tr>';
-                }
-            ?>
+          //<?php 
+               // global $conexion;
+               // $sql2 = "SELECT * FROM usuario";                
+               // $ejecutar2 = $conexion->query($sql2);                
+              //  while ($row = mysqli_fetch_object($ejecutar2)){
+                 //   echo '<tr>
+                  //          <td>'.$row->identificacion.'</td>
+                  //          <td>'.$row->nombre.'</td>
+                  //          <td>'.$row->apellidos.'</td>
+                  //          <td>'.$row->correo.'</td>
+                 //           <td>'.$row->celular.'</td>
+                 //           <td>'.$row->direccion.'</td>
+                 //           <td>'.$row->correo.'</td>
+                 //       </tr>';
+               // }
+           // ?>
         </tbody>-->
     </table>
 </body>
