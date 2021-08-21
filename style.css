@@ -84,7 +84,7 @@ hr {
 /* SHOWCASE*/
 
 .showcase {  
-    width: 100%;
+    width: 80%;
     height: 550px; 
     background: url('./img/showcase2.jpg') no-repeat center center/cover;
     padding: 50px;
@@ -95,7 +95,10 @@ hr {
     justify-content: flex-end; 
     
 }
-
+.grid{
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
 
 .btn {
     cursor: pointer;
