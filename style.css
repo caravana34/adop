@@ -5,8 +5,8 @@
 }
 
 body {
-    background: #070b0c;
-    color: rgb(3, 3, 3);
+    background: hsl(192, 26%, 4%);
+    color: white;
     background-color: #0f1516;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23383838' fill-opacity='0' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
 font-size: 16px;
@@ -14,7 +14,7 @@ font-family: 'Oswald', sans-serif;
 }
 
 a {
-    color: #ffff;
+    color: white;
     text-decoration: none;
 }
 
