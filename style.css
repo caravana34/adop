@@ -5,16 +5,16 @@
 }
 
 body {
-    background:rgb(214, 6, 6);
-    color: white;
-    background-color: #0f1516;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23383838' fill-opacity='0' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+    /*background:rgb(255, 0, 0);*/
+    color: rgb(255, 255, 255);
+    background-color: #1f2324;
+   /* background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23383838' fill-opacity='0' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");*/
 font-size: 16px;
 font-family: 'Oswald', sans-serif;
 }
 
 a {
-    color: white;
+    color: rgb(255, 255, 255);
     text-decoration: none;
 }
 
@@ -55,7 +55,7 @@ ul{
 }
 
 .nav-main ul li a:hover {
-    border-bottom: 2px solid #ffffff;
+   color: rgb(0, 255, 234);
 }
 
 .nav-main ul.nav-menu {
