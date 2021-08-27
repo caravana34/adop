@@ -291,7 +291,7 @@ margin-bottom: 10px;
 /* Footer ELIX copyright */
 
 .footer {
-    background: #2f3640;
+    background: #118C5A;
     color: #fff;
     font-size: 12px;
     padding: 20px 0;
@@ -395,11 +395,11 @@ margin-bottom: 10px;
 .regis{
     margin: auto;
     text-align: center;
-    background: rgb(68, 68, 139);
+    background:#0FD986;
     width: 40%;
     border:solid rgb(47, 44, 43) 2px;
     padding: 15px;
-    border-radius: 7%;
+    border-radius: 4px;
 }
 
 /* e l i a s */

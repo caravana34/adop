@@ -1,3 +1,134 @@
+
+<!--<?php 
+    require "config/conexion.php";
+    error_reporting(0);
+    $identificacion = $_POST['Identificacion'];
+    $nombres = $_POST['nombres'];
+    $apellidos = $_POST['apellidos'];
+    $telefono = $_POST['telefono'];
+    $fechaNacimiento = $_POST['fechaNacimiento'];
+    $direccion = $_POST['direccion'];
+    $correo = $_POST['correo'];
+    $btnGuardar = $_POST['btnGuardar'];
+    if(isset($btnGuardar)){
+        $sql = "INSERT INTO usuarios(identificacion,nombres,apellidos,telefono,fechaNacimiento, direccion, correo)VALUES($identificacion,'$nombres','$apellidos',$telefono, '$fechaNacimiento','$direccion','$correo')";
+        if($conexion->query($sql)){
+            echo 'GUARDADO CORRECTAMENTE';
+        }else{
+            echo 'ERROR';
+        }
+    }
+?>-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel = "preconnect" href = "https://fonts.gstatic.com">
+    <link href = "https://fonts.googleapis.com/css2? family = Oswald: wght @ 200; 300; 400 & display = swap "rel =" stylesheet ">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="menu-btn">
+        <i class="fas fa-bars"></i>
+
+    </div>
+
+
+    <div class="container">
+        <nav class="nav-main"><a href="index.html" >
+         <img src="img/brand1-01.svg" alt="Logo Mimascota" class="nav-brand"></a> 
+           
+        </nav> 
+        
+        
+            <div>
+                <form class="regis">
+                    Identificación <input type="text" name="nombresUsuario" size="30" maxlength="50" placeholder="Aqui primer y segundo nombre"> <br><br>
+                    Nombre    <input type="text" name="ApellidosUsuario" size="30" maxlength="50" placeholder="Sus apellidos"> <br><br>
+                    Apellidos        <input type="text" name="nombresUsuario" size="30" maxlength="50" placeholder="País de residencia"> <br><br>
+                    Correo   <input type="text" name="ApellidosUsuario" size="30" maxlength="50" placeholder="ciudad de residencia"> <br><br>
+                    Celular     <input type="text" name="ApellidosUsuario" size="30" maxlength="50" placeholder="Su numero celular"> <br><br>    
+            
+                    Correo                 <input type="text" name="nombresUsuario" size="30" maxlength="50" placeholder="Aqui primer y segundo nombre"> <br><br>
+                    Confirma tu correo     <input type="text" name="ApellidosUsuario" size="30" maxlength="50" placeholder="Sus apellidos"> <br><br>
+                    Contraseña             <input type="text" name="nombresUsuario" size="30" maxlength="50" placeholder="País de residencia"> <br><br>
+                    Confirma tu contraseña <input type="text" name="nombresUsuario" size="30" maxlength="50" placeholder="País de residencia"> <br><br>
+                </form>
+
+
+        
+            </div>
+        <section class="social">
+             <!--e l i a s--> 
+    
+            
+        </section>
+    </div>
+
+    <div class="footer-links">
+        <div class="footer-container">
+            <ul>
+                <li>
+                  <a href="#">
+                      <h2>Inicio</h2>
+                  </a> 
+                </li>
+                
+              
+            </ul>
+
+          
+
+            <ul>
+                <li>
+                  <a href="#">
+                      <h2>Registro</h2>
+                  </a> 
+                </li>
+               
+               
+            </ul>
+
+           
+           
+        </div>
+    </div>
+
+<footer class="footer">
+    <h3>Mi mascota copyright</h3>
+</footer>
+
+<!-- scroll reveal -->
+<script src="https://unpkg.com/scrollreveal"></script>
+
+<!-- custom js -->
+
+<script src="main.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!--?php 
     require "config/conexion.php";
     error_reporting(0);
@@ -15,7 +146,7 @@
             echo 'ERROR';
         }
     }
-?> -->
+?> 
 
 <!DOCTYPE html>
 <html lang="en">
@@ -24,14 +155,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DERECHO ANIMAL</title>
-    <!-- FONT AWESOME -->
+    <!-- FONT AWESOME 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <!--FONT OSWALD-->
+    <!--FONT OSWALD
     <link rel = "preconnect" href = "https://fonts.gstatic.com">
     <link href = "https://fonts.googleapis.com/css2? family = Oswald: wght @ 200; 300; 400 & display = swap "rel =" stylesheet ">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-
-    <!-- CUSTOM CSS -->
+    -->
+    <!-- CUSTOM CSS 
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -120,6 +251,6 @@
                // }
            // ?>
         </tbody>-->
-    </table>
+    <!--</table>
 </body>
 </html>
