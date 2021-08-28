@@ -1,0 +1,58 @@
+create table tipoUsuario(
+    idTipoUsuario int PRIMARY KEY AUTO_INCREMENT,
+	nombreTipoUsario varchar(50)
+	
+)
+
+create table usuario(
+    id int PRIMARY KEY AUTO_INCREMENT,
+	identificacion varchar (20),
+	nombre varchar (20),
+        apellidos varchar (20),	
+      	correo varchar (50),
+	telefono varchar (50),
+	estado varchar (50),
+	idTipoUsuario int,
+        FOREIGN key (idTipoUsuario) REFERENCES tipoUsuario (id)
+)
+
+ALTER TABLE usuario add idTipoUsuario int;
+ALTER TABLE usuario add FOREIGN KEY(idTipoUsuario) REFERENCES tipoUsuario (idTipoUsuario);
+)
+
+
+
+
+create table especie(
+	id int PRIMARY KEY AUTO_INCREMENT,
+	nombre varchar (20) 
+)
+
+
+
+create table Raza ( id int AUTO_INCREMENT PRIMARY KEY,
+	nombre varchar(50),
+	idEspecie int,
+    FOREIGN key (idEspecie) REFERENCES especie (id)
+)
+
+CREATE table animal(
+    	        id int PRIMARY key AUTO_INCREMENT,
+		nombre varchar (50),
+                idRaza int,
+		color varchar(50), 
+		edad int,
+		
+        FOREIGN key (idRaza) REFERENCES raza (id)
+)
+
+create table solicitud(
+	    id int PRIMARY KEY AUTO_INCREMENT,
+		idUsuario int,
+		idAnimal int,
+        FOREIGN key (idUsuario) REFERENCES usuario (id),
+        FOREIGN key (idAnimal) REFERENCES animal (id)
+)
+
+
+Crear otra tabla para solicitud de cancelación.
