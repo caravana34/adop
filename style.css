@@ -17,6 +17,34 @@ font-family: 'Oswald', sans-serif;
     color: rgb(255, 255, 255);
     text-decoration: none;
 }
+.textdetanimal{
+    color:#000000;
+    display: grid;
+    align-content: center;
+    justify-content:center;
+
+}
+.row{
+    display: flex;
+}
+
+.row .col-70{
+    width: 70%;
+}
+
+.row .col-70 .btn11{
+    height: 50%;
+}
+
+.row .col-30{
+    width: 30%;
+}
+
+.row img{
+    height:400px;
+    border-radius: 6px;
+}
+
 
 ul{
     list-style: none;
