@@ -167,8 +167,10 @@ hr {
 .adopindex{
     display: grid;
     grid-template-columns: 33%  33% 33%;
-    
     padding-top:5px; 
+    justify-content: center;
+    align-content: center;
+    width: 100%;
 }
 
 .adopindex img{
@@ -191,7 +193,9 @@ hr {
 
 .grid4{
     display: grid;
-    grid-template-columns:100%;
+    
+    align-content: center;
+    justify-content: center;
     /*gap:10px;*/
 }   
 
