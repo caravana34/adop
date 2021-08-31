@@ -18,7 +18,7 @@
     </div>
 
 
-    <div class="container">
+    <div class="container4">
         <nav class="nav-main"><a href="index.html" >
          <img src="img/brand1-01.svg" alt="Logo Mimascota" class="nav-brand"></a> 
            
@@ -30,42 +30,11 @@
           
 
         Contraseña <input type="text" name="nombresUsuario" size="30" maxlength="50" placeholder="Contraseña"> <br><br>
-        <input type="submit" name="btnGuardar" value="Iniciar"></form></div>
-        <section class="social">
-             <!--e l i a s--> 
+        <input class="btn1" type="submit" name="btn" value="Iniciar"></form></div>
+        
+    </div>
+
     
-            
-        </section>
-    </div>
-
-    <div class="footer-links">
-        <div class="footer-container">
-            <ul>
-                <li>
-                  <a href="#">
-                      <h2>Inicio</h2>
-                  </a> 
-                </li>
-                
-              
-            </ul>
-
-          
-
-            <ul>
-                <li>
-                  <a href="#">
-                      <h2>Registro</h2>
-                  </a> 
-                </li>
-               
-               
-            </ul>
-
-           
-           
-        </div>
-    </div>
 
 <footer class="footer">
     <h3>Mi mascota copyright</h3>
