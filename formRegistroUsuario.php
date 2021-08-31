@@ -40,7 +40,7 @@
     </div>
 
 
-    <div class="container">
+    <div class="container5">
         <nav class="nav-main"><a href="index.html" >
          <img src="img/brand1-01.svg" alt="Logo Mimascota" class="nav-brand"></a> 
            
@@ -49,56 +49,26 @@
         
             <div>
                 <form class="regis">
-                    Identificación <input type="text" name="nombresUsuario" size="30" maxlength="50" placeholder="Aqui primer y segundo nombre"> <br><br>
-                    Nombre    <input type="text" name="ApellidosUsuario" size="30" maxlength="50" placeholder="Sus apellidos"> <br><br>
-                    Apellidos        <input type="text" name="nombresUsuario" size="30" maxlength="50" placeholder="País de residencia"> <br><br>
-                    Correo   <input type="text" name="ApellidosUsuario" size="30" maxlength="50" placeholder="ciudad de residencia"> <br><br>
-                    Celular     <input type="text" name="ApellidosUsuario" size="30" maxlength="50" placeholder="Su numero celular"> <br><br>    
+                    Identificación <br><input type="text" name="nombresUsuario" size="30" maxlength="50" placeholder="Identificación"> <br><br>
+                    Nombre   <br> <input type="text" name="ApellidosUsuario" size="30" maxlength="50" placeholder="Nombre"> <br><br>
+                    Apellidos   <br>     <input type="text" name="nombresUsuario" size="30" maxlength="50" placeholder="Apellidos"> <br><br>
+                    Correo  <br> <input type="text" name="ApellidosUsuario" size="30" maxlength="50" placeholder="ciudad de residencia"> <br><br>
+                    Celular  <br>   <input type="text" name="ApellidosUsuario" size="30" maxlength="50" placeholder="Su numero celular"> <br><br>    
             
-                    Correo                 <input type="text" name="nombresUsuario" size="30" maxlength="50" placeholder="Aqui primer y segundo nombre"> <br><br>
-                    Confirma tu correo     <input type="text" name="ApellidosUsuario" size="30" maxlength="50" placeholder="Sus apellidos"> <br><br>
-                    Contraseña             <input type="text" name="nombresUsuario" size="30" maxlength="50" placeholder="País de residencia"> <br><br>
-                    Confirma tu contraseña <input type="text" name="nombresUsuario" size="30" maxlength="50" placeholder="País de residencia"> <br><br>
-                </form>
+                    Correo      <br>           <input type="text" name="correoElectronico" size="30" maxlength="50" placeholder="Correo Electronico"> <br><br>
+                    Confirma tu correo <br>    <input type="text" name="correoElectronico" size="30" maxlength="50" placeholder="E-mail"> <br><br>
+                    Contraseña        <br>     <input type="text" name="contrasena" size="30" maxlength="50" placeholder="Contraseña"> <br><br>
+                    Confirma tu contraseña <br><input type="text" name="contrasena" size="30" maxlength="50" placeholder="Confirma tu contraseña"> <br><br>
+                    <input class="btn1" type="submit" name="btn" value="Iniciar">
+                 </form>
 
 
         
             </div>
-        <section class="social">
-             <!--e l i a s--> 
+        
+    </div>
+
     
-            
-        </section>
-    </div>
-
-    <div class="footer-links">
-        <div class="footer-container">
-            <ul>
-                <li>
-                  <a href="#">
-                      <h2>Inicio</h2>
-                  </a> 
-                </li>
-                
-              
-            </ul>
-
-          
-
-            <ul>
-                <li>
-                  <a href="#">
-                      <h2>Registro</h2>
-                  </a> 
-                </li>
-               
-               
-            </ul>
-
-           
-           
-        </div>
-    </div>
 
 <footer class="footer">
     <h3>Mi mascota copyright</h3>

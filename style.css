@@ -77,7 +77,14 @@ ul{
     height: 100%;
     
 }
+.container4{
+   height: 510px;
+}
 
+
+.container5{
+    height: 950px;
+ }
 /* NAV LEFT */
 /*
 .nav-main ul {
@@ -201,7 +208,7 @@ hr {
     display: flex;
     grid-template-columns: 30%  30% 30%;
     padding-top:5px; 
-    gap:50px;
+    gap:30px;
     width: 100%;
 }
 
@@ -445,6 +452,7 @@ margin-bottom: 10px;
 /* Footer ELIX copyright */
 
 .footer {
+    
     background: #118C5A;
     color: #fff;
     font-size: 12px;
@@ -459,6 +467,8 @@ margin-bottom: 10px;
 
    display: grid; 
    align-content: center;
+   width: 340px;
+
 }
 
 @media (max-width: 700px) {
@@ -558,6 +568,7 @@ margin-bottom: 10px;
     text-align: center;
     background:#0FD986;
     width: 40%;
+    height:auto;
     border:solid rgb(47, 44, 43) 2px;
     padding: 15px;
     border-radius: 4px;
