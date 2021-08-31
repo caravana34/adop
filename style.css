@@ -201,7 +201,7 @@ hr {
     display: flex;
     grid-template-columns: 30%  30% 30%;
     padding-top:5px; 
-    gap:50px;
+    gap:30px;
     width: 100%;
 }
 
@@ -459,6 +459,8 @@ margin-bottom: 10px;
 
    display: grid; 
    align-content: center;
+   width: 340px;
+
 }
 
 @media (max-width: 700px) {
