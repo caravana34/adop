@@ -17,12 +17,15 @@
 
     </div>
 
+    
 
     <div class="container4">
         <nav class="nav-main"><a href="index.html" >
          <img src="img/brand1-01.svg" alt="Logo Mimascota" class="nav-brand"></a> 
            
         </nav> 
+
+        <div class= "sectionTitle"><h2>Inicia Sesión</h2></div>
         
         
         <div class="regis"><form method="post" action="formRegistroUsuario.php">
