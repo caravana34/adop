@@ -30,7 +30,7 @@
           
 
         Contraseña <input type="text" name="nombresUsuario" size="30" maxlength="50" placeholder="Contraseña"> <br><br>
-        <input class="btn1" type="submit" name="btn" value="Iniciar"></form></div>
+        <input class="btn2" type="submit" name="btn" value="Iniciar"></form></div>
         
     </div>
 
