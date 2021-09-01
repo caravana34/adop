@@ -50,9 +50,9 @@
             <div>
                 <form class="regis">
                     Identificación <br><input type="text" name="nombresUsuario" size="30" maxlength="50" placeholder="Identificación"> <br><br>
-                    Nombre   <br> <input type="text" name="ApellidosUsuario" size="30" maxlength="50" placeholder="Nombre"> <br><br>
-                    Apellidos   <br>     <input type="text" name="nombresUsuario" size="30" maxlength="50" placeholder="Apellidos"> <br><br>
-                    Correo  <br> <input type="text" name="ApellidosUsuario" size="30" maxlength="50" placeholder="ciudad de residencia"> <br><br>
+                    Nombre   <br> <input type="text" name="ApellidosUsuario" size="30" maxlength="50" placeholder="Nombres y apellidos"> <br><br>
+                    
+                    Ciudad  <br> <input type="text" name="municipio" size="30" maxlength="50" placeholder="ciudad de residencia"> <br><br>
                     Celular  <br>   <input type="text" name="ApellidosUsuario" size="30" maxlength="50" placeholder="Su numero celular"> <br><br>    
             
                     Correo      <br>           <input type="text" name="correoElectronico" size="30" maxlength="50" placeholder="Correo Electronico"> <br><br>

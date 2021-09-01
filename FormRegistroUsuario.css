@@ -77,9 +77,6 @@ body {
    color: #0FD986;
 }
 
-
-
-
 .footer-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr) ;
