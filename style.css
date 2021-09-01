@@ -198,6 +198,7 @@ hr {
     grid-template-columns: 33% 33% 33%;
     gap:10px;
     width: 98.5%;
+    padding-bottom: 20px;
 }
 
 .grid2{
