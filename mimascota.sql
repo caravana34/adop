@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.4
+-- version 5.1.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 22, 2021 at 05:28 PM
--- Server version: 10.4.17-MariaDB
--- PHP Version: 8.0.2
+-- Generation Time: Sep 02, 2021 at 09:56 PM
+-- Server version: 10.4.20-MariaDB
+-- PHP Version: 7.3.29
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -32,7 +32,9 @@ CREATE TABLE `animal` (
   `nombre` varchar(50) DEFAULT NULL,
   `idRaza` int(11) DEFAULT NULL,
   `color` varchar(50) DEFAULT NULL,
-  `edad` int(11) DEFAULT NULL
+  `edad` int(11) DEFAULT NULL,
+  `tamaño` varchar(60) NOT NULL,
+  `CaracPersonalidad` longtext NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -44,6 +46,20 @@ CREATE TABLE `animal` (
 CREATE TABLE `especie` (
   `id` int(11) NOT NULL,
   `nombre` varchar(20) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `ingresoanimal`
+--
+
+CREATE TABLE `ingresoanimal` (
+  `cedula` int(11) DEFAULT NULL,
+  `correo` varchar(50) DEFAULT NULL,
+  `telefono` varchar(50) DEFAULT NULL,
+  `imagen` blob DEFAULT NULL,
+  `descripcionAnimal` longtext DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -67,7 +83,8 @@ CREATE TABLE `raza` (
 CREATE TABLE `solicitud` (
   `id` int(11) NOT NULL,
   `idUsuario` int(11) DEFAULT NULL,
-  `idAnimal` int(11) DEFAULT NULL
+  `idAnimal` int(11) DEFAULT NULL,
+  `cartaIntencion` blob NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -91,9 +108,10 @@ CREATE TABLE `usuario` (
   `id` int(11) NOT NULL,
   `identificacion` varchar(20) DEFAULT NULL,
   `nombre` varchar(20) DEFAULT NULL,
-  `apellidos` varchar(20) DEFAULT NULL,
+  `ciudad` varchar(20) DEFAULT NULL,
   `correo` varchar(50) DEFAULT NULL,
   `telefono` varchar(50) DEFAULT NULL,
+  `contrasena` varchar(60) NOT NULL,
   `estado` varchar(50) DEFAULT NULL,
   `idTipoUsuario` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
