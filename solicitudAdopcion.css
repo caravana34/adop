@@ -37,7 +37,7 @@ body {
 }
 
 .container5{
-    height:510px;
+    height:810px;
  }
 
 
@@ -196,7 +196,20 @@ body {
     color: #fff;
     }
 
+    .sectiontitle{
+        color: #000;
+    }
+
+    .parrafoSolicitud{
+        color: black;
+    }
 
 
+    .pasosSolicitud{ display: grid;
+        align-items: center;
+        justify-content: center;
+        padding-top: 30px;
+
+    }
 
 

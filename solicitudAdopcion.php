@@ -34,16 +34,22 @@
                 <form class="regis">
                     
             
-                    Usuario     <br>           <input type="text" name="correoElectronico" size="30" maxlength="50" placeholder="Correo Electronico"> <br><br>
+                    Usuario     <br>   <input type="text" name="correoElectronico" size="30" maxlength="50" placeholder="Correo Electronico"> <br><br>
+                    Cédula <br>    <input type="file" name="correoElectronico" size="30" maxlength="50" placeholder="E-mail"> <br><br>
+                    Carta de voluntad    <br>   <input type="file" name="cartadevoluntad" size="30" maxlength="50" placeholder="Correo Electronico"> <br><br>
                     Animal <br>    <input type="text" name="correoElectronico" size="30" maxlength="50" placeholder="E-mail"> <br><br>
                     
                     <input class="btn1" type="submit" name="btn" value="Iniciar">
                  </form>
-
-
-        
-            </div>
-        
+                   </div>
+<div class="pasosSolicitud">
+                   <h1 class="sectiontitle"> Solicitud de adopción</h1>
+                   <p class="parrafoSolicitud">Si quieres solicitar un animal en adopción debes seguir los siguientes pasos:</p>
+                   <p class="parrafoSolicitud">1 - Registrate en el sitio web</p>
+                   <p class="parrafoSolicitud">2 - Llenar el formulario de esta página con los documentos solicitados</p>
+                   <p class="parrafoSolicitud">3 - Iniciar el proceso de adopción y estar dispuesto a concertar visitas y encuentros para formalizar el proceso</p>
+                   <p class="parrafoSolicitud">4 - Atender y formalizar el proceso de adopción</p>
+                   </div>
     </div>
 
     
