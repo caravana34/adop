@@ -37,7 +37,7 @@ body {
 }
 
 .container5{
-    height:850px;
+    height:510px;
  }
 
 
@@ -190,7 +190,11 @@ body {
     padding: 15px;
     border-radius: 4px;
 }
-
+.footer a{
+    font-size: 14px;
+    text-decoration: none;
+    color: #fff;
+    }
 
 
 

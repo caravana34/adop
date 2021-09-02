@@ -46,6 +46,7 @@ font-family: 'Oswald', sans-serif;
 }
 .row{
     display: flex;
+    height: 210px;
 }
 
 .row .col-70{

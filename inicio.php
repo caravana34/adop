@@ -39,9 +39,10 @@
 
     
 
-<footer class="footer">
-    <h3>Mi mascota copyright</h3>
-</footer>
+    <footer class="footer">
+        <h4><a href="index.html">Mi mascota copyright</a></h4>
+    </footer>
+
 
 <!-- scroll reveal -->
 <script src="https://unpkg.com/scrollreveal"></script>
