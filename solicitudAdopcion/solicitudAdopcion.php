@@ -24,8 +24,8 @@
 
 
     <div class="container5">
-        <nav class="nav-main"><a href="index.html" >
-         <img src="img/brand1-01.svg" alt="Logo Mimascota" class="nav-brand"></a> 
+        <nav class="nav-main"><a href="../index.html" >
+         <img src="../img/brand1-01.svg" alt="Logo Mimascota" class="nav-brand"></a> 
            
         </nav> 
         
@@ -55,7 +55,7 @@
     
 
     <footer class="footer">
-        <h4><a href="index.html">Mi mascota copyright</a></h4>
+        <h4><a href="../index.html">Mi mascota copyright</a></h4>
     </footer>
 
 <!-- scroll reveal -->
@@ -63,6 +63,6 @@
 
 <!-- custom js -->
 
-<script src="main.js"></script> 
+<script src="../main.js"></script> 
 </body>
 </html>
