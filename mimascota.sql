@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 02, 2021 at 09:56 PM
+-- Generation Time: Sep 03, 2021 at 05:21 PM
 -- Server version: 10.4.20-MariaDB
 -- PHP Version: 7.3.29
 
@@ -98,6 +98,14 @@ CREATE TABLE `tipousuario` (
   `nombreTipoUsario` varchar(50) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Dumping data for table `tipousuario`
+--
+
+INSERT INTO `tipousuario` (`idTipoUsuario`, `nombreTipoUsario`) VALUES
+(1, 'administrador'),
+(2, 'cliente');
+
 -- --------------------------------------------------------
 
 --
@@ -115,6 +123,19 @@ CREATE TABLE `usuario` (
   `estado` varchar(50) DEFAULT NULL,
   `idTipoUsuario` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `usuario`
+--
+
+INSERT INTO `usuario` (`id`, `identificacion`, `nombre`, `ciudad`, `correo`, `telefono`, `contrasena`, `estado`, `idTipoUsuario`) VALUES
+(6, '1015392769', 'J Dario', 'Bello', 'jeikson.gomez@gmail.com', '3148520270', '123456', '', 2),
+(7, '43257323', 'Andrea', 'Sabaneta', 'gomezposadadario@gmail.com', '3148520270', '123456', '', 2),
+(8, '43257323', 'Camila', 'Sabaneta', 'gomezposadadario@gmail.com', '3148520270', '123456', '', 2),
+(9, '43257323', 'Camila', 'Sabaneta', 'gomezposadadario@gmail.com', '3148520270', '123456', '', 2),
+(10, '43257323', 'Camila', 'Sabaneta', 'gomezposadadario@gmail.com', '3148520270', '123456', '', 2),
+(11, '1015392768', 'Myriam', 'Bello', 'gomezposadadario@gmail.com', '3148520270', '123456', '', 2),
+(12, '43257323', 'Diseño, Imagen', 'Bello', 'jeikson.gomez@gmail.com', '3148520270', '123456', '', 2);
 
 --
 -- Indexes for dumped tables
@@ -193,13 +214,13 @@ ALTER TABLE `solicitud`
 -- AUTO_INCREMENT for table `tipousuario`
 --
 ALTER TABLE `tipousuario`
-  MODIFY `idTipoUsuario` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `idTipoUsuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `usuario`
 --
 ALTER TABLE `usuario`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- Constraints for dumped tables
