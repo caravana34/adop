@@ -197,7 +197,8 @@ body {
     text-decoration: none;
     color: #fff;
     }
-    
-
+    input::-webkit-input-placeholder {
+        text-align: center
+  }
 
 
