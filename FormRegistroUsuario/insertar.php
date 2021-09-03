@@ -1,5 +1,5 @@
 <?php if (isset($_POST["enviar"])){
-    include("./conexion.php");
+    include("../config/conexion.php");
     $identificacion=$_POST['identificacion'];
     $nombre=$_POST['nombre'];
     $ciudad=$_POST['ciudad'];

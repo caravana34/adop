@@ -31,17 +31,18 @@
         
         
             <div>
-                <form class="regis">
+                <form action="insertar.php" method="POST" class="regis">
                     
             
-                    Usuario     <br>   <input type="text" name="correoElectronico" size="30" maxlength="50" placeholder="Correo Electronico"> <br><br>
-                    Cédula <br>    <input type="file" name="correoElectronico" size="30" maxlength="50" placeholder="E-mail"> <br><br>
-                    Carta de voluntad    <br>   <input type="file" name="cartadevoluntad" size="30" maxlength="50" placeholder="Correo Electronico"> <br><br>
-                    Animal <br>    <input type="text" name="correoElectronico" size="30" maxlength="50" placeholder="E-mail"> <br><br>
+                    Usuario<br><input type="text" name="correoElectronico" size="30" maxlength="50" placeholder="Correo Electronico"> <br><br>
+                    Cédula<br><input type="file" name="cedula" size="30" maxlength="50" placeholder="E-mail"> <br><br>
+                    Carta de voluntad<br><input type="file" name="cartaVoluntad" size="30" maxlength="50" placeholder="Correo Electronico"> <br><br>
+                    Animal<br><input type="number" name="animal" size="30" maxlength="50" placeholder="E-mail"> <br><br>
                     
-                    <input class="btn1" type="submit" name="btn" value="Iniciar">
+                    <input class="btn1" type="submit" name="btn" value="Enviar">
                  </form>
                    </div>
+
 <div class="pasosSolicitud">
                    <h1 class="sectiontitle"> Solicitud de adopción</h1>
                    <p class="parrafoSolicitud">Si quieres solicitar un animal en adopción debes seguir los siguientes pasos:</p>
