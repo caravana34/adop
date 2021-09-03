@@ -21,7 +21,7 @@
                                 if(!$ejecutarinsertar){
                             echo "Error en la linea de sql";
                                                               }
-                        header("location:./../detanimal.html");
+                        header("location:.././detanimal/detanimal.html");
     
 }
 ?>
