@@ -206,7 +206,9 @@ color: #0FD986;
     color: #fff;
     }
     
-
+    input::-webkit-input-placeholder {
+        text-align: center
+  }
 
 
 
