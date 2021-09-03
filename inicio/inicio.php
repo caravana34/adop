@@ -20,15 +20,15 @@
     
 
     <div class="container4">
-        <nav class="nav-main"><a href="index.html" >
-         <img src="img/brand1-01.svg" alt="Logo Mimascota" class="nav-brand"></a> 
+        <nav class="nav-main"><a href="../index.html" >
+         <img src="../img/brand1-01.svg" alt="Logo Mimascota" class="nav-brand"></a> 
            
         </nav> 
 
         <div class= "sectionTitle"><h2>Inicia Sesión</h2></div>
         
         
-        <div class="regis"><form method="post" action="formRegistroUsuario.php">
+        <div class="regis"><form method="post" action="../index.html">
         Correo   <input type="text" name="ApellidosUsuario" size="30" maxlength="50" placeholder="correo electrónico"> <br><br>
           
 
@@ -40,7 +40,7 @@
     
 
     <footer class="footer">
-        <h4><a href="index.html">Mi mascota copyright</a></h4>
+        <h4><a href="../index.html">Mi mascota copyright</a></h4>
     </footer>
 
 
@@ -49,7 +49,7 @@
 
 <!-- custom js -->
 
-<script src="main.js"></script>
+<script src="../main.js"></script>
 </body>
 
 </html>
