@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 03, 2021 at 05:21 PM
+-- Generation Time: Sep 03, 2021 at 05:35 PM
 -- Server version: 10.4.20-MariaDB
 -- PHP Version: 7.3.29
 
@@ -135,7 +135,8 @@ INSERT INTO `usuario` (`id`, `identificacion`, `nombre`, `ciudad`, `correo`, `te
 (9, '43257323', 'Camila', 'Sabaneta', 'gomezposadadario@gmail.com', '3148520270', '123456', '', 2),
 (10, '43257323', 'Camila', 'Sabaneta', 'gomezposadadario@gmail.com', '3148520270', '123456', '', 2),
 (11, '1015392768', 'Myriam', 'Bello', 'gomezposadadario@gmail.com', '3148520270', '123456', '', 2),
-(12, '43257323', 'Diseño, Imagen', 'Bello', 'jeikson.gomez@gmail.com', '3148520270', '123456', '', 2);
+(12, '43257323', 'Diseño, Imagen', 'Bello', 'jeikson.gomez@gmail.com', '3148520270', '123456', '', 2),
+(14, '1025673987', 'Elias', 'Medellín', 'elias@hotmail.com', '3148520270', '123456', '', 2);
 
 --
 -- Indexes for dumped tables
@@ -220,7 +221,7 @@ ALTER TABLE `tipousuario`
 -- AUTO_INCREMENT for table `usuario`
 --
 ALTER TABLE `usuario`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
 -- Constraints for dumped tables
