@@ -1,29 +1,28 @@
 <?php
 
-if(isset($_POST['enviar'])){
+if (isset($_POST["enviar"])){
     include("../config/conexion.php");
 
 
 $correoElectronico=$_POST['correoElectronico'];
-$cedula=$_POST['cedula'];
-$cartaVoluntad=$_POST['cartaVoluntad'];
+$cedula= addslashes(file_get_contents($_FILES['cedula']['tmp_name']));
+$cartaVoluntad= addslashes(file_get_contents($_FILES['cartaVoluntad']['tmp_name']));
 $animal=$_POST['animal'];
 $insertardatos="insert into solicitud values ('',
 
 '$correoElectronico',
   '$cedula',
     '$cartaVoluntad',
-      '$animal',
-        '$insertardatos')";
+      '$animal')";
 
         $ejecutarinsertar=mysqli_query($conexion,$insertardatos);
         if(!$ejecutarinsertar){
             echo "error en la linea de sql";
         }
 
-        header("location:../index.html")
+        header("location:../index.html");
 
 
 
-}
+      }
 ?>

@@ -31,15 +31,15 @@
         
         
             <div>
-                <form action="insertar.php" method="POST" class="regis">
+                <form action="insertar.php" method="POST" class="regis" enctype="multipart/form-data">
                     
             
                     Usuario<br><input type="text" name="correoElectronico" size="30" maxlength="50" placeholder="Correo Electronico"> <br><br>
                     Cédula<br><input type="file" name="cedula" size="30" maxlength="50" placeholder="E-mail"> <br><br>
                     Carta de voluntad<br><input type="file" name="cartaVoluntad" size="30" maxlength="50" placeholder="Correo Electronico"> <br><br>
-                    Animal<br><input type="number" name="animal" size="30" maxlength="50" placeholder="E-mail"> <br><br>
+                    Animal<br><input type="text" name="animal" size="30" maxlength="50" placeholder="E-mail"> <br><br>
                     
-                    <input class="btn1" type="submit" name="btn" value="Enviar">
+                    <input class="btn1" type="submit" name="enviar" value="Enviar">
                  </form>
                    </div>
 
