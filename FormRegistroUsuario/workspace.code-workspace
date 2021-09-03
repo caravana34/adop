@@ -1,0 +1,93 @@
+{
+	"folders": [
+		{
+			"name": "login",
+			"path": "..\\..\\login"
+		},
+		{
+			"name": "fourphp",
+			"path": "..\\..\\fourphp"
+		},
+		{
+			"name": "Actvidad4",
+			"path": "..\\..\\Actvidad4"
+		},
+		{
+			"name": "Actividad4",
+			"path": "..\\..\\Actividad4"
+		},
+		{
+			"name": "act4",
+			"path": "..\\..\\act4"
+		},
+		{
+			"name": "evidencia4",
+			"path": "..\\..\\evidencia4"
+		},
+		{
+			"name": "mlp",
+			"path": "..\\..\\..\\..\\Users\\gomez\\Documents\\pruebamerc\\mlp"
+		},
+		{
+			"name": "adop",
+			"path": ".."
+		},
+		{
+			"name": "shopserver",
+			"path": "..\\..\\..\\..\\Users\\gomez\\OneDrive\\Documentos\\shopserver"
+		},
+		{
+			"name": "shopserver",
+			"path": "..\\..\\..\\..\\Users\\gomez\\Documents\\shopserver"
+		},
+		{
+			"name": "fode",
+			"path": "..\\..\\fode"
+		},
+		{
+			"name": "grid",
+			"path": "..\\..\\grid"
+		},
+		{
+			"name": "grass",
+			"path": "..\\..\\grass"
+		},
+		{
+			"name": "rol",
+			"path": "..\\..\\rol"
+		},
+		{
+			"name": "imagen",
+			"path": "..\\..\\imagen"
+		},
+		{
+			"name": "airplane",
+			"path": "..\\..\\airplane"
+		},
+		{
+			"name": "api",
+			"path": "..\\..\\..\\..\\Users\\gomez\\api"
+		},
+		{
+			"name": "formulario",
+			"path": "..\\..\\formulario"
+		},
+		{
+			"name": "algojs",
+			"path": "..\\..\\algojs"
+		},
+		{
+			"name": "clima",
+			"path": "..\\..\\clima"
+		},
+		{
+			"name": "conex30",
+			"path": "..\\..\\conex30"
+		},
+		{
+			"name": "prueba",
+			"path": "..\\..\\prueba"
+		}
+	],
+	"settings": {}
+}
