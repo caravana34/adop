@@ -7,7 +7,7 @@
     $telefono=$_POST['telefono'];
     $contrasena=$_POST['contrasena'];
     $estado=$_POST['estado'];
-    $IdTipoUsuario=$_POST['IdTipoUsuario'];
+    $IdTipoUsuario='2';
     $insertardatos="insert into usuario values ('',
     '$identificacion',
         '$nombre',

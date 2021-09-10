@@ -29,7 +29,7 @@
         
         
         <div class="regis">
-              <form  action=""method="post" action="../index.html">
+              <form  action="" method="post" action="../index.html">
         Correo <br><input type="text" name="ApellidosUsuario" size="30" maxlength="50" placeholder="correo electrónico"> <br><br>
           
 
