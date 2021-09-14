@@ -35,15 +35,15 @@ while($fila=mysqli_fetch_array($resultado)) // ciclo mientras para ordenar en la
 {
     echo"<tr>";
     echo"<td>".$fila['id'];
+    echo"<td>".$fila['identificacion'];
     echo"<td>".$fila['nombre'];
     echo"<td>".$fila['ciudad'];
     echo"<td>".$fila['correo'];
     echo"<td>".$fila['telefono'];
 
-    echo"<td>" ?> <img height="50px" src="data:image/jpg;base64,
-    <?php echo base64_encode($fila['imagen']);?>"/> </td>
+     ?>  </td>
 
-    <th><a href="modificar.php?id=<?php echo $fila['id']; ?>"> Modificar </a></th>
+    <th><a href="/FormRegistroUsuario/modificarRegistroCliente.php?id=<?php echo $fila['id']; ?>"> Modificar </a></th>
 
     <th><a href="eliminar.php?id=<?php echo $fila['id']; ?>"> Eliminar </a></th>
     
