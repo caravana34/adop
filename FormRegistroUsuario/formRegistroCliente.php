@@ -27,14 +27,14 @@
         
             <div>
                 <form class="regis" action="./insertarcliente.php" method="POST" enctype="multipart/form-data">
-                    Identificación <br><input type="text" name="identificacion" size="30" maxlength="50" placeholder="Identificación"> <br><br>
-                    Nombre   <br> <input type="text" name="nombre" size="30" maxlength="50" placeholder="Nombres y apellidos"> <br><br>
+                    Identificación <br><input type="text" name="identificacion" size="30" maxlength="50" placeholder="Identificación" required> <br><br>
+                    Nombre   <br> <input type="text" name="nombre" size="30" maxlength="50" placeholder="Nombres y apellidos" required> <br><br>
                     
-                    Ciudad  <br> <input class="place" type="text" name="ciudad" size="30" maxlength="50" placeholder="Ciudad de Residencia"> <br><br>
-                    Correo <br>   <input class="place"  type="text" name="correo" size="30" maxlength="50" placeholder="Su Correo Electrónico"> <br><br>    
-                    Telefono <br>  <input class="place"  type="text" name="telefono" size="30" maxlength="50" placeholder="Número de Celular"> <br><br>
-                    Contraseña <br><input class="place"  type="text" name="contrasena" size="30" maxlength="50" placeholder="Contraseña"> <br><br>
-                    Estado <br><input class="place"  type="text" name="Estado" size="30" maxlength="50" placeholder="Descripción"> <br><br>
+                    Ciudad  <br> <input class="place" type="text" name="ciudad" size="30" maxlength="50" placeholder="Ciudad de Residencia" required> <br><br>
+                    Correo <br>   <input class="place"  type="text" name="correo" size="30" maxlength="50" placeholder="Su Correo Electrónico" required> <br><br>    
+                    Telefono <br>  <input class="place"  type="text" name="telefono" size="30" maxlength="50" placeholder="Número de Celular" required> <br><br>
+                    Contraseña <br><input class="place"  type="text" name="contrasena" size="30" maxlength="50" placeholder="Contraseña"required> <br><br>
+                    <!--Estado <br><input class="place"  type="text" name="Estado" size="30" maxlength="50" placeholder="Descripción"> <br><br>-->
                     
                     <input class="btn1" type="submit" name="enviar" value="Iniciar">
                  </form>
