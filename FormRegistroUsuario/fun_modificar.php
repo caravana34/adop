@@ -1,15 +1,20 @@
 <?php
 
 include("../config/conexion.php");
-$id=$_REQUEST['id'];
-$nombre=$_POST['nombre'];
-
-
-$consulta="update usuario set nombre='$nombre', where id='$id'";
-$resultado=mysqli_query($conexion,$consulta);
-if($resultado){
+    $id=$_REQUEST['id'];
+    $identificacion=$_POST['identificacion'];
+    $nombre=$_POST['nombre'];
+    $ciudad=$_POST['ciudad'];
+    $correo=$_POST['correo'];
+    $telefono=$_POST['telefono'];
+    $contrasena=$_POST['contrasena'];
+    $estado=$_POST['estado'];
+    //$idTipoUsuario=$_POST['idTipoUsuario'];
+    $consulta="update usuario set identificacion='$identificacion',nombre='$nombre',ciudad='$ciudad',correo=' $correo',telefono='$telefono',contrasena='$contrasena',estado='$estado' WHERE id='$id'";
+    $resultado=mysqli_query($conexion,$consulta);
+    if($resultado){
     //echo "Guardada";
-    header("location:index.php");
+    header("location:consultaRegistroCliente.php");
 }
 else{
     echo "No se guardo";

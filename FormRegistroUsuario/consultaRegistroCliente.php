@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Imagenes PHP</title>
+    <title>Consulta registro Usario</title>
 </head>
 <body>
     <center>
@@ -20,6 +20,9 @@
             <th>Ciudad</th>
             <th>Correo</th>
             <th>Teléfono</th>
+            <th>estado</th>
+            <th>contrasena</th>
+            <th>IdTipoUsuario</th>
             <th colspan="2">Operacion</th>
             
 </tr>
@@ -40,10 +43,12 @@ while($fila=mysqli_fetch_array($resultado)) // ciclo mientras para ordenar en la
     echo"<td>".$fila['ciudad'];
     echo"<td>".$fila['correo'];
     echo"<td>".$fila['telefono'];
-
+    echo"<td>".$fila['estado'];
+    echo"<td>".$fila['contrasena'];
+    echo"<td>".$fila['idTipoUsuario'];
      ?>  </td>
 
-    <th><a href="/FormRegistroUsuario/modificarRegistroCliente.php?id=<?php echo $fila['id']; ?>"> Modificar </a></th>
+    <th><a href="modificarRegistroCliente.php?id=<?php echo $fila['id']; ?>"> Modificar </a></th>
 
     <th><a href="eliminar.php?id=<?php echo $fila['id']; ?>"> Eliminar </a></th>
     

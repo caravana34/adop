@@ -7,7 +7,7 @@
     $telefono=$_POST['telefono'];
     $contrasena=$_POST['contrasena'];
     $estado=$_POST['estado'];
-    $IdTipoUsuario=$_POST['IdTipoUsuario'];
+    $idTipoUsuario=$_POST['idTipoUsuario'];
     $insertardatos="insert into usuario values ('',
     '$identificacion',
         '$nombre',
@@ -16,7 +16,7 @@
                     '$telefono',
                         '$contrasena',
                             '$estado',
-                                '$IdTipoUsuario')";
+                                '$idTipoUsuario')";
                                 $ejecutarinsertar=mysqli_query($conexion,$insertardatos);
                                 if(!$ejecutarinsertar){
                             echo "Error en la linea de sql";

@@ -15,8 +15,16 @@
     ?>
     <center>
         <form action="fun_modificar.php?id=<?php echo $fila['id']; ?>" method="POST" enctype="multipart/form-data">
-            <input type="text" name="nombre" placeholder="Nombre" require>
+            <input type="text" name="identificacion" placeholder="Cedula" require><br><br>
+            <input type="text" name="nombre" placeholder="Nombre" require><br><br>
+             <input type="text" name="ciudad" placeholder="Ciudad" require><br><br>
+            <input type="text" name="correo" placeholder="Correo" require><br><br>
+             <input type="text" name="telefono" placeholder="telefono" require><br><br>
+             <input type="text" name="contrasena" placeholder="Contraseña" require><br><br>
+             <input type="text" name="estado" placeholder="estado" require><br><br>
+             <input type="text" name="idTipoUsario" placeholder="idTipoUsuario" require><br><br>
             
+    
             <input type="submit" value="aceptar">
         </form>
 </center>

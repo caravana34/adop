@@ -29,11 +29,11 @@
         
         
         <div class="regis">
-              <form  action="" method="post" action="../index.html">
-        Correo <br><input type="text" name="ApellidosUsuario" size="30" maxlength="50" placeholder="correo electrónico"> <br><br>
+              <form  action="validar.php" method="post" action="../index.html">
+        Correo <br><input type="text" name="correo" size="30" maxlength="50" placeholder="correo electrónico"> <br><br>
           
 
-        Contraseña<br><input type="text" name="nombresUsuario" size="30" maxlength="50" placeholder="Contraseña"> <br><br>
+        Contraseña<br><input type="text" name="contrasena" size="30" maxlength="50" placeholder="Contraseña"> <br><br>
         <input class="btn1" type="submit" name="btn" value="Iniciar">
     </form>
 </div>

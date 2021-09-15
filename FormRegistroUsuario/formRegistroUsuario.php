@@ -26,7 +26,7 @@
         
         
             <div>
-                <form class="regis" action="./insertar.php" method="POST" enctype="multipart/form-data">
+                <form class="regis" action="insertar.php" method="POST" enctype="multipart/form-data">
                     Identificación <br><input type="text" name="identificacion" size="30" maxlength="50" placeholder="Identificación"> <br><br>
                     Nombre   <br> <input type="text" name="nombre" size="30" maxlength="50" placeholder="Nombres y apellidos"> <br><br>
                     
@@ -34,8 +34,8 @@
                     Correo <br>   <input class="place"  type="text" name="correo" size="30" maxlength="50" placeholder="Su Correo Electrónico"> <br><br>    
                     Telefono <br>  <input class="place"  type="text" name="telefono" size="30" maxlength="50" placeholder="Número de Celular"> <br><br>
                     Contraseña <br><input class="place"  type="text" name="contrasena" size="30" maxlength="50" placeholder="Contraseña"> <br><br>
-                    Estado <br><input class="place"  type="text" name="Estado" size="30" maxlength="50" placeholder="Descripción"> <br><br>
-                    IdTipoUsuario <br><input class="place" type="text" name="IdTipoUsuario" size="30" maxlength="50" placeholder="Contraseña"> <br><br>
+                    Estado <br><input class="place"  type="text" name="estado" size="30" maxlength="50" placeholder="Descripción"> <br><br>
+                    IdTipoUsuario <br><input class="place" type="number" name="idTipoUsuario" size="30" maxlength="50" placeholder="Contraseña"> <br><br>
                     <input class="btn1" type="submit" name="enviar" value="Iniciar">
                  </form>
 
