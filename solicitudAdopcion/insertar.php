@@ -6,7 +6,7 @@ if (isset($_POST["enviar"])){
 
 $correoElectronico=$_POST['correoElectronico'];
 $cedula= addslashes(file_get_contents($_FILES['cedula']['tmp_name']));
-$cartaVoluntad= addslashes(file_get_contents($_FILES['cartaVoluntad']['tmp_name']));
+$cartaVoluntad=$_POST['cartaVoluntad'];
 $animal=$_POST['animal'];
 $insertardatos="insert into solicitud values ('',
 
