@@ -31,7 +31,7 @@
                     Carta de voluntad<textarea name="cartaVoluntad"></textarea><br><br>
                     Animal<br><input type="text" name="animal" size="30" maxlength="50" placeholder="E-mail"> <br><br>
                     
-                    <input class="btn1" type="submit"  value="aceptar">
+                    <input class="btn1" type="submit" name="enviar" value="aceptar">
                  </form>
                    </div>
 
