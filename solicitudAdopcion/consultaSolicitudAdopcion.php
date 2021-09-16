@@ -32,19 +32,13 @@ while($fila=mysqli_fetch_array($resultado)) // ciclo mientras para ordenar en la
     echo"<tr>";
     echo"<td>".$fila['id'];
     echo"<td>".$fila['correoElectronico'];
-    echo"<td>".$fila['cedula'];
-    echo"<td>".$
+    echo"<td>".$fila['cartaVoluntad'];
     echo"<td>".$fila['animal'];
+    echo"<td>" ?> <img height="50px" src="data:image/jpg;base64,
+    <?php echo base64_encode($fila['cedula']);?>"/>
+   
+    </td>
     
-
-    <a href="<?= htmlspecialchars($fila['cartaVoluntad']) ?>">Carta PDF</a>
-            
-              
-              
-           
-
-
-     ?>  </td>
 
     <th><a href="/FormRegistroUsuario/modificarRegistroCliente.php?id=<?php echo $fila['id']; ?>"> Modificar </a></th>
 
@@ -60,3 +54,4 @@ while($fila=mysqli_fetch_array($resultado)) // ciclo mientras para ordenar en la
     </center>
 </body>
 </html>
+
