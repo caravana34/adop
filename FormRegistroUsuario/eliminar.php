@@ -6,7 +6,7 @@ $consulta="delete from usuario where id='$id'";
 $resultado=mysqli_query($conexion,$consulta);
 if($resultado){
     //echo "eliminada";
-    header("consultaRegistroCliente.php");
+    header("location:consultaRegistroCliente.php");
 }
 else{
     echo "No se elimino";
