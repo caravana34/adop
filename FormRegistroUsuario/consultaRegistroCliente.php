@@ -4,14 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./FormRegistroUsuario.css">
     <title>Consulta registro Usario</title>
 </head>
-<body>
-    <center>
-        
-    
+<body><div class="menu-btn">
+        <i class="fas fa-bars"></i>
+    </div>
+    <div class="container5">
+        <nav class="nav-main"><a href="./../index.html" >
+         <img src="./../img/brand1-01.svg" alt="Logo Mimascota" class="nav-brand"></a> 
+        </nav> 
+            <div>
 
-    <table border ="1">
+
+
+    <center>
+    <table class="regis" border ="1">
     <thead>
             <tr>
             <th>Id</th>
