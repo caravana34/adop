@@ -9,8 +9,8 @@ include("../config/conexion.php");
     $telefono=$_POST['telefono'];
     $contrasena=$_POST['contrasena'];
     $estado=$_POST['estado'];
-    //$idTipoUsuario=$_POST['idTipoUsuario'];
-    $consulta="update usuario set identificacion='$identificacion',nombre='$nombre',ciudad='$ciudad',correo=' $correo',telefono='$telefono',contrasena='$contrasena',estado='$estado' WHERE id='$id'";
+    $idTipoUsuario=$_POST['idTipoUsuario'];
+    $consulta="update usuario set identificacion='$identificacion',nombre='$nombre',ciudad='$ciudad',correo=' $correo',telefono='$telefono',contrasena='$contrasena', estado='$estado', idTipoUusario='$idTipoUusario' WHERE id='$id'";
     $resultado=mysqli_query($conexion,$consulta);
     if($resultado){
     //echo "Guardada";

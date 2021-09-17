@@ -24,14 +24,14 @@
             <div>
     <center>
         <form class="regis" action="fun_modificar.php?id=<?php echo $fila['id']; ?>" autocomplete="on" method="POST"   enctype="multipart/form-data">
-            <input type="text" name="identificacion" placeholder="Cedula" required  ><br><br>
-            <input type="text" name="nombre" placeholder="Nombre" required><br><br>
-             <input type="text" name="ciudad" placeholder="Ciudad" required><br><br>
-            <input type="text" name="correo" placeholder="Correo" Required><br><br>
-             <input type="text" name="telefono" placeholder="telefono" Required><br><br>
-             <input type="text" name="contrasena" placeholder="Contraseña" Required><br><br>
-             <input type="text" name="estado" placeholder="estado" Required><br><br>
-             <input type="text" name="idTipoUsario" placeholder="idTipoUsuario" Required><br><br>
+            <input type="text" name="identificacion" placeholder="Cedula" value="<?php echo($fila['identificacion']);?>"  required  ><br><br>
+            <input type="text" name="nombre"  value="<?php echo($fila['nombre']);?>" required><br><br>
+             <input type="text" name="ciudad"   value="<?php echo($fila['ciudad']);?>" required><br><br>
+            <input type="text" name="correo"   value="<?php echo($fila['correo']);?>" Required><br><br>
+             <input type="text" name="telefono"   value="<?php echo($fila['telefono']);?>" Required><br><br>
+             <input type="text" name="contrasena"   value="<?php echo($fila['contrasena']);?>" Required><br><br>
+             <input type="text" name="estado"  value="<?php echo($fila['estado']);?>" Required><br><br>
+             <input type="text" name="idTipoUsuario" value="<?php echo($fila['idTipoUsuario']);?>" Required><br><br>
             
     
             <input class="btn1" type="submit" value="aceptar">
