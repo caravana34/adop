@@ -3,7 +3,7 @@
 include("../config/conexion.php");
     $id=$_REQUEST['id'];
     $correoElectronico=$_POST['correoElectronico'];
-    $cedula=$_POST['cedula'];
+    $cedula= addslashes(file_get_contents($_FILES['cedula']['tmp_name']));
     $cartaVoluntad=$_POST['cartaVoluntad'];
     $animal=$_POST['animal'];
     //$idTipoUsuario=$_POST['idTipoUsuario'];

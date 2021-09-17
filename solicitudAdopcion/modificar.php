@@ -18,7 +18,7 @@
         <i class="fas fa-bars"></i>
     </div>
     <div class="container5">
-        <nav class="nav-main"><a href="./../consultaSolicitudAdopcion.php" >
+        <nav class="nav-main"><a href="../index.html" >
          <img src="./../img/brand1-01.svg" alt="Logo Mimascota" class="nav-brand"></a> 
         </nav> 
          
