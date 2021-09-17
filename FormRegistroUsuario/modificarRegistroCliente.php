@@ -24,7 +24,7 @@
             <div>
     <center>
         <form class="regis" action="fun_modificar.php?id=<?php echo $fila['id']; ?>" autocomplete="on" method="POST"   enctype="multipart/form-data">
-            <input type="text" name="identificacion" placeholder="Cedula" value="<?php echo($fila['identificacion']);?>"  required  ><br><br>
+            <input type="text" name="identificacion"  value="<?php echo($fila['identificacion']);?>"  required  ><br><br>
             <input type="text" name="nombre"  value="<?php echo($fila['nombre']);?>" required><br><br>
              <input type="text" name="ciudad"   value="<?php echo($fila['ciudad']);?>" required><br><br>
             <input type="text" name="correo"   value="<?php echo($fila['correo']);?>" Required><br><br>
