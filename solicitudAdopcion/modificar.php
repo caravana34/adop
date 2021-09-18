@@ -26,10 +26,15 @@
 
         <form class="regis" action="fun_modificar.php?id=<?php echo $fila['id']; ?>" autocomplete="on" method="POST"   enctype="multipart/form-data">
             
-                    Usuario<br><input type="text" name="correoElectronico" size="30" maxlength="50" placeholder="Correo Electronico"> <br><br>
-                    Cédula<br><input type="file" name="cedula" size="30" maxlength="50" placeholder="E-mail"> <br><br>
-                    Carta de voluntad<textarea name="cartaVoluntad"></textarea><br><br>
-                    Animal<br><input type="text" name="animal" size="30" maxlength="50" placeholder="E-mail"> <br><br>
+                    Usuario<br><input type="text" name="correoElectronico" size="30" maxlength="50"  value="<?php echo($fila['correoElectronico']);?>"> <br><br>
+
+                    Cédula<br><input type="file" value="<?php echo base64_encode($fila['cedula']);?>" name="cedula" > <br><br>
+
+                    
+
+                    Carta de voluntad<textarea name="cartaVoluntad" value="<?php echo($fila['cartaVoluntad']);?>"></textarea><br><br>
+
+                    Animal<br><input type="text" name="animal" size="30" maxlength="50"  value="<?php echo($fila['animal']);?>"> <br><br>
                     
                     <input class="btn1" type="submit" name="enviar" value="aceptar">
                  </form>
