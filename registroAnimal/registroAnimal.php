@@ -31,6 +31,7 @@
                     Raza <br><input type="text" name="raza" size="30" maxlength="50" placeholder="Raza" required> <br><br>
                     
                     Color<br> <input class="place" type="text" name="color" size="30" maxlength="50" placeholder="Colores" required> <br><br>
+                    Edad<br> <input class="place" type="text" name="color" size="30" maxlength="50" placeholder="Colores" required> <br><br>
                     Tamaño<br><input class="place"  type="text" name="tamaño" size="30" maxlength="50" placeholder="Grande, mediana o pequeña" required> <br><br>    
                     Características de personalidad <br> <textarea class="place" placeholder="Cuentanos sobre tu mascota" name="cartaVoluntad" required></textarea>  <br><br>
                     Imagen<br><input type="file" name="imagen" size="30" maxlength="50" placeholder="Imagen Mascota" required> <br><br>
