@@ -52,7 +52,7 @@ while($fila=mysqli_fetch_array($resultado)) // ciclo mientras para ordenar en la
         </tbody>
 
     </table>
-
+    <div><a href=".././FormRegistroUsuario/consultaRegistroCliente.php">Volver</a></div>
     </center>
 </body>
 </html>

@@ -66,7 +66,8 @@ while($fila=mysqli_fetch_array($resultado)) // ciclo mientras para ordenar en la
         </tbody>
 
     </table>
-
+<div><a href=".././solicitudAdopcion/consultaSolicitudAdopcion.php">Consulta Solicitud de Adopción</a></div>
+<div><a href=".././registroAnimal/registroAnimal.php"> Registro Animal</a></div>
     </center>
 </body>
 </html>

@@ -35,7 +35,7 @@
                     
             
                     Usuario<br><input type="text" name="correoElectronico" size="30" maxlength="50" placeholder="Correo Electronico"> <br><br>
-                    Cédula<br><input type="file" name="cedula" size="30" maxlength="50" placeholder="E-mail"> <br><br>
+                    Cédula<br><input type="file" name="cedula" size="30" maxlength="50" placeholder="Cédula"> <br><br>
                     Carta de voluntad<textarea name="cartaVoluntad"></textarea><br><br>
                     Animal<br><input type="text" name="animal" size="30" maxlength="50" placeholder="E-mail"> <br><br>
                     
