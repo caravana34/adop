@@ -23,14 +23,14 @@
     <thead>
             <tr>
             <th>Id</th>
-            <th>Identificación</th>
             <th>Nombre</th>
-            <th>Ciudad</th>
-            <th>Correo</th>
-            <th>Teléfono</th>
-            <th>estado</th>
-            <th>contrasena</th>
-            <th>IdTipoUsuario</th>
+            <th>IdRaza</th>
+            <th>Color</th>
+            <th>Edad</th>
+            <th>Tamaño</th>
+            <th>Cracterística Personalidad</th>
+            <th>Imagen</th>
+           
             <th colspan="2">Operacion</th>
             
 </tr>
@@ -40,23 +40,25 @@
         
         <?php 
         include('../config/conexion.php');
-        $consulta="select * from usuario";
+        $consulta="select * from animal";
 $resultado=mysqli_query($conexion,$consulta);
 while($fila=mysqli_fetch_array($resultado)) // ciclo mientras para ordenar en la estructura los campos
 {
     echo"<tr>";
     echo"<td>".$fila['id'];
-    echo"<td>".$fila['identificacion'];
+    
     echo"<td>".$fila['nombre'];
-    echo"<td>".$fila['ciudad'];
-    echo"<td>".$fila['correo'];
-    echo"<td>".$fila['telefono'];
-    echo"<td>".$fila['estado'];
-    echo"<td>".$fila['contrasena'];
-    echo"<td>".$fila['idTipoUsuario'];
-     ?>  </td>
+    echo"<td>".$fila['idRaza'];
+    echo"<td>".$fila['color'];
+    echo"<td>".$fila['edad'];
+    echo"<td>".$fila['tamano'];
+    echo"<td>".$fila['CaracPersonalidad'];
+    echo"<td>" ?> <img height="50px" src="data:image/jpg;base64,
+    <?php echo base64_encode($fila['cedula']);?>"/>
+    
+     </td>
 
-    <th><a href="modificarRegistroCliente.php?id=<?php echo $fila['id']; ?>"> Modificar </a></th>
+    <th><a href="modificarRegistroAnimal.php?id=<?php echo $fila['id']; ?>"> Modificar </a></th>
 
     <th><a href="eliminar.php?id=<?php echo $fila['id']; ?>"> Eliminar </a></th>
     
@@ -68,10 +70,9 @@ while($fila=mysqli_fetch_array($resultado)) // ciclo mientras para ordenar en la
     </table>
 <div><a href=".././solicitudAdopcion/consultaSolicitudAdopcion.php">Consulta Solicitud de Adopción</a></div>
 <div><a href=".././registroAnimal/registroAnimal.php"> Registro Animal</a></div>
-<div><a href=".././registroRaza/registroRaza.php">Registro Raza</a></div>
-<div><a href=".././registroEspecie/registroEspecie.php"> Registro Especie</a></div>
+<div><a href=".././registroRaza/registroRaza.php">Raza</a></div>
+<div><a href=".././registroEspecie/registroEspecie.php"> Especie</a></div>
 <div><a href="./formRegistroUsuario.php"> AdminRegister</a></div>
-<div><a href="../registroAnimal/consultaRegistroAnimal.php"> Consulta Animal</a></div>
     </center>
 </body>
 </html>
