@@ -27,7 +27,8 @@
         <form class="regis" action="fun_modificar.php?id=<?php echo $fila['id']; ?>" autocomplete="on" method="POST"   enctype="multipart/form-data">
             
                     Usuario<br><input type="text" name="correoElectronico" size="30" maxlength="50"  value="<?php echo($fila['correoElectronico']);?>"> <br><br>
-
+                    <img height="50px" src="data:image/jpg;base64,
+                <?php echo base64_encode($fila['cedula']);?>" require/><br>
                     Cédula<br><input type="file" value="<?php echo base64_encode($fila['cedula']);?>" name="cedula" > <br><br>
                                                         
                     
