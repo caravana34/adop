@@ -26,14 +26,14 @@
         
         
             <div>
-                <form class="regis" action="./insertarAninmal.php" method="POST" enctype="multipart/form-data">
+                <form class="regis" action="./insertarAnimal.php" method="POST" enctype="multipart/form-data">
                     Nombre <br><input type="text" name="nombre" size="30" maxlength="50" placeholder="Nombre" required> <br><br>
-                    Raza <br><input type="text" name="raza" size="30" maxlength="50" placeholder="Raza" required> <br><br>
+                    Raza <br><input type="text" name="idRaza" size="30" maxlength="50" placeholder="Raza" required> <br><br>
                     
                     Color<br> <input class="place" type="text" name="color" size="30" maxlength="50" placeholder="Colores" required> <br><br>
-                    Edad<br> <input class="place" type="text" name="color" size="30" maxlength="50" placeholder="Colores" required> <br><br>
-                    Tamaño<br><input class="place"  type="text" name="tamaño" size="30" maxlength="50" placeholder="Grande, mediana o pequeña" required> <br><br>    
-                    Características de personalidad <br> <textarea class="place" placeholder="Cuentanos sobre tu mascota" name="cartaVoluntad" required></textarea>  <br><br>
+                    Edad<br> <input class="place" type="number" name="edad" size="30" maxlength="50" placeholder="edad" required> <br><br>
+                    Tamaño<br><input class="place"  type="text" name="tamano" size="30" maxlength="50" placeholder="Grande, mediana o pequeña" required> <br><br>    
+                    Características de personalidad <br> <textarea name="CaracPersonalidad" required></textarea>  <br><br>
                     Imagen<br><input type="file" name="imagen" size="30" maxlength="50" placeholder="Imagen Mascota" required> <br><br>
                     <!--Estado <br><input class="place"  type="text" name="Estado" size="30" maxlength="50" placeholder="Descripción"> <br><br>-->
                     

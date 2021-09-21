@@ -5,7 +5,7 @@
     $color=$_POST['color'];
     $edad=$_POST['edad'];
     $tamano=$_POST['tamano'];
-    $caracPersonalidad=$_POST['caracPersonalidad'];
+    $CaracPersonalidad=$_POST['CaracPersonalidad'];
     $imagen=addslashes(file_get_contents($_FILES['imagen']['tmp_name']));
     
     $insertardatos="insert into animal values ('',
@@ -14,13 +14,13 @@
             '$color',
                 '$edad',
                     '$tamano',
-                        '$caracPersonalidad',
+                        '$CaracPersonalidad',
                             '$imagen')";
                                 $ejecutarinsertar=mysqli_query($conexion,$insertardatos);
                                 if(!$ejecutarinsertar){
                             echo "Error en la linea de sql";
                                                               }
-                        header("location:.././index.html");
+                        header("location:./consultaRegistroAnimal.php");
                         
     
 }

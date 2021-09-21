@@ -54,7 +54,7 @@ while($fila=mysqli_fetch_array($resultado)) // ciclo mientras para ordenar en la
     echo"<td>".$fila['tamano'];
     echo"<td>".$fila['CaracPersonalidad'];
     echo"<td>" ?> <img height="50px" src="data:image/jpg;base64,
-    <?php echo base64_encode($fila['cedula']);?>"/>
+    <?php echo base64_encode($fila['imagen']);?>"/>
     
      </td>
 
