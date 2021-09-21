@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./solicitudAdopcion.css">
+    <link rel="stylesheet" href="./FormRegistroUsuario.css">
     <title>Modificar solicitud adopcion</title>
 </head>
 <body>
@@ -26,16 +26,12 @@
 
         <form class="regis" action="fun_modificar.php?id=<?php echo $fila['id']; ?>" autocomplete="on" method="POST"   enctype="multipart/form-data">
             
-                    Usuario<br><input type="text" name="correoElectronico" size="30" maxlength="50"  value="<?php echo($fila['correoElectronico']);?>"> <br><br>
+                    Id<br><input type="number" value="<?php echo($fila['id']);?>" name="id" > <br><br>
+                                                
+                    Nombre<br><input type="text" name="nombre" size="30" maxlength="50"  value="<?php echo($fila['nombre']);?>"> <br><br>
 
-                    Cédula<br><input type="file" value="<?php echo base64_encode($fila['cedula']);?>" name="cedula" > <br><br>
+                    IdEspecie<br><input type="number" value="<?php echo($fila['idEspecie']);?>" name="idEspecie" > <br><br>
                                                         
-                    
-
-                    Carta de voluntad<textarea name="cartaVoluntad" value="<?php echo($fila['cartaVoluntad']);?>"></textarea><br><br>
-
-                    Animal<br><input type="text" name="animal" size="30" maxlength="50"  value="<?php echo($fila['animal']);?>"> <br><br>
-                    
                     <input class="btn1" type="submit" name="enviar" value="aceptar">
                  </form>
                    </div>
