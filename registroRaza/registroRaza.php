@@ -14,7 +14,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
 
     <!-- CUSTOM CSS -->
-    <link rel="stylesheet" href="./FormRegistroUsuario.css.css">
+    <link rel="stylesheet" href="./FormRegistroUsuario.css">
 </head>
 <body>
 <div class="menu-btn">
@@ -33,25 +33,13 @@
             <div>
                 <form action="insertar.php" method="POST" class="regis" enctype="multipart/form-data">
                     
-            
-                    Usuario<br><input type="text" name="correoElectronico" size="30" maxlength="50" placeholder="Correo Electronico"> <br><br>
-                    Cédula<br><input type="file" name="cedula" size="30" maxlength="50" placeholder="Cédula"> <br><br>
-                    Carta de voluntad<textarea name="cartaVoluntad"></textarea><br><br>
-                    Animal<br><input type="text" name="animal" size="30" maxlength="50" placeholder="nombre de la mascota"> <br><br>
-                    
+                    Nombre<br><input type="text" name="nombre" size="30" maxlength="50" placeholder="Nombre de la raza"> <br><br>
+                    idEspecie<br><input type="number" name="idEspecie" placeholder="id de la especie"> <br><br>
                     <input class="btn1" type="submit" name="enviar" value="Enviar">
                  </form>
                    </div>
 
-<div class="pasosSolicitud">
-                   <h1 class="sectiontitle"> Solicitud de adopción</h1>
-                   <p class="parrafoSolicitud">Si quieres solicitar un animal en adopción debes seguir los siguientes pasos:</p>
-                   <p class="parrafoSolicitud">1 - Registrate en el sitio web</p>
-                   <p class="parrafoSolicitud">2 - Llenar el formulario de esta página con los documentos solicitados</p>
-                   <p class="parrafoSolicitud">3 - Iniciar el proceso de adopción y estar dispuesto a concertar visitas y encuentros para formalizar el proceso</p>
-                   <p class="parrafoSolicitud">4 - Atender y formalizar el proceso de adopción</p>
-                   </div>
-    </div>
+
 
     
 
