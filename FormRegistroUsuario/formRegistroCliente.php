@@ -33,7 +33,7 @@
                     Ciudad  <br> <input class="place" type="text" name="ciudad" size="30" maxlength="50" placeholder="Ciudad de Residencia" required> <br><br>
                     Correo <br>   <input class="place"  type="text" name="correo" size="30" maxlength="50" placeholder="Su Correo Electrónico" required> <br><br>    
                     Telefono <br>  <input class="place"  type="text" name="telefono" size="30" maxlength="50" placeholder="Número de Celular" required> <br><br>
-                    Contraseña <br><input class="place"  type="text" name="contrasena" size="30" maxlength="50" placeholder="Contraseña"required> <br><br>
+                    Contraseña <br><input class="place"  type="password" name="contrasena" size="30" maxlength="50" placeholder="Contraseña"required> <br><br>
                     <!--Estado <br><input class="place"  type="text" name="Estado" size="30" maxlength="50" placeholder="Descripción"> <br><br>-->
                     
                     <input class="btn1" type="submit" name="enviar" value="Iniciar">
