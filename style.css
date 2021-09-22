@@ -3,6 +3,22 @@
     margin: 0;
     padding: 0;
 }
+.gridcan{
+display:flex;
+grid-template-columns:50% 50%;
+gap: 30px;
+padding-top: 20px;
+padding-bottom:40px;
+}
+
+.gridcan img{
+width:480px;
+height: auto;
+border-radius: 10px;
+padding: 5px;
+float: left;
+}
+
 
 body {
     /*background:rgb(255, 0, 0);*/
@@ -250,8 +266,8 @@ hr {
 
 .title-section{
 
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     color: #0FD986;
 }
 
