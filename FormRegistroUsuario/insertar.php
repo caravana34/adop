@@ -21,7 +21,7 @@
                                 if(!$ejecutarinsertar){
                             echo "Error en la linea de sql";
                                                               }
-                        header("location:./formRegistroCliente.php");
+                        header("location:./consultaRegistroCliente.php");
                         
     
 }
