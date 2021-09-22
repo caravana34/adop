@@ -45,7 +45,7 @@ while($fila=mysqli_fetch_array($resultado)) // ciclo mientras para ordenar en la
    
      ?>  </td>
 
-    <th><a href="modificarRegistroCliente.php?id=<?php echo $fila['id']; ?>"> Modificar </a></th>
+    <th><a href="modificar.php?id=<?php echo $fila['id']; ?>"> Modificar </a></th>
 
     <th><a href="eliminar.php?id=<?php echo $fila['id']; ?>"> Eliminar </a></th>
     
