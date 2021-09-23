@@ -72,6 +72,7 @@ while($fila=mysqli_fetch_array($resultado)) // ciclo mientras para ordenar en la
 <div><a href=".././registroEspecie/registroEspecie.php"> Registro Especie</a></div>
 <div><a href="./formRegistroAdministrador.php"> AdminRegister</a></div>
 <div><a href="../registroAnimal/consultaRegistroAnimal.php"> Consulta Animal</a></div>
+<div><a href="../registroRaza/consultaRegistroRaza.php"> Consulta Raza</a></div>
     </center>
 </body>
 </html>
