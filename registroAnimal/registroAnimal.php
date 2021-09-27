@@ -19,34 +19,115 @@
 
 
     <div class="container5">
+
+    
         <nav class="nav-main"><a href="./../index.html" >
          <img src="./../img/brand1-01.svg" alt="Logo Mimascota" class="nav-brand"></a> 
            
         </nav> 
         
-        
+        <div class="tableconsult">
             <div>
                 <form class="regis" action="./insertarAnimal.php" method="POST" enctype="multipart/form-data">
                     Nombre <br><input type="text" name="nombre" size="30" maxlength="50" placeholder="Nombre" required> <br><br>
-                    Raza <br><input type="text" name="idRaza" size="30" maxlength="50" placeholder="Raza" required> <br><br>
+                    Raza <br><input type="text" name="idRaza" size="30" maxlength="50" placeholder="Id -Raza" required> <br><br>
                     
                     Color<br> <input class="place" type="text" name="color" size="30" maxlength="50" placeholder="Colores" required> <br><br>
-                    Edad<br> <input class="place" type="number" name="edad" size="30" maxlength="50" placeholder="edad" required> <br><br>
+                    Edad<br> <input class="place" type="text" name="edad" size="30" maxlength="50" placeholder="edad" required> <br><br>
                     Tamaño<br><input class="place"  type="text" name="tamano" size="30" maxlength="50" placeholder="Grande, mediana o pequeña" required> <br><br>    
                     Características de personalidad <br> <textarea name="CaracPersonalidad" required></textarea>  <br><br>
                     Imagen<br><input type="file" name="imagen" size="30" maxlength="50" placeholder="Imagen Mascota" required> <br><br>
                     <!--Estado <br><input class="place"  type="text" name="Estado" size="30" maxlength="50" placeholder="Descripción"> <br><br>-->
-                    
                     <input class="btn1" type="submit" name="enviar" value="Iniciar">
                  </form>
-
-
-        
             </div>
+        <div>
+            <table class="regis" border ="1">
+    <thead>
+            <tr>
+            <th>Id</th>
+            <th>Nombre</th>
+            <th>IdEspecie</th>
+            
+            
+</tr>
+        </thead>
+
+        <tbody>
         
+        <?php 
+        include('../config/conexion.php');
+        $consulta="select * from raza";
+$resultado=mysqli_query($conexion,$consulta);
+while($fila=mysqli_fetch_array($resultado)) // ciclo mientras para ordenar en la estructura los campos
+{
+    echo"<tr>";
+    echo"<td>".$fila['id'];
+    
+    echo"<td>".$fila['nombre'];
+    echo"<td>".$fila['idEspecie'];
+    ?> 
+    
+     </td>
+
+    <th><a href="modificarRegistroAnimal.php?id=<?php echo $fila['id']; ?>"> Modificar </a></th>
+
+    <th><a href="eliminar.php?id=<?php echo $fila['id']; ?>"> Eliminar </a></th>
+    
+    <?php echo"<tr>";
+    
+}?>
+        </tbody>
+
+    </table>
+
     </div>
 
+    <div class="tableconsult">
+            <div><table class="regis" border ="1">
+    <thead>
+            <tr>
+            <th>Id</th>
+            <th>Nombre</th>
+            
+            
+            
+</tr>
+        </thead>
+
+        <tbody>
+        
+        <?php 
+        include('../config/conexion.php');
+        $consulta="select * from especie";
+$resultado=mysqli_query($conexion,$consulta);
+while($fila=mysqli_fetch_array($resultado)) // ciclo mientras para ordenar en la estructura los campos
+{
+    echo"<tr>";
+    echo"<td>".$fila['id'];
     
+    echo"<td>".$fila['nombre'];
+    
+    ?> 
+    
+     </td>
+
+    <th><a href="modificarRegistroAnimal.php?id=<?php echo $fila['id']; ?>"> Modificar </a></th>
+
+    <th><a href="eliminar.php?id=<?php echo $fila['id']; ?>"> Eliminar </a></th>
+    
+    <?php echo"<tr>";
+    
+}?>
+        </tbody>
+
+    </table></div>
+            <div></div>
+
+
+    </div>
+    
+    </div>
 
     <footer class="footer">
         <h4><a href="./../index.html">Mi mascota copyright</a></h4>

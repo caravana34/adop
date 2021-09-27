@@ -1,3 +1,22 @@
+
+<?php include("./config/conexion.php");
+//$consulta="select*from articulo";
+//$resultado= mysqli_query($conexion, $consulta);
+//$fila=mysqli_fetch_array($resultado);
+$porpagina=3;
+if(isset($_GET['mimascota'])){
+    $pagina=$_GET['mimascota'];
+
+}else{
+    $pagina=1;
+}
+$inicio=($pagina-1)*$pagina;
+$consulta="select * from animal limit $inicio,$porpagina";
+$resultado=mysqli_query($conexion,$consulta);
+$totalregistro=mysqli_num_rows($resultado);
+$totalpagina=ceil($totalregistro/$porpagina);
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -25,7 +44,7 @@
 
 
     <div class="container">
-        <nav class="nav-main"><a href="index.html" >
+        <nav class="nav-main"><a href="index.php" >
          <img src="./img/brand1-01.svg" alt="Logo Mimascota" class="nav-brand"></a>           
         </nav> 
         
@@ -151,34 +170,20 @@
     
 
         <div class="adopindex"><!--grilla de 2 columnas-->
-
-            <div class="grid4">              
-                <div>
-                 <img class="animal1" src="img/gato destacados2.jpg" >
+        <?php foreach($resultado as $dato):?>  
+            <div class="grid4">   
+                     
+                <div class="animal1">
+                 <img src="data:image/webp;base64,
+    <?php echo base64_encode($fila['imagen']);?>" >
                 </div>
-
+                
                 <div class="anibtn">
-                    <!--<?php echo $dato['titulo']?>--><a href="./detanimal/detanimal.html" class="btn">Conocer mas<i class="fas fa-angle-double-right"></i> </a>               
+                    <a href="./detanimal/detanimal.html" class="btn">Conocer mas<i class="fas fa-angle-double-right"></i> </a>               
                 </div>
             </div>
+            <?php endforeach?>
             
-            <div class="grid4">
-               <div>
-                    <img class="animal1" src="img/gato destacados2.jpg" >
-               </div>
-               <div class="anibtn">
-                    <a href="#" class="btn"> Conocer mas <i class="fas fa-angle-double-right"></i></a>
-               </div>                          
-            </div>
-
-            <div class="grid4">
-                <div>
-                     <img class="animal1" src="img/gato destacados2.jpg" >
-                </div>
-                <div class="anibtn">
-                     <a href="#" class="btn"> Conocer mas <i class="fas fa-angle-double-right"></i></a>
-                </div>                          
-             </div>
 
         </div>
         <div >
