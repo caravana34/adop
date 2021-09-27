@@ -14,7 +14,8 @@ $inicio=($pagina-1)*$pagina;
 $consulta="select * from animal limit $inicio,$porpagina";
 $resultado=mysqli_query($conexion,$consulta);
 $totalregistro=mysqli_num_rows($resultado);
-$totalpagina=ceil($totalregistro/$porpagina);
+$totalpagina=ceil($totalregistro/$porpagina)
+
 ?>
 
 <!DOCTYPE html>
@@ -175,7 +176,7 @@ $totalpagina=ceil($totalregistro/$porpagina);
                      
                 <div class="animal1">
                  <img src="data:image/webp;base64,
-    <?php echo base64_encode($fila['imagen']);?>" >
+    <?php echo base64_encode($dato['imagen']);?>" >
                 </div>
                 
                 <div class="anibtn">

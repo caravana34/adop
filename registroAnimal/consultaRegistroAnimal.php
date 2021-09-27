@@ -46,7 +46,6 @@ while($fila=mysqli_fetch_array($resultado)) // ciclo mientras para ordenar en la
 {
     echo"<tr>";
     echo"<td>".$fila['id'];
-    
     echo"<td>".$fila['nombre'];
     echo"<td>".$fila['idRaza'];
     echo"<td>".$fila['color'];
