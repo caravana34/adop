@@ -240,7 +240,7 @@ $totalpagina=ceil($totalregistro/$porpagina)
 </div>
 
 <footer class="footer">
-    <h4><a href="index.html">Mi mascota copyright</a></h4>
+    <h4><a href="index.php">Mi mascota copyright</a></h4>
 </footer>
 
 <!-- scroll reveal -->
