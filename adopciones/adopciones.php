@@ -1,3 +1,25 @@
+<?php include("./config/conexion.php");
+//$consulta="select*from articulo";
+//$resultado= mysqli_query($conexion, $consulta);
+//$fila=mysqli_fetch_array($resultado);
+$porpagina=2;
+if(isset($_GET['mimascota'])){
+    $pagina=$_GET['mimascota'];
+
+}else{
+    $pagina=1;
+}
+$inicio=($pagina-1)*$pagina;
+$consulta="select * from animal limit $inicio,$porpagina";
+$resultado=mysqli_query($conexion,$consulta);
+$totalregistro=mysqli_num_rows($resultado);
+$totalpagina=ceil($totalregistro/$porpagina)
+
+?>
+
+
+
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -23,12 +45,19 @@
     <div class="categorias">
         <h2>Elige tu mejor amigo</h2>
     </div>             
-        <div class="grid2"><!--grilla de 2 columnas-->
-         <div class="nested_grid"> 
-            <div>
-                 <a href="../detanimal/detanimal.html"><img src="../img/gato destacados2.jpg" ></a>
-            </div>
+       
 
+               
+
+    <div class="grid2"><!--grilla de 2 columnas-->
+   
+        <?php foreach($resultado as $dato):?>  
+            <div class="nested_grid"> 
+                     
+                 <img src="data:image/webp;base64,
+    <?php echo base64_encode($dato['imagen']);?>" >
+                </div>
+                
                 <div class="descripcion">
                     <h2>Descripcion</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda deserunt recusandae libero tenetur molestias ducimus at similique excepturi temporibus in, facere saepe, dolorem consequatur nobis, ea repellat cum beatae incidunt ipsa molestiae explicabo. Iure voluptatibus magni maxime adipisci exercitationem, nemo a facilis error eius eligendi quidem. Eius dolore cum et!</p>
@@ -40,6 +69,46 @@
 
                 </div> 
           </div>
+
+             
+            <?php endforeach?>
+
+
+
+
+
+
+
+            <div>
+               
+            </div>
+
+
+
+
+
+           
+        
+           
+
+           
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
           <div class="nested_grid">  
             <div>
@@ -57,7 +126,8 @@
 
                 </div> 
           </div>
-        
+
+
           <div class="nested_grid">    
             <div>        
                  <img  src="../img/gato destacados2.jpg" >
