@@ -53,7 +53,7 @@ $totalpagina=ceil($totalregistro/$porpagina)
         <div class="grid">
         <div>
              <header class="showcase"> 
-                <a href="./adopciones/adopciones.html" class="btn1">Adopciones<i class="fas fa-angle-double-right"></i> </a>
+                <a href="./adopciones/adopciones.php" class="btn1">Adopciones<i class="fas fa-angle-double-right"></i> </a>
              </header>       
          </div>
 
