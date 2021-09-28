@@ -3,7 +3,7 @@
 //$consulta="select*from articulo";
 //$resultado= mysqli_query($conexion, $consulta);
 //$fila=mysqli_fetch_array($resultado);
-$porpagina=6;
+$porpagina=3;
 if(isset($_GET['mimascota'])){
     $pagina=$_GET['mimascota'];
 
@@ -11,11 +11,13 @@ if(isset($_GET['mimascota'])){
     $pagina=1;
 }
 $inicio=($pagina-1)*$pagina;
-$consulta="select * from animal where idEspecie=9 limit $inicio,$porpagina";
+$consulta="select * from animal where idEspecie=8 limit $inicio,$porpagina";
 $resultado=mysqli_query($conexion,$consulta);
 $totalregistro=mysqli_num_rows($resultado);
-$totalpagina=ceil($totalregistro/$porpagina)
-
+$totalpagina=ceil($totalregistro/$porpagina);
+$consulta1="select * from animal where idEspecie=9 limit $inicio,$porpagina";
+$resultado1=mysqli_query($conexion,$consulta1);
+$totalregistro1=mysqli_num_rows($resultado1)
 ?>
 
 <!DOCTYPE html>
@@ -198,36 +200,25 @@ $totalpagina=ceil($totalregistro/$porpagina)
     
         <div class="adopindex"><!--grilla de 2 columnas-->
 
-            <div class="grid4">              
-               <div>
-                    <img class="animal1" src="img/gato destacados2.jpg" >
-               </div>
-   
-                   <div class="anibtn">
-                       <a href="#" class="btn">Conocer mas<i class="fas fa-angle-double-right"></i> </a>               
-                   </div>
-            </div>
-               
-               <div class="grid4">
-                  <div>
-                       <img class="animal1" src="img/gato destacados2.jpg" >
-                  </div>
-                  <div class="anibtn">
-                       <a href="#" class="btn"> Conocer mas <i class="fas fa-angle-double-right"></i></a>
-                  </div>                          
-               </div>
-   
-               <div class="grid4">
-                   <div>
-                        <img class="animal1" src="img/gato destacados2.jpg" >
-                   </div>
-                   <div class="anibtn">
-                        <a href="#" class="btn"> Conocer mas <i class="fas fa-angle-double-right"></i></a>
-                   </div>                          
+        <?php foreach($resultado1 as $dato):?>  
+            <div class="grid4">   
+                     
+                <div class="animal1">
+                 <img src="data:image/webp;base64,
+    <?php echo base64_encode($dato['imagen']);?>" >
                 </div>
                 
+                <div class="anibtn">
+                    <a href="./detanimal/detanimal.html" class="btn">Conocer mas<i class="fas fa-angle-double-right"></i> </a>               
+                </div>
+            </div>
+            <?php endforeach?>
+            
+
+        </div>
                 
-           </div>
+                
+           
            <div class="pcta">
 
             <h2 class="title-section2">PIÉNSALO BIEN</h2>
