@@ -11,7 +11,7 @@ if(isset($_GET['mimascota'])){
     $pagina=1;
 }
 $inicio=($pagina-1)*$pagina;
-$consulta="select * from animal where idEspecie=9 limit $inicio,$porpagina";
+$consulta="select * from animal where idEspecie=8 limit $inicio,$porpagina";
 $resultado=mysqli_query($conexion,$consulta);
 $totalregistro=mysqli_num_rows($resultado);
 $totalpagina=ceil($totalregistro/$porpagina);
