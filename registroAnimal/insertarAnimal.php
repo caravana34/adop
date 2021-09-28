@@ -7,6 +7,8 @@
     $tamano=$_POST['tamano'];
     $CaracPersonalidad=$_POST['CaracPersonalidad'];
     $imagen=addslashes(file_get_contents($_FILES['imagen']['tmp_name']));
+    $sexo=$_POST['sexo'];
+    $idEspecie=$_POST['idEspecie'];
     
     $insertardatos="insert into animal values ('',
     '$nombre',
@@ -15,7 +17,9 @@
                 '$edad',
                     '$tamano',
                         '$CaracPersonalidad',
-                            '$imagen')";
+                            '$imagen',
+                            '$sexo',
+                            '$idEspecie')";
                                 $ejecutarinsertar=mysqli_query($conexion,$insertardatos);
                                 if(!$ejecutarinsertar){
                             echo "Error en la linea de sql";

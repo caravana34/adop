@@ -37,8 +37,10 @@
                     Tamaño<br><input class="place"  type="text" name="tamano" size="30" maxlength="50" placeholder="Grande, mediana o pequeña" required> <br><br>    
                     Características de personalidad <br> <textarea name="CaracPersonalidad" required></textarea>  <br><br>
                     Imagen<br><input type="file" name="imagen" size="30" maxlength="50" placeholder="Imagen Mascota" required> <br><br>
+                    Sexo <br><input type="text" name="sexo" size="30" maxlength="50" placeholder="Sexo" required> <br><br>
+                    IdEspecie <br><input type="number" name="idEspecie" size="30" maxlength="50" placeholder="Id -Especie" required> <br><br>
                     <!--Estado <br><input class="place"  type="text" name="Estado" size="30" maxlength="50" placeholder="Descripción"> <br><br>-->
-                    <input class="btn1" type="submit" name="enviar" value="Iniciar">
+                    <input class="btn1" type="submit" name="enviar" value="Enviar">
                  </form>
             </div>
         <div>

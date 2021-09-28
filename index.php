@@ -3,7 +3,7 @@
 //$consulta="select*from articulo";
 //$resultado= mysqli_query($conexion, $consulta);
 //$fila=mysqli_fetch_array($resultado);
-$porpagina=3;
+$porpagina=6;
 if(isset($_GET['mimascota'])){
     $pagina=$_GET['mimascota'];
 
@@ -11,7 +11,7 @@ if(isset($_GET['mimascota'])){
     $pagina=1;
 }
 $inicio=($pagina-1)*$pagina;
-$consulta="select * from animal limit $inicio,$porpagina";
+$consulta="select * from animal where idEspecie=8 limit $inicio,$porpagina";
 $resultado=mysqli_query($conexion,$consulta);
 $totalregistro=mysqli_num_rows($resultado);
 $totalpagina=ceil($totalregistro/$porpagina)

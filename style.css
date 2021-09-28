@@ -224,7 +224,7 @@ hr {
 }
 
 .adopindex{
-    display: flex;
+    display:flex;
     grid-template-columns: 30%  30% 30%;
     padding-top:5px; 
     gap:30px;
