@@ -11,11 +11,11 @@ if(isset($_GET['mimascota'])){
     $pagina=1;
 }
 $inicio=($pagina-1)*$pagina;
-$consulta="select * from animal where idEspecie=8 limit $inicio,$porpagina";
+$consulta="select * from animal where idEspecie=8 order by id desc limit $inicio,$porpagina";
 $resultado=mysqli_query($conexion,$consulta);
 $totalregistro=mysqli_num_rows($resultado);
 $totalpagina=ceil($totalregistro/$porpagina);
-$consulta1="select * from animal where idEspecie=9 limit $inicio,$porpagina";
+$consulta1="select * from animal where idEspecie=9 order by id desc limit $inicio,$porpagina";
 $resultado1=mysqli_query($conexion,$consulta1);
 $totalregistro1=mysqli_num_rows($resultado1)
 ?>
