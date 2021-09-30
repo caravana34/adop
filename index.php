@@ -182,7 +182,7 @@ $totalregistro1=mysqli_num_rows($resultado1)
                 </div>
                 
                 <div class="anibtn">
-                    <a href="./detanimal/detanimal.html" class="btn">Conocer mas<i class="fas fa-angle-double-right"></i> </a>               
+                    <a href="./detanimal/detanimal.php" class="btn">Conocer mas<i class="fas fa-angle-double-right"></i> </a>               
                 </div>
             </div>
             <?php endforeach?>
@@ -209,7 +209,7 @@ $totalregistro1=mysqli_num_rows($resultado1)
                 </div>
                 
                 <div class="anibtn">
-                    <a href="./detanimal/detanimal.html" class="btn">Conocer mas<i class="fas fa-angle-double-right"></i> </a>               
+                    <a href="./detanimal/detanimal.php" class="btn">Conocer mas<i class="fas fa-angle-double-right"></i> </a>               
                 </div>
             </div>
             <?php endforeach?>
