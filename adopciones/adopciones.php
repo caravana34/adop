@@ -53,23 +53,23 @@ $totalpagina=ceil($totalregistro/$porpagina)
             <div class="grid2"><!--grilla de 2 columnas-->
             <?php foreach($resultado as $dato):?> 
                 <div class="nested_grid"> 
-                    <img src="data:image/webp;base64,
+                    <img class="img" src="data:image/webp;base64,
                         <?php echo base64_encode($dato['imagen']);?>" >
-               
+                      
                 
               <div class="descripcion">
-                    <h2>Descripcion</h2>
-                    <p><?php echo($dato['nombre']);?></p>
-                    <p><?php echo($dato['sexo']);?></p>
-                    <p><?php echo($dato['color']);?></p>
-                    <p><?php echo($dato['edad']);?></p>
-                    <p><?php echo($dato['tamano']);?></p>
-                    <p><?php echo($dato['CaracPersonalidad']);?></p>
+                    <h2>Descripcion</h2><br>
+                    <p>Nmobre:  <?php echo($dato['nombre']);?></p>
+                    <p>Sexo:    <?php echo($dato['sexo']);?></p>
+                    <p>Color:   <?php echo($dato['color']);?></p>
+                    <p>Edad:    <?php echo($dato['edad']);?></p>
+                    <p>Tamaño:  <?php echo($dato['tamano']);?></p><br>
+                    <p>Personalidad:   <?php echo($dato['CaracPersonalidad']);?></p><br>
                    
                         <a href="../solicitudAdopcion/solicitudAdopcion.php" class="btn">Adoptar<i class="fas fa-angle-double-right"></i></a>
                         
                         <a href="#" class="btn">Comparte<i class="fas fa-angle-double-right"></i></a>   
-
+                        
                 </div> 
                 </div>
                 <?php endforeach?>
