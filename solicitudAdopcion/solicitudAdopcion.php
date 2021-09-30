@@ -24,12 +24,12 @@
 
 
     <div class="container5">
-        <nav class="nav-main"><a href="../index.html" >
+        <nav class="nav-main"><a href="../index.php" >
          <img src="../img/brand1-01.svg" alt="Logo Mimascota" class="nav-brand"></a> 
            
         </nav> 
         
-        
+        <div class="grid">
             <div>
                 <form action="insertar.php" method="POST" class="regis" enctype="multipart/form-data">
                     
@@ -52,7 +52,7 @@
                    <p class="parrafoSolicitud">4 - Atender y formalizar el proceso de adopción</p>
                    </div>
     </div>
-
+    </div>
     
 
     <footer class="footer">
