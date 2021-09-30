@@ -7,7 +7,7 @@
 body {
    
     color: rgb(255, 255, 255);
-    background-color: #181d1d;
+    background-color: #ffffff;
     font-size: 16px;
     font-family: 'Oswald', sans-serif;
 }
@@ -81,7 +81,7 @@ body {
     gap:.5em;
     margin-top:5px;
     position: relative;
-   
+    background: white;
    
     /*justify-items: stretch; */
 }
@@ -112,6 +112,7 @@ body {
 
 
 /*efecto*/
+
 .nested_grid {
     position: relative;
     overflow: hidden;
@@ -130,10 +131,10 @@ body {
 
 .img {
     transition: all 2s;
+    position: absolute;
 }
 
  .descripcion{
-    
     bottom: 0;
     background: rgba(0,0,0,0.5);
     transform: translate(0,-200%);
