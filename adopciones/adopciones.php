@@ -58,7 +58,7 @@ $totalpagina=ceil($totalregistro/$porpagina)
                       
                 
               <div class="descripcion">
-                    <h2>Descripcion</h2><br>
+                   <div class="d1"><h2>Descripcion</h2></div><br>
                     <p>Nmobre:  <?php echo($dato['nombre']);?></p>
                     <p>Sexo:    <?php echo($dato['sexo']);?></p>
                     <p>Color:   <?php echo($dato['color']);?></p>
