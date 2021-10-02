@@ -191,10 +191,39 @@ $totalregistro1=mysqli_num_rows($resultado1)
         </div>
         <div >
 
-            <h2 class="title-section" >FELINOS</h2>
-            
+        <div class="gridcan4">
+        <div class="">
+            <div><h2 class="title-section">FELINOS</h2></div>
+            <div class="parrmid"><p>El gato doméstico (Felis silvestris catus), llamado popularmente gato, es un mamífero carnívoro de la familia Felidae. Es una subespecie domesticada por la convivencia con el ser humano.</p>
+                </div> 
+                <div class="gridcanids">
+                    <div clas=""><img src="./img/animals6.webp" alt=""></div>
+                    <div class=""><img src="./img/animals8.webp" alt=""></div>
+                    <div class=""><img src="./img/animals7.webp" alt=""></div>
+                </div>
+               
+                <div class="caresdogs">
+                    <div class="parrmid">
+                <p>Los gatos junto con los perros son los animales preferidos para adoptar cómo mascotas, sus habilidades como cazador ayuda al control de roedores.</p>
+                
+                <p>El nombre actual en muchas lenguas proviene del latín vulgar catus. Irónicamente, catus aludía a los gatos salvajes, mientras que los gatos domésticos, en latín, eran llamados felis.</p>
+                
+                <p>- Frívolo: es el gato más asustadizo, el típico que sale disparado del sofá al ver que llegan invitados a casa. Se caracteriza por ser muy nervioso.</p>
+                    <p>-Extrovertido: es el llamado gato curioso. Les encanta establecer relaciones con su alrededor. Juegan con sus juguetes y liberan mucha energía, ¡cuidado con su aburrimiento, porque pueden destrozar muebles! Además, les encanta estar en el jardín y en la calle, por lo que es crucial llevar controles de desparasitación para evitar que contagien a tu familia.
+                    </p>
+                    <p>- Espontáneo: se caracteriza por reaccionar ante distintas situaciones de manera diferente. Puede llegar a ser ansioso o todo lo contrario, según el día.</p>
+                    <p>- Amistoso: es cariñoso, duerme contigo y disfruta estando en tu espacio personal.</p>
+                </div>
 
-
+                <div class="cares1">
+                  <div><img clas="row" src="./img/animals5.png" alt=""></div>
+                 <!-- <div><img clas="row" src="./img/animals4.webp" alt=""></div>-->
+                  
+                  
+                </div>
+                </div>
+                </div>
+        </div>
         
     </div>
     
