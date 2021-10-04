@@ -216,7 +216,7 @@ $totalregistro1=mysqli_num_rows($resultado1)
                 </div>
 
                 <div class="cares1">
-                  <div><img clas="row" src="./img/animals5.png" alt=""></div>
+                  <div><img clas="row" src="./img/animals9.png" alt=""></div>
                  <!-- <div><img clas="row" src="./img/animals4.webp" alt=""></div>-->
                   
                   
@@ -250,11 +250,7 @@ $totalregistro1=mysqli_num_rows($resultado1)
            
            <div class="pcta">
 
-            <h2 class="title-section2">PIÉNSALO BIEN</h2>
-            <p>Si quieres tener la 
-                compañía de una mascota 
-                debes tener en cuenta que 
-                también implica unas responsabilidades.</p>
+           
     </div> 
 </div>
 </div>
