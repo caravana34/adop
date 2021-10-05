@@ -19,10 +19,11 @@
 <body>
 <?php include('../config/conexion.php');
     $id=$_REQUEST['id'];
+    $idRaza=$_REQUEST['idRaza'];
     $consulta="select * from animal where id='$id'";
     $resultado=mysqli_query($conexion,$consulta);
     $fila=mysqli_fetch_array($resultado);
-    $consulta2="select * from raza ";
+    $consulta2="select * from raza where id='$idRaza'";
     $resultado2=mysqli_query($conexion,$consulta2);
     $fila2=mysqli_fetch_array($resultado2);
     ?>
