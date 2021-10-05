@@ -92,36 +92,36 @@ $totalregistro1=mysqli_num_rows($resultado1)
                     <div class="carousel__lista">
                         <div class="carousel__elemento">
                             <img src="./img/animales/dogs/dog1.webp" alt="Rock and Roll Hall of Fame">
-                            <p>Rock and Roll Hall of Fame</p>
+                            <p></p>
                         </div>
                         <div class="carousel__elemento">
                             <img src="./img/animales/dogs/dog2.webp" alt="Constitution Square - Tower I">
-                            <p>Constitution Square - Tower I</p>
+                            <p></p>
                         </div>
                         <div class="carousel__elemento">
                             <img src="./img/animales/dogs/dog3.webp" alt="Empire State Building">
-                            <p>Empire State Building</p>
+                            <p></p>
                         </div>
                         <div class="carousel__elemento">
                             <img src="./img/animales/dogs/dog4.webp" alt="Harmony Tower">
-                            <p>Harmony Tower</p>
+                            <p></p>
                         </div>
         
                         <div class="carousel__elemento">
                             <img src="./img/animales/dogs/dog5.webp" alt="Empire State Building">
-                            <p>Empire State Building</p>
+                            <p></p>
                         </div>
                         <div class="carousel__elemento">
                             <img src="./img/animales/dogs/dog6.webp" alt="Harmony Tower">
-                            <p>Harmony Tower</p>
+                            <p></p>
                         </div>
                         <div class="carousel__elemento">
                             <img src="./img/animales/dogs/dog7.webp" alt="Empire State Building">
-                            <p>Empire State Building</p>
+                            <p></p>
                         </div>
                         <div class="carousel__elemento">
                             <img src="./img/animales/dogs/dog8.webp" alt="Harmony Tower">
-                            <p>Harmony Tower</p>
+                            <p></p>
                         </div>
                     </div>
     
@@ -182,7 +182,7 @@ $totalregistro1=mysqli_num_rows($resultado1)
                 </div>
                 
                 <div class="anibtn">
-                    <a href="./detanimal/detanimal.php" class="btn">Conocer mas<i class="fas fa-angle-double-right"></i> </a>               
+                    <a href="./detanimal/detanimal.php?id=<?php echo $dato['id']; ?>" class="btn">Conocer mas<i class="fas fa-angle-double-right"></i> </a>               
                 </div>
             </div>
             <?php endforeach?>
@@ -238,7 +238,7 @@ $totalregistro1=mysqli_num_rows($resultado1)
                 </div>
                 
                 <div class="anibtn">
-                    <a href="./detanimal/detanimal.php" class="btn">Conocer mas<i class="fas fa-angle-double-right"></i> </a>               
+                    <a href="./detanimal/detanimal.php?id=<?php echo $dato['id']; ?>" class="btn">Conocer mas<i class="fas fa-angle-double-right"></i> </a>               
                 </div>
             </div>
             <?php endforeach?>

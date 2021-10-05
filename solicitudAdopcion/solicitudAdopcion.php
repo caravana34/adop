@@ -17,6 +17,12 @@
     <link rel="stylesheet" href="./solicitudAdopcion.css">
 </head>
 <body>
+<?php include('../config/conexion.php');
+    $id=$_REQUEST['id'];
+    $consulta="select * from animal where id='$id'";
+    $resultado=mysqli_query($conexion,$consulta);
+    $fila=mysqli_fetch_array($resultado);
+    ?>
 <div class="menu-btn">
         <i class="fas fa-bars"></i>
 
@@ -37,7 +43,7 @@
                     Usuario<br><input type="text" name="correoElectronico" size="30" maxlength="50" placeholder="Correo Electronico"> <br><br>
                     Cédula<br><input type="file" name="cedula" size="30" maxlength="50" placeholder="Cédula"> <br><br>
                     Carta de voluntad<textarea name="cartaVoluntad"></textarea><br><br>
-                    Animal<br><input type="text" name="animal" size="30" maxlength="50" placeholder="nombre de la mascota"> <br><br>
+                    Animal<br><input type="text" name="animal" size="30" maxlength="50" value="<?php echo($fila['nombre']);?>"  placeholder="nombre de la mascota"> <br><br>
                     
                     <input class="btn1" type="submit" name="enviar" value="Enviar">
                  </form>
