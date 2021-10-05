@@ -17,6 +17,16 @@
     <link rel="stylesheet" href="./detanimal.css">
 </head>
 <body>
+<?php include('../config/conexion.php');
+    $id=$_REQUEST['id'];
+    $consulta="select * from animal where id='$id'";
+    $resultado=mysqli_query($conexion,$consulta);
+    $fila=mysqli_fetch_array($resultado);
+    $consulta2="select * from raza ";
+    $resultado2=mysqli_query($conexion,$consulta2);
+    $fila2=mysqli_fetch_array($resultado2);
+    ?>
+
 
     <div class="menu-btn">
         <i class="fas fa-bars"></i>
@@ -31,7 +41,8 @@
 
             <div class="row">
                     <div class="col-30">
-                        <img src="./../img/gato destacados2.jpg" alt="">
+                        <img src="data:image/jpg;base64,
+                <?php echo base64_encode($fila['imagen']);?>" alt="">
 
                     </div> 
 
@@ -39,11 +50,15 @@
 
                         <div class="textdetanimal">
 
-                            <h2>Felino</h2>
-                            <p>Adoptar una mascota enriquece la vida y abre las puertas a una época de diversión, descubrimientos, juegos y mimos. Sin embargo, implica  también asumir la responsabilidad de cuidar del animal durante muchos años, proporcionándole comida, un lugar seguro donde vivir, cuidados veterinarios y preocupándonos de satisfacer sus necesidades en cuanto a actividad y cariño.</p>
+                            <h2><?php echo $fila['nombre'];?></h2>
+                            <p>Edad:<?php echo $fila['edad'];?></p>
+                            <p>Sexo:<?php echo $fila['sexo'];?></p>
+                            <p>Color:<?php echo $fila['color'];?></p>
+                            <p>Raza:<?php echo $fila2['nombre'];?></p>
+                            <p><?php echo $fila['CaracPersonalidad'];?></p>
                    </div>
                         <div class="btn11">
-                            <a href="../solicitudAdopcion/solicitudAdopcion.php" class="btn"> Adoptar<i class="fas fa-angle-double-right"></i></a>
+                            <a href="../solicitudAdopcion/solicitudAdopcion.php?id=<?php echo $fila['id']; ?>" class="btn"> Adoptar<i class="fas fa-angle-double-right"></i></a>
                        </div> 
                        
                         
