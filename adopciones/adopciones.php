@@ -2,7 +2,7 @@
 //$consulta="select*from articulo";
 //$resultado= mysqli_query($conexion, $consulta);
 //$fila=mysqli_fetch_array($resultado);
-$porpagina=6;
+$porpagina=18;
 if(isset($_GET['mimascota'])){
     $pagina=$_GET['mimascota'];
 
@@ -11,10 +11,13 @@ if(isset($_GET['mimascota'])){
 }
 $inicio=($pagina-1)*$pagina;
 $consulta="select * from animal where idEspecie=8 limit $inicio,$porpagina";
+$consulta1="select * from animal where idEspecie=9 limit $inicio,$porpagina";
 $resultado=mysqli_query($conexion,$consulta);
+$resultado1=mysqli_query($conexion,$consulta1);
 $totalregistro=mysqli_num_rows($resultado);
-$totalpagina=ceil($totalregistro/$porpagina)
-
+$totalregistro1=mysqli_num_rows($resultado1);
+$totalpagina=ceil($totalregistro/$porpagina);
+$totalpagina1=ceil($totalregistro1/$porpagina)
 ?>
 
 
@@ -71,6 +74,32 @@ $totalpagina=ceil($totalregistro/$porpagina)
                         <a href="#" class="btn">Comparte<i class="fas fa-angle-double-right"></i></a>   
                         
                 </div> 
+                
+                </div>
+                <?php endforeach?>
+          </div>
+          <div class="grid2"><!--grilla de 2 columnas-->
+            <?php foreach($resultado1 as $dato):?> 
+                <div class="nested_grid"> 
+                    <img class="img" src="data:image/webp;base64,
+                        <?php echo base64_encode($dato['imagen']);?>" >
+                      
+                
+              <div class="descripcion">
+                   <div class="d1"><h2>Descripcion</h2></div><br>
+                    <p>Nmobre:  <?php echo($dato['nombre']);?></p>
+                    <p>Sexo:    <?php echo($dato['sexo']);?></p>
+                    <p>Color:   <?php echo($dato['color']);?></p>
+                    <p>Edad:    <?php echo($dato['edad']);?></p>
+                    <p>Tamaño:  <?php echo($dato['tamano']);?></p><br>
+                    <p>Personalidad:   <?php echo($dato['CaracPersonalidad']);?></p><br>
+                   
+                        <a href="../solicitudAdopcion/solicitudAdopcion.php" class="btn">Adoptar<i class="fas fa-angle-double-right"></i></a>
+                        
+                        <a href="#" class="btn">Comparte<i class="fas fa-angle-double-right"></i></a>   
+                        
+                </div> 
+                
                 </div>
                 <?php endforeach?>
           </div>
