@@ -24,7 +24,7 @@ body {
     display: none;
 }
 
-.container {
+.continer{
     width: 90%;
     margin: auto;   
     justify-content:center;
@@ -56,12 +56,14 @@ body {
     color:#0FD986;
     text-align: left;
     margin-bottom: 10px;
+    padding-left: 25px;
+    margin-top: 10px;
 }
 
 .grid2 {
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
-    gap:1.5em;  
+    gap: 0em;  
     
 }
 
@@ -78,11 +80,11 @@ body {
     display: grid;
     grid-template-columns: 100%;
     /*grid-template-rows: 300px;*/
-    gap:.5em;
+    gap: 0em;
     margin-top:5px;
     position: relative;
     background: white;
-   
+    padding-left: 15px;
     /*justify-items: stretch; */
 }
 
@@ -121,17 +123,17 @@ body {
 
 .nested_grid:hover .descripcion{
     transform: translate(0,0);
-    padding: 20px;
+    padding: 12px;
     
 }
 
 .nested_grid:hover .img{
-    transform: scale(1.15);
+    transform: scale(1.5);
 }
 
 
 .img {
-    transition: all 2s;
+    transition: all 1.5s;
     position: relative;
 }
 
@@ -144,6 +146,7 @@ body {
     transform: translate(0,-200%);
     transition: all 2s ease-out;
     position: absolute;
+    
  }
 
 
@@ -151,8 +154,7 @@ body {
     color: white;
     margin-top: 20px;
    
-    
-    }
+}
     
 .descripcion p{
         color: white;
@@ -169,7 +171,7 @@ body {
 .footer {
   background: #118C5A;
   color: #fff;
-  font-size: 12px;
+  font-size: 18px;
   padding: 20px 0;
   text-align: center;
   padding-bottom: 20px;
@@ -178,6 +180,11 @@ body {
   margin-top: 3em;
 }
 
+
+.footer a {
+    color: white;
+    text-decoration: none;
+}
 
 
 

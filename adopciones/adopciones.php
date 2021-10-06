@@ -47,7 +47,7 @@ $totalpagina1=ceil($totalregistro1/$porpagina)
    
      
     <div class="categorias">
-        <h2>Elige tu mejor amigo</h2>
+        <h2>Elige tu dog amigo</h2>
     </div>             
        
    
@@ -61,14 +61,14 @@ $totalpagina1=ceil($totalregistro1/$porpagina)
                       
                 
               <div class="descripcion">
-                   <div class="d1"><h2>Descripcion</h2></div><br>
-                    <p>Nmobre:  <?php echo($dato['nombre']);?></p>
-                    <p>Sexo:    <?php echo($dato['sexo']);?></p>
-                    <p>Color:   <?php echo($dato['color']);?></p>
-                    <p>Edad:    <?php echo($dato['edad']);?></p>
-                    <p>Tamaño:  <?php echo($dato['tamano']);?></p><br>
-                    <p>Personalidad:   <?php echo($dato['CaracPersonalidad']);?></p><br>
-                   
+                   <div class="d1"><h2>Descripción</h2></div><br>
+                    <p>Nomobre:   <?php echo($dato['nombre']);?></p>
+                    <p>Sexo:     <?php echo($dato['sexo']);?></p>
+                    <p>Color:    <?php echo($dato['color']);?></p>
+                    <p>Edad:     <?php echo($dato['edad']);?></p>
+                    <p>Tamaño:   <?php echo($dato['tamano']);?></p><br>
+                    <p>Personalidad:    <?php echo($dato['CaracPersonalidad']);?></p><br>
+            
                         <a href="../detanimal/detanimal.php?id=<?php echo $dato['id']; ?>" class="btn">Conocer más<i class="fas fa-angle-double-right"></i></a>
                         
                         <a href="#" class="btn">Comparte<i class="fas fa-angle-double-right"></i></a>   
@@ -76,8 +76,16 @@ $totalpagina1=ceil($totalregistro1/$porpagina)
                 </div> 
                 
                 </div>
+                
                 <?php endforeach?>
           </div>
+
+
+          <div class="categorias">
+        <h2>Elige tu cat amigo</h2>
+    </div>             
+
+
           <div class="grid2"><!--grilla de 2 columnas-->
             <?php foreach($resultado1 as $dato):?> 
                 <div class="nested_grid"> 
@@ -86,13 +94,13 @@ $totalpagina1=ceil($totalregistro1/$porpagina)
                       
                 
               <div class="descripcion">
-                   <div class="d1"><h2>Descripcion</h2></div><br>
-                    <p>Nmobre:  <?php echo($dato['nombre']);?></p>
-                    <p>Sexo:    <?php echo($dato['sexo']);?></p>
-                    <p>Color:   <?php echo($dato['color']);?></p>
-                    <p>Edad:    <?php echo($dato['edad']);?></p>
-                    <p>Tamaño:  <?php echo($dato['tamano']);?></p><br>
-                    <p>Personalidad:   <?php echo($dato['CaracPersonalidad']);?></p><br>
+                   <div class="d1"><h2>Descripción</h2></div><br>
+                    <p>Nomobre:   <?php echo($dato['nombre']);?></p>
+                    <p>Sexo:     <?php echo($dato['sexo']);?></p>
+                    <p>Color:    <?php echo($dato['color']);?></p>
+                    <p>Edad:     <?php echo($dato['edad']);?></p>
+                    <p>Tamaño:   <?php echo($dato['tamano']);?></p><br>
+                    <p>Personalidad:    <?php echo($dato['CaracPersonalidad']);?></p><br>
                    
                         <a href="../detanimal/detanimal.php?id=<?php echo $dato['id']; ?>" class="btn">Conocer más<i class="fas fa-angle-double-right"></i></a>
                         
@@ -104,10 +112,20 @@ $totalpagina1=ceil($totalregistro1/$porpagina)
                 <?php endforeach?>
           </div>
 
-        
-        <footer class="footer">
-            <h3>Mi mascota copyright</h3>
-        </footer>
+          </div>
+
+          
+          <footer class="footer">
+    <h4><a href="index.php">Mi mascota copyright</a></h4>
+</footer>
+
+<!-- scroll reveal -->
+<script src="https://unpkg.com/scrollreveal"></script>
+
+<!-- custom js -->
+<script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.7/glider.js"></script>
+<script src="main.js"></script>
+
 
 </body>
 </html>
