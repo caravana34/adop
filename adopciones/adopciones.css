@@ -7,10 +7,9 @@
 body {
    
     color: rgb(255, 255, 255);
-    background-color:rgb(34, 40, 41);
     font-size: 16px;
     font-family: 'Oswald', sans-serif;
-    ba
+    
 }
 
 
@@ -75,7 +74,7 @@ body {
 }
 
 
-.nested_grid{
+.nested_grid {
     display: grid;
     grid-template-columns: 100%;
     /*grid-template-rows: 300px;*/
