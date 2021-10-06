@@ -36,7 +36,9 @@
             <th>Característica Personalidad</th>
             <th>Sexo</th>
             <th>IdEspecie</th>
+            <th>Raza</th>
             <th>Imagen</th>
+
            
             <th colspan="2">Operacion</th>
             
@@ -61,6 +63,7 @@ while($fila=mysqli_fetch_array($resultado)) // ciclo mientras para ordenar en la
     echo"<td>".$fila['CaracPersonalidad'];
     echo"<td>".$fila['sexo'];
     echo"<td>".$fila['idEspecie'];
+    echo"<td>".$fila['raza'];
     echo"<td>" ?> <img height="50px" src="data:image/jpg;base64,
     <?php echo base64_encode($fila['imagen']);?>"/>
     

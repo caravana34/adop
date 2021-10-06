@@ -26,7 +26,7 @@
 
     
 
-    $consulta2="select * from raza where id='$id'";
+    $consulta2="select * from raza ";
     $resultado2=mysqli_query($conexion,$consulta2);
     $fila2=mysqli_fetch_array($resultado2);?>
 
