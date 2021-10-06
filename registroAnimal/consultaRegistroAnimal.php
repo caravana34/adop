@@ -19,8 +19,8 @@
             <li><a href=".././solicitudAdopcion/consultaSolicitudAdopcion.php">Consulta Solicitud de Adopción</a></li>
             <li><a href=".././registroAnimal/registroAnimal.php"> Registro Animal</a></li>
             <li><a href=".././registroRaza/registroRaza.php">Raza</a></li>
-            <li><a href=".././registroEspecie/registroEspecie.php"> Especie</a></li>
-            <li><a href="./formRegistroUsuario.php"> AdminRegister</a></li>
+            <li><a href=".././registroEspecie/registroEspecie.php">Especie</a></li>
+            <li><a href="./formRegistroUsuario.php">AdminRegister</a></li>
         </ul>
         <div>
     <center>

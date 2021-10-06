@@ -19,7 +19,7 @@
 <body>
 <?php include('../config/conexion.php');
     $id=$_REQUEST['id'];
-    $idRaza=$_REQUEST['idRaza'];
+   
     $consulta="select * from animal where id='$id' ";
     $resultado=mysqli_query($conexion,$consulta);
     $fila=mysqli_fetch_array($resultado);
@@ -57,7 +57,7 @@
                             <p>Sexo:<?php echo $fila['sexo'];?></p>
                             <p>Color:<?php echo $fila['color'];?></p>
                             <p>Raza:<?php echo $fila['idRaza'];?></p>
-                            <p>Raza:<?php echo $fila2['nombre'];?></p>
+                            <p>Raza:<?php echo $fila['raza'];?></p>
                             <p><?php echo $fila['CaracPersonalidad'];?></p>
                    </div>
                         <div class="btn11">

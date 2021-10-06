@@ -7,7 +7,7 @@ include("../config/conexion.php");
     $cartaVoluntad=$_POST['cartaVoluntad'];
     $animal=$_POST['animal'];
     //$idTipoUsuario=$_POST['idTipoUsuario'];
-    $consulta="update solicitud set id='$id',correoElectronico='$correoElectronico',cedula='$',cartaVoluntad=' $cartaVoluntad',animal='$animal' WHERE id='$id'";
+    $consulta="update solicitud set id='$id',correoElectronico='$correoElectronico',cedula='$cedula',cartaVoluntad=' $cartaVoluntad',animal='$animal' WHERE id='$id'";
     $resultado=mysqli_query($conexion,$consulta);
     if($resultado){
     //echo "Guardada";

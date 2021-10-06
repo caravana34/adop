@@ -13,7 +13,13 @@
     <div class="container5">
         <nav class="nav-main"><a href="./../index.php" >
          <img src="./../img/brand1-01.svg" alt="Logo Mimascota" class="nav-brand"></a> 
-        </nav> 
+        </nav> <ul>
+        <li><a href=".././solicitudAdopcion/consultaSolicitudAdopcion.php">Consulta Solicitud de Adopción</a></li>
+            <li><a href=".././registroAnimal/registroAnimal.php"> Registro Animal</a></li>
+            <li><a href=".././registroRaza/registroRaza.php">Raza</a></li>
+            <li><a href=".././registroEspecie/registroEspecie.php">Especie</a></li>
+            <li><a href="./formRegistroUsuario.php">AdminRegister</a></li>
+            </ul>
             <div>
 
 
