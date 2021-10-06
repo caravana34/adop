@@ -14,10 +14,15 @@
         <nav class="nav-main"><a href="./../index.php" >
          <img src="./../img/brand1-01.svg" alt="Logo Mimascota" class="nav-brand"></a> 
         </nav> 
-            <div>
-
-
-
+        <ul class="marginl">
+            
+            <li><a href=".././solicitudAdopcion/consultaSolicitudAdopcion.php">Consulta Solicitud de Adopción</a></li>
+            <li><a href=".././registroAnimal/registroAnimal.php"> Registro Animal</a></li>
+            <li><a href=".././registroRaza/registroRaza.php">Raza</a></li>
+            <li><a href=".././registroEspecie/registroEspecie.php"> Especie</a></li>
+            <li><a href="./formRegistroUsuario.php"> AdminRegister</a></li>
+        </ul>
+        <div>
     <center>
     <table class="regis" border ="1">
     <thead>
@@ -71,11 +76,8 @@ while($fila=mysqli_fetch_array($resultado)) // ciclo mientras para ordenar en la
         </tbody>
 
     </table>
-<div><a href=".././solicitudAdopcion/consultaSolicitudAdopcion.php">Consulta Solicitud de Adopción</a></div>
-<div><a href=".././registroAnimal/registroAnimal.php"> Registro Animal</a></div>
-<div><a href=".././registroRaza/registroRaza.php">Raza</a></div>
-<div><a href=".././registroEspecie/registroEspecie.php"> Especie</a></div>
-<div><a href="./formRegistroUsuario.php"> AdminRegister</a></div>
+    
+
     </center>
 </body>
 </html>

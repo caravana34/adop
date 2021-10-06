@@ -25,7 +25,7 @@
          <img src="./../img/brand1-01.svg" alt="Logo Mimascota" class="nav-brand"></a> 
            
         </nav> 
-        
+        <center><h1>Registro Animal</h1></center>
         <div class="tableconsult">
             <div>
                 <form class="regis" action="./insertarAnimal.php" method="POST" enctype="multipart/form-data">

@@ -20,14 +20,15 @@
 <?php include('../config/conexion.php');
     $id=$_REQUEST['id'];
     $idRaza=$_REQUEST['idRaza'];
-    $consulta="select * from animal where id='$id'";
+    $consulta="select * from animal where id='$id' ";
     $resultado=mysqli_query($conexion,$consulta);
     $fila=mysqli_fetch_array($resultado);
-    $consulta2="select * from raza where id='$idRaza'";
-    $resultado2=mysqli_query($conexion,$consulta2);
-    $fila2=mysqli_fetch_array($resultado2);
-    ?>
 
+    
+
+    $consulta2="select * from raza where id='$id'";
+    $resultado2=mysqli_query($conexion,$consulta2);
+    $fila2=mysqli_fetch_array($resultado2);?>
 
     <div class="menu-btn">
         <i class="fas fa-bars"></i>
@@ -55,6 +56,7 @@
                             <p>Edad:<?php echo $fila['edad'];?></p>
                             <p>Sexo:<?php echo $fila['sexo'];?></p>
                             <p>Color:<?php echo $fila['color'];?></p>
+                            <p>Raza:<?php echo $fila['idRaza'];?></p>
                             <p>Raza:<?php echo $fila2['nombre'];?></p>
                             <p><?php echo $fila['CaracPersonalidad'];?></p>
                    </div>

@@ -4,11 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./solicitudAdopcion.css">
     <title>Consulta Solicitud Adopcion</title>
 </head>
 <body>
+<nav class="nav-main"><a href="../index.php" >
+         <img src="../img/brand1-01.svg" alt="Logo Mimascota" class="nav-brand"></a> 
+           
+        </nav> 
     <center>
-    <table border ="1">
+    <table class="regis" border ="1">
     <thead>
             <tr>
             <th>Id</th>
@@ -54,6 +59,16 @@ while($fila=mysqli_fetch_array($resultado)) // ciclo mientras para ordenar en la
     </table>
     <div><a href=".././FormRegistroUsuario/consultaRegistroCliente.php">Volver</a></div>
     </center>
+    <footer class="footer">
+        <h4><a href="../index.html">Mi mascota copyright</a></h4>
+    </footer>
+
+<!-- scroll reveal -->
+<script src="https://unpkg.com/scrollreveal"></script>
+
+<!-- custom js -->
+
+<script src="../main.js"></script> 
 </body>
 </html>
 
