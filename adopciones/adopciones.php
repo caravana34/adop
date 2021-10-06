@@ -69,7 +69,7 @@ $totalpagina1=ceil($totalregistro1/$porpagina)
                     <p>Tamaño:  <?php echo($dato['tamano']);?></p><br>
                     <p>Personalidad:   <?php echo($dato['CaracPersonalidad']);?></p><br>
                    
-                        <a href="../solicitudAdopcion/solicitudAdopcion.php" class="btn">Adoptar<i class="fas fa-angle-double-right"></i></a>
+                        <a href="../detanimal/detanimal.php?id=<?php echo $dato['id']; ?>" class="btn">Conocer más<i class="fas fa-angle-double-right"></i></a>
                         
                         <a href="#" class="btn">Comparte<i class="fas fa-angle-double-right"></i></a>   
                         
@@ -94,7 +94,7 @@ $totalpagina1=ceil($totalregistro1/$porpagina)
                     <p>Tamaño:  <?php echo($dato['tamano']);?></p><br>
                     <p>Personalidad:   <?php echo($dato['CaracPersonalidad']);?></p><br>
                    
-                        <a href="../solicitudAdopcion/solicitudAdopcion.php" class="btn">Adoptar<i class="fas fa-angle-double-right"></i></a>
+                        <a href="../detanimal/detanimal.php?id=<?php echo $dato['id']; ?>" class="btn">Conocer más<i class="fas fa-angle-double-right"></i></a>
                         
                         <a href="#" class="btn">Comparte<i class="fas fa-angle-double-right"></i></a>   
                         
