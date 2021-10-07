@@ -95,12 +95,12 @@ $totalpagina1=ceil($totalregistro1/$porpagina)
                 
               <div class="descripcion">
                    <div class="d1"><h2>Descripción</h2></div><br>
-                    <p>Nomobre:   <?php echo($dato['nombre']);?></p>
-                    <p>Sexo:     <?php echo($dato['sexo']);?></p>
-                    <p>Color:    <?php echo($dato['color']);?></p>
-                    <p>Edad:     <?php echo($dato['edad']);?></p>
-                    <p>Tamaño:   <?php echo($dato['tamano']);?></p><br>
-                    <p>Personalidad:    <?php echo($dato['CaracPersonalidad']);?></p><br>
+                   <p>Nomobre:  <?php echo($dato['nombre']);?></p>
+                   <p>Sexo:    <?php echo($dato['sexo']);?></p>
+                   <p>Color:  <?php echo($dato['color']);?></p>
+                   <p>Edad:   <?php echo($dato['edad']);?></p>
+                   <p>Tamaño:  <?php echo($dato['tamano']);?></p><br>
+                   <p>Personalidad:    <?php echo($dato['CaracPersonalidad']);?></p><br>
                    
                         <a href="../detanimal/detanimal.php?id=<?php echo $dato['id']; ?>" class="btn">Conocer más<i class="fas fa-angle-double-right"></i></a>
                         

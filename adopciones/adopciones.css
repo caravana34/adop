@@ -53,18 +53,22 @@ body {
 }
 
 .categorias h2{
-    color:#0FD986;
+    /*color:#0FD986;*/
+    color: black;
     text-align: left;
     margin-bottom: 10px;
     padding-left: 25px;
-    margin-top: 10px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    font-weight: bolder;
 }
 
 .grid2 {
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
-    gap: 0em;  
-    padding: 1.5px;
+    gap: .5em;  
+    padding-left: 10px;
+    padding-right: 34px;
     
 }
 
@@ -161,9 +165,9 @@ body {
 .descripcion p{
         color: white;
         bottom: 0;
+     
        
     }
-
     /*efecto*/
    
 
