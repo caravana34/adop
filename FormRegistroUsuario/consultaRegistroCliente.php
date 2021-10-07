@@ -13,7 +13,8 @@
     <div class="container5">
         <nav class="nav-main"><a href="./../index.php" >
          <img src="./../img/brand1-01.svg" alt="Logo Mimascota" class="nav-brand"></a> 
-        </nav> <ul>
+        </nav> 
+        <ul>
         <li><a href=".././solicitudAdopcion/consultaSolicitudAdopcion.php">Consulta Solicitud de Adopción</a></li>
             <li><a href=".././registroAnimal/registroAnimal.php"> Registro Animal</a></li>
             <li><a href=".././registroRaza/registroRaza.php">Raza</a></li>
@@ -81,7 +82,7 @@ while($fila=mysqli_fetch_array($resultado)) // ciclo mientras para ordenar en la
 <div><a href="../registroRaza/consultaRegistroRaza.php"> Consulta Raza</a></div>
     </center>
     <footer class="footer">
-        <h4><a href="../index.html">Mi mascota copyright</a></h4>
+        <h4><a href="../index.php">Mi mascota copyright</a></h4>
     </footer>
 
 <!-- scroll reveal -->

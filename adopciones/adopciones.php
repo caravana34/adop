@@ -2,22 +2,25 @@
 //$consulta="select*from articulo";
 //$resultado= mysqli_query($conexion, $consulta);
 //$fila=mysqli_fetch_array($resultado);
-$porpagina=18;
-if(isset($_GET['mimascota'])){
-    $pagina=$_GET['mimascota'];
+//$totalpagina=1;
+//$totalpagina1=1;
+//$porpagina=$totalpagina;
+//$porpagina1=$totalpagina1;
+//if(isset($_GET['mimascota'])){
+    //$pagina=$_GET['mimascota'];
 
-}else{
-    $pagina=1;
-}
-$inicio=($pagina-1)*$pagina;
-$consulta="select * from animal where idEspecie=8 limit $inicio,$porpagina";
-$consulta1="select * from animal where idEspecie=9 limit $inicio,$porpagina";
+//}else{
+//    $pagina=1;
+//}
+//$inicio=($pagina-1)*$pagina;
+$consulta="select * from animal where idEspecie=8  ";
+$consulta1="select * from animal where idEspecie=9  ";
 $resultado=mysqli_query($conexion,$consulta);
 $resultado1=mysqli_query($conexion,$consulta1);
-$totalregistro=mysqli_num_rows($resultado);
-$totalregistro1=mysqli_num_rows($resultado1);
-$totalpagina=ceil($totalregistro/$porpagina);
-$totalpagina1=ceil($totalregistro1/$porpagina)
+//$totalregistro=mysqli_num_rows($resultado);
+//$totalregistro1=mysqli_num_rows($resultado1);
+//$totalpagina=ceil($totalregistro/$porpagina);
+//$totalpagina1=ceil($totalregistro1/$porpagina1)-->
 ?>
 
 
