@@ -37,8 +37,15 @@ body {
     justify-content: center;
     height: 120px;
     padding: 3px;
+    background: rgb(58, 59, 59);
+}
+
+hr {
+    border-color: #D96404;
 
 }
+
+
 .nav-main a{
     
   width: 90px;
@@ -187,12 +194,24 @@ body {
 }
 
 
+.footer {
+    height: 500px;
+    background: rgb(58, 59, 59);
+}
+
 .footer a {
+    
     color: white;
     text-decoration: none;
 }
 
+.footerdatos {
+    height: 300px;
+    margin-top: 30px;
 
+    background-color: #D96404;
+
+}
 
 
 

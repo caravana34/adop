@@ -45,9 +45,9 @@ $resultado1=mysqli_query($conexion,$consulta1);
 
     <div class="container">
     <nav class="nav-main"><a href="./../index.php" >
-         <img src="../img/brand1-01.svg" alt="Logo Mimascota" class="nav-brand"></a>           
+        <img src="../img/brand1-01.svg" alt="Logo Mimascota" class="nav-brand"></a>       
     </nav> 
-   
+    <hr>
      
     <div class="categorias">
         <h2>Elige tu dog amigo</h2>
@@ -119,7 +119,10 @@ $resultado1=mysqli_query($conexion,$consulta1);
 
           
           <footer class="footer">
-    <h4><a href="index.php">Mi mascota copyright</a></h4>
+    <h3><a href="index.php">Mi mascota copyright</a></h3>
+    <div class="footerdatos">
+       
+    </div>
 </footer>
 
 <!-- scroll reveal -->
