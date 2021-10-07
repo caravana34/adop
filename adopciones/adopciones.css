@@ -24,7 +24,7 @@ body {
     display: none;
 }
 
-.continer{
+.container{
     width: 90%;
     margin: auto;   
     justify-content:center;
@@ -141,12 +141,12 @@ hr {
 }
 
 .nested_grid:hover .img{
-    transform: scale(1.5);
+    transform: scale(1.2);
 }
 
 
 .img {
-    transition:  1.5s;
+    transition:  1.2s;
     position: relative;
 }
 

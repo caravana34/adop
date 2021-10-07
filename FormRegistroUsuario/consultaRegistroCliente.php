@@ -14,17 +14,18 @@
         <nav class="nav-main"><a href="./../index.php" >
          <img src="./../img/brand1-01.svg" alt="Logo Mimascota" class="nav-brand"></a> 
         </nav> 
+        
         <ul>
-        <li><a href=".././solicitudAdopcion/consultaSolicitudAdopcion.php">Consulta Solicitud de Adopción</a></li>
+            <li ><a href=".././solicitudAdopcion/consultaSolicitudAdopcion.php">Consulta Solicitud de Adopción</a></li>
             <li><a href=".././registroAnimal/registroAnimal.php"> Registro Animal</a></li>
             <li><a href=".././registroRaza/registroRaza.php">Raza</a></li>
             <li><a href=".././registroEspecie/registroEspecie.php">Especie</a></li>
             <li><a href="./formRegistroUsuario.php">AdminRegister</a></li>
-            </ul>
-            <div>
-
-
-
+            <li><a href="../registroAnimal/consultaRegistroAnimal.php"> Consulta Animal</a></li>
+            <li><a href="../registroRaza/consultaRegistroRaza.php"> Consulta Raza</a></li>
+        </ul>
+        
+           
     <center>
     <table class="regis" border ="1">
     <thead>
@@ -72,15 +73,10 @@ while($fila=mysqli_fetch_array($resultado)) // ciclo mientras para ordenar en la
 }?>
         </tbody>
 
-    </table>
-<div><a href=".././solicitudAdopcion/consultaSolicitudAdopcion.php">Consulta Solicitud de Adopción</a></div>
-<div><a href=".././registroAnimal/registroAnimal.php"> Registro Animal</a></div>
-<div><a href=".././registroRaza/registroRaza.php">Registro Raza</a></div>
-<div><a href=".././registroEspecie/registroEspecie.php"> Registro Especie</a></div>
-<div><a href="./formRegistroAdministrador.php"> AdminRegister</a></div>
-<div><a href="../registroAnimal/consultaRegistroAnimal.php"> Consulta Animal</a></div>
-<div><a href="../registroRaza/consultaRegistroRaza.php"> Consulta Raza</a></div>
-    </center>
+    </table></center>
+
+    
+    </div>
     <footer class="footer">
         <h4><a href="../index.php">Mi mascota copyright</a></h4>
     </footer>

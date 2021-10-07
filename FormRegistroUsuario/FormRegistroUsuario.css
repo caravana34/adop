@@ -37,7 +37,7 @@ body {
 }
 
 .container5{
-    height:auto;
+    height:520px;
  }
 
 
@@ -197,30 +197,30 @@ body {
     text-decoration: none;
     color: #fff;
     }
-    input::-webkit-input-placeholder {
+input::-webkit-input-placeholder {
         text-align: center
   }
 
 
-  ul{
+ul{
     list-style-type:none;
     margin:10px 0px 10px 0px;
     padding:10px;
     overflow:hidden;
-    background-color:rgb(0, 0, 0);
+    background-color:#118C5A;
+    align-content: center;
 }
 
 li{
-    float:left;
+    float: left;
 }
 
 li a{
-    display:block;
+    display:inline;
     color:white;
     text-align: center;
     padding:14px 16px;
     text-decoration:none;
-
 }
 
 .col-3 img{
