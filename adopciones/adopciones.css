@@ -54,11 +54,11 @@ body {
 
 .categorias h2{
     /*color:#0FD986;*/
-    color: black;
+    color: #0FD986;
     text-align: left;
     margin-bottom: 10px;
     padding-left: 25px;
-    margin-top: 20px;
+    margin-top: 50px;
     margin-bottom: 5px;
     font-weight: bolder;
 }
