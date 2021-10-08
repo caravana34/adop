@@ -1,3 +1,10 @@
+<?php
+    session_start();
+    if (($_SESSION['contrasena']) !==''){
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -37,7 +44,7 @@
         <input class="btn1" type="submit" name="btn" value="Iniciar">
     </form>
 </div>
-        
+        <a href="cerrar.php">Cerrar sesión</a>
     </div>
 
     
@@ -56,3 +63,8 @@
 </body>
 
 </html>
+<?php }else{
+    header("location:inicio.php");
+}
+
+?>

@@ -42,12 +42,11 @@ $resultado1=mysqli_query($conexion,$consulta1);
         <i class="fas fa-bars"></i>
     </div>
 
-
-    <div class="container">
     <nav class="nav-main"><a href="./../index.php" >
         <img src="../img/brand1-01.svg" alt="Logo Mimascota" class="nav-brand"></a>       
-    </nav> 
-    <hr>
+    </nav>
+    <div class="container">
+    
      
     <div class="categorias">
         <h2>Elige tu dog amigo</h2>

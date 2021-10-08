@@ -22,5 +22,7 @@ elseif
     <h1> Datos de ingreso erroneos</h1>
     <?php 
     }
+    $_SESSION['correo']=$filas['correo'];
+    $_SESSION['nombre']=$filas['nombre'];
 mysqli_free_result($resultado);
 mysqli_close($conexion); 
