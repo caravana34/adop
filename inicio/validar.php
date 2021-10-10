@@ -1,7 +1,8 @@
-<?php $correo=$_POST['correo'];
-$contrasena=$_POST['contrasena'];
+<?php
 session_start();//crear un inicio de session
-$_SESSION['correo']=$usuario;
+$correo=$_POST['correo'];
+$contrasena=$_POST['contrasena'];
+$_SESSION['usuario']=$usuario;
 
 include('../config/conexion.php');
 
@@ -14,15 +15,25 @@ if ($filas['idTipoUsuario']==1){header("location:../FormRegistroUsuario/consulta
 }
 elseif
  ($filas['idTipoUsuario']==2){
-    header("location:../adopciones/adopciones.html");
-    
+    header("location:../adopciones/adopciones.php");
+ 
+
  }else{
-    include("../adopciones/adopciones.html");
+    include('./inicio/inicio.php');
 ?>
     <h1> Datos de ingreso erroneos</h1>
     <?php 
     }
-    $_SESSION['correo']=$filas['correo'];
+
+    $_SESSION['id']=$filas['id'];
+    $_SESSION['identificacion']=$filas['identificacion'];
     $_SESSION['nombre']=$filas['nombre'];
+    $_SESSION['ciudad']=$filas['ciudad'];
+    $_SESSION['correo']=$filas['correo'];
+    $_SESSION['telefono']=$filas['telefono'];
+    $_SESSION['contrasena']=$filas['contrasena'];
+    $_SESSION['estado']=$filas['estado'];
+    $_SESSION['idTipoUsuario']=$filas['idTipoUsuario'];
+    
 mysqli_free_result($resultado);
 mysqli_close($conexion); 

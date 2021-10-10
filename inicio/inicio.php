@@ -1,7 +1,6 @@
 <?php
     session_start();
-    if (($_SESSION['contrasena']) !==''){
-
+   
 ?>
 
 
@@ -36,15 +35,15 @@
         
         
         <div class="regis">
-              <form  action="validar.php" method="post" action="../index.html">
+              <form  action="validar.php" method="post">
         Correo <br><input type="text" name="correo" size="30" maxlength="50" placeholder="correo electrónico"> <br><br>
           
 
-        Contraseña<br><input type="text" name="contrasena" size="30" maxlength="50" placeholder="Contraseña"> <br><br>
+        Contraseña<br><input type="password" name="contrasena" size="30" maxlength="50" placeholder="Contraseña"> <br><br>
         <input class="btn1" type="submit" name="btn" value="Iniciar">
     </form>
 </div>
-        <a href="cerrar.php">Cerrar sesión</a>
+        
     </div>
 
     
@@ -63,8 +62,3 @@
 </body>
 
 </html>
-<?php }else{
-    header("location:inicio.php");
-}
-
-?>

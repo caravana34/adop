@@ -1,3 +1,6 @@
+
+
+
 <?php include("../config/conexion.php");
 //$consulta="select*from articulo";
 //$resultado= mysqli_query($conexion, $consulta);
@@ -23,7 +26,11 @@ $resultado1=mysqli_query($conexion,$consulta1);
 //$totalpagina1=ceil($totalregistro1/$porpagina1)-->
 ?>
 
+<?php
+session_start();
+if(($_SESSION['id']) != ''){
 
+?>
 
 
 
@@ -43,8 +50,12 @@ $resultado1=mysqli_query($conexion,$consulta1);
     </div>
 
     <nav class="nav-main"><a href="./../index.php" >
-        <img src="../img/brand1-01.svg" alt="Logo Mimascota" class="nav-brand"></a>       
+        <img src="../img/brand1-01.svg" alt="Logo Mimascota" class="nav-brand"></a>  
+
+        <a class="csesion" href="../inicio/cerrar.php">Cerrar sesión</a>     
     </nav>
+
+
     <div class="container">
     
      
@@ -134,3 +145,10 @@ $resultado1=mysqli_query($conexion,$consulta1);
 
 </body>
 </html>
+
+<?php
+}
+else{
+  header("location:../inicio/inicio.php");
+}
+?>
