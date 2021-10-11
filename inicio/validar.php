@@ -2,7 +2,8 @@
 session_start();//crear un inicio de session
 $correo=$_POST['correo'];
 $contrasena=$_POST['contrasena'];
-$_SESSION['usuario']=$usuario;
+
+
 
 include('../config/conexion.php');
 
@@ -19,12 +20,11 @@ elseif
  
 
  }else{
-    include('./inicio/inicio.php');
+    header("location:../inicio/inicio.php");
 ?>
     <h1> Datos de ingreso erroneos</h1>
     <?php 
     }
-
     $_SESSION['id']=$filas['id'];
     $_SESSION['identificacion']=$filas['identificacion'];
     $_SESSION['nombre']=$filas['nombre'];
@@ -34,6 +34,8 @@ elseif
     $_SESSION['contrasena']=$filas['contrasena'];
     $_SESSION['estado']=$filas['estado'];
     $_SESSION['idTipoUsuario']=$filas['idTipoUsuario'];
+   
+   
     
 mysqli_free_result($resultado);
 mysqli_close($conexion); 
