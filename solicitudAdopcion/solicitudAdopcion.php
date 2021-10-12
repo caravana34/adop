@@ -1,3 +1,8 @@
+<?php
+session_start();
+if(($_SESSION['id']) != ''){
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -73,3 +78,9 @@
 <script src="../main.js"></script> 
 </body>
 </html>
+<?php
+}
+else{
+  header("location:../inicio/inicio.php");
+}
+?>

@@ -10,12 +10,13 @@
 <body><div class="menu-btn">
         <i class="fas fa-bars"></i>
     </div>
-    <div class="container5">
-        <nav class="nav-main"><a href="./../index.php" >
-         <img src="./../img/brand1-01.svg" alt="Logo Mimascota" class="nav-brand"></a> 
+    <nav class="nav-main">
+            <a href="./../index.php" >
+                    <img src="./../img/brand1-01.svg" alt="Logo Mimascota" class="nav-brand">
+            </a> 
         </nav> 
         
-        <ul>
+        <ul class="center">
             <li ><a href=".././solicitudAdopcion/consultaSolicitudAdopcion.php">Consulta Solicitud de Adopción</a></li>
             <li><a href=".././registroAnimal/registroAnimal.php"> Registro Animal</a></li>
             <li><a href=".././registroRaza/registroRaza.php">Raza</a></li>
@@ -24,8 +25,8 @@
             <li><a href="../registroAnimal/consultaRegistroAnimal.php"> Consulta Animal</a></li>
             <li><a href="../registroRaza/consultaRegistroRaza.php"> Consulta Raza</a></li>
         </ul>
-        
-           
+
+    <div class="container5">
     <center>
     <table class="regis" border ="1">
     <thead>
@@ -64,9 +65,9 @@ while($fila=mysqli_fetch_array($resultado)) // ciclo mientras para ordenar en la
     echo"<td>".$fila['idTipoUsuario'];
      ?>  </td>
 
-    <th><a href="modificarRegistroCliente.php?id=<?php echo $fila['id']; ?>"> Modificar </a></th>
+    <th><a href="modificarRegistroCliente.php?id=<?php echo $fila['id'];?>"> Modificar </a></th>
 
-    <th><a href="eliminar.php?id=<?php echo $fila['id']; ?>"> Eliminar </a></th>
+    <th><a href="eliminar.php?id=<?php echo $fila['id'];?>"> Eliminar </a></th>
     
     <?php echo"<tr>";
     
