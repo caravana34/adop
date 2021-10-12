@@ -1,5 +1,4 @@
 <?php
-
 $correo=$_POST['correo'];
 $contrasena=$_POST['contrasena'];
 session_start();//crear un inicio de session
@@ -38,4 +37,4 @@ elseif
    
     
 mysqli_free_result($resultado);
-mysqli_close($conexion); 
+mysqli_close($conexion);  
