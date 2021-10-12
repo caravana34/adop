@@ -21,7 +21,7 @@
             <li><a href=".././registroAnimal/registroAnimal.php"> Registro Animal</a></li>
             <li><a href=".././registroRaza/registroRaza.php">Raza</a></li>
             <li><a href=".././registroEspecie/registroEspecie.php">Especie</a></li>
-            <li><a href="./formRegistroUsuario.php">AdminRegister</a></li>
+            <li><a href="./formRegistroAdministrador.php">AdminRegister</a></li>
             <li><a href="../registroAnimal/consultaRegistroAnimal.php"> Consulta Animal</a></li>
             <li><a href="../registroRaza/consultaRegistroRaza.php"> Consulta Raza</a></li>
         </ul>
