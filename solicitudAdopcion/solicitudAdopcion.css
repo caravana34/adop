@@ -38,6 +38,8 @@ body {
 
 .container5{
     height:auto;
+    margin: auto;   
+    justify-content:center;
  }
 
 .grid{

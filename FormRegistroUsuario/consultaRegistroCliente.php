@@ -16,7 +16,7 @@
             </a> 
         </nav> 
         
-        <ul class="center">
+        <ul class="nav-main">
             <li ><a href=".././solicitudAdopcion/consultaSolicitudAdopcion.php">Consulta Solicitud de Adopción</a></li>
             <li><a href=".././registroAnimal/registroAnimal.php"> Registro Animal</a></li>
             <li><a href=".././registroRaza/registroRaza.php">Raza</a></li>
