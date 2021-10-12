@@ -26,11 +26,11 @@ body {
 
 .container{
     width: 90%;
-    margin: auto;   
+    /*margin: auto;*/   
     justify-content: center;
 }
 
-.nav-main{
+.nav-main {
     font-size: 17px; 
     display: grid;
     align-items: center;
