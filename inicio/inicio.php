@@ -1,7 +1,4 @@
-<?php
-    session_start();
-   
-?>
+
 
 
 <!DOCTYPE html>
@@ -30,7 +27,9 @@
          <img src="../img/brand1-01.svg" alt="Logo Mimascota" class="nav-brand"></a> 
            
         </nav> 
-
+        <div>
+        <a class="csesion" href="../inicio/cerrar.php">Cerrar sesión</a>   
+    </div>
         <div class= "sectionTitle"><h2>Inicia Sesión</h2></div>
         
         
@@ -62,3 +61,4 @@
 </body>
 
 </html>
+

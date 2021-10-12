@@ -1,6 +1,4 @@
 
-
-
 <?php include("../config/conexion.php");
 //$consulta="select*from articulo";
 //$resultado= mysqli_query($conexion, $consulta);
