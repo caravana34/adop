@@ -43,14 +43,14 @@
         
             </div>
         
-    </div>
+            </div>
 
     
 
     <footer class="footer">
         <h4><a href="./../index.php">Mi mascota copyright</a></h4>
     </footer>
-
+    
 <!-- scroll reveal -->
 <script src="https://unpkg.com/scrollreveal"></script>
 

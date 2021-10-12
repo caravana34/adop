@@ -37,7 +37,9 @@ body {
 }
 
 .container5{
-    height:45px;
+    height:auto;
+    margin: auto;   
+    justify-content:center;
  }
 
 .grid{
