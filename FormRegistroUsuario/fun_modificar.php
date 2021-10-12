@@ -10,7 +10,7 @@ include("../config/conexion.php");
     $contrasena=$_POST['contrasena'];
     $estado=$_POST['estado'];
     $idTipoUsuario=$_POST['idTipoUsuario'];
-    $consulta="update usuario set identificacion='$identificacion',nombre='$nombre',ciudad='$ciudad',correo=' $correo',telefono='$telefono',contrasena='$contrasena', estado='$estado', idTipoUusario='$idTipoUusario' WHERE id='$id'";
+    $consulta="update usuario set identificacion='$identificacion',nombre='$nombre',ciudad='$ciudad',correo=' $correo',telefono='$telefono',contrasena='$contrasena', estado='$estado', idTipoUsuario='$idTipoUsuario' WHERE id='$id'";
     $resultado=mysqli_query($conexion,$consulta);
     if($resultado){
     //echo "Guardada";

@@ -60,7 +60,7 @@ while($fila=mysqli_fetch_array($resultado)) // ciclo mientras para ordenar en la
     <div><a href=".././FormRegistroUsuario/consultaRegistroCliente.php">Volver</a></div>
     </center>
     <footer class="footer">
-        <h4><a href="../index.html">Mi mascota copyright</a></h4>
+        <h4><a href="../index.php">Mi mascota copyright</a></h4>
     </footer>
 
 <!-- scroll reveal -->

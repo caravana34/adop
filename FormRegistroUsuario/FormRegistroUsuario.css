@@ -37,7 +37,7 @@ body {
 }
 
 .container5{
-    height: 700px;
+    height: 350px;
  }
 
 
@@ -222,6 +222,16 @@ li a{
     padding:14px 16px;
     text-decoration:none;
 }
+
+.center{
+display: inline-block;
+
+justify-content: center;
+align-content: center;
+
+
+}
+
 
 .col-3 img{
     width:290px;
