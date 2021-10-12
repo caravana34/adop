@@ -51,8 +51,8 @@ if(($_SESSION['id']) != ''){
         <img src="../img/brand1-01.svg" alt="Logo Mimascota" class="nav-brand"></a>    
     </nav>
 
-    <div>
-        <a class="csesion" href="../inicio/cerrar.php">Cerrar sesión</a>   
+    <div class="csesion">
+        <a href="../inicio/cerrar.php">Cerrar sesión</a>   
     </div>
 
 
