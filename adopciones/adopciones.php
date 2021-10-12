@@ -45,27 +45,26 @@ if(($_SESSION['id']) != ''){
 </head>
 <body>
  
-    <div class="menu-btn">
+    <!--<div class="menu-btn">
         <i class="fas fa-bars"></i>
-    </div>
+    </div>-->
 
-    <nav class="nav-main"><a href="./../index.php" >
-        <img src="../img/brand1-01.svg" alt="Logo Mimascota" class="nav-brand"></a>  
-
-        <a class="csesion" href="../inicio/cerrar.php">Cerrar sesión</a>     
+    <nav class="nav-main"><a href="./../index.php" >        
+        <img src="../img/brand1-01.svg" alt="Logo Mimascota" class="nav-brand"></a>    
     </nav>
+
+    <div>
+        <a class="csesion" href="../inicio/cerrar.php">Cerrar sesión</a>   
+    </div>
 
 
     <div class="container">
     
      
-    <div class="categorias">
+     <div class="categorias">
         <h2>Elige tu dog amigo</h2>
-    </div>             
+     </div>             
        
-   
-      
-
             <div class="grid2"><!--grilla de 2 columnas-->
             <?php foreach($resultado as $dato):?> 
                 <div class="nested_grid"> 
@@ -82,9 +81,9 @@ if(($_SESSION['id']) != ''){
                     <p>Tamaño:   <?php echo($dato['tamano']);?></p><br>
                     <p>Personalidad:    <?php echo($dato['CaracPersonalidad']);?></p><br>
             
-                        <a href="../detanimal/detanimal.php?id=<?php echo $dato['id']; ?>" class="btn">Conocer más<i class="fas fa-angle-double-right"></i></a>
+                    <a href="../detanimal/detanimal.php?id=<?php echo $dato['id']; ?>" class="btn">Conocer más<i class="fas fa-angle-double-right"></i></a>
                         
-                        <a href="#" class="btn">Comparte<i class="fas fa-angle-double-right"></i></a>   
+                    <a href="#" class="btn">Comparte<i class="fas fa-angle-double-right"></i></a>   
                         
                 </div> 
                 
@@ -95,7 +94,7 @@ if(($_SESSION['id']) != ''){
 
 
           <div class="categorias">
-        <h2>Elige tu cat amigo</h2>
+            <h2>Elige tu cat amigo</h2>
     </div>             
 
 
