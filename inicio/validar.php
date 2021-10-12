@@ -1,9 +1,9 @@
 <?php
-session_start();//crear un inicio de session
+
 $correo=$_POST['correo'];
 $contrasena=$_POST['contrasena'];
-
-
+session_start();//crear un inicio de session
+$_SESSION['correo']=$filas['correo'];
 
 include('../config/conexion.php');
 

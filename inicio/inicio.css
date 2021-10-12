@@ -213,3 +213,12 @@ color: #0FD986;
 
 
 
+  .csesion {
+    color: rgb(7, 7, 7);
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+.csesion a {
+    text-align: center;
+}
