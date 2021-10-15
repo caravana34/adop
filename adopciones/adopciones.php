@@ -49,18 +49,14 @@ if(($_SESSION['id']) != ''){
    
     <nav class="nav-main"><div class="csesion_btn">
     <a href="../inicio/cerrar.php">Cerrar sesión</a>   
-    </div><a href="./../index.php" > 
-
-        <img src="../img/brand1-01.svg" alt="Logo Mimascota" class="nav-brand"></a>  
-        
-
+    </div>
+   
+    <a href="./../index.php"><img src="../img/brand1-01.svg" alt="Logo Mimascota" class="nav-brand"></a>  
     </nav>
     
 
-
     <div class="container">
     
-     
      <div class="categorias">
         <h2>Elige tu dog amigo</h2>
      </div>             
@@ -129,9 +125,31 @@ if(($_SESSION['id']) != ''){
           
           <footer class="footer">
     <h3><a href="index.php">Mi mascota copyright</a></h3>
+
     <div class="footerdatos">
-       
+        <ul>
+            <li>
+                <h3>Developers</h3> <br>
+                <p>e l i a s  Rodriguez - Jeikson Gomez</p><br>
+            </li>
+        </ul>
+
+        <ul>
+            <li>
+               <h3>Contactanos</h3> <br>
+               <p>email:<a>eliasjoserodriguez@hotmail.com - </a><a>jeikson@gmail.com</a>
+            </p>  
+            <p>WhatsApp:</p>
+            <p>3002003328 - 314 8520270</p>                    
+            </li>
+        </ul>
+
+        <a href="./../index.php"><img src="../img/brand1-01.svg" alt="Logo Mimascota" class="nav-brand"></a>  
+                    
+               
+            
     </div>
+
 </footer>
 
 <!-- scroll reveal -->
