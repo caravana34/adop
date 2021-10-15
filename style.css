@@ -31,9 +31,13 @@ font-family: 'Oswald', sans-serif;
 .nav-main{
     font-size: 17px; 
     display: grid;
-    align-items: center;
-    justify-content: center;
-    height: 120 px;
+    /*grid-template-columns: 70% 30%;*/
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    /*align-items: center;
+    justify-content: center;*/
+    height: 120px;
     padding: 3px;
 
 }
@@ -743,3 +747,42 @@ padding-bottom: 20px;
   .expresion p{
       align-items: center;
   }
+
+
+
+  /*boton cerrar sesion*/
+  .csesion_btn a {
+  
+    cursor: pointer;
+    /*display: inline-flex;*/
+    border: 0;
+    font-weight: bold;
+    padding: 10px 20px;
+    background: #D96404;
+    color: #ffffff;
+    font-size: 15px;
+    border: 1px solid #ffffff;
+    /*margin: 10px 0px;*/
+      
+    border-radius:4px;
+      
+  }
+  
+  .csesion_btn a {
+      text-decoration: none;
+     
+  }
+  
+  .csesion_btn a:hover {
+      opacity: .7;
+      color: #0FD986; 
+   }
+  
+   .csesion_btn {
+       text-align: right;
+       width: 90%;
+      padding-top: 0px;
+      
+  
+   }
+      

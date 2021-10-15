@@ -46,12 +46,25 @@ $totalregistro1=mysqli_num_rows($resultado1)
     </div>
 
 
-    <div class="container">
-        <nav class="nav-main"><a href="index.php" >
+      <div class="csesion_btn">
+        <a href="../inicio/cerrar.php">Cerrar sesión</a>   
+      </div>
+      
+        <nav class="nav-main">
+        <a href="./../index.php"><img src="./img/brand1-01.svg" alt="Logo Mimascota" class="nav-brand"></a>  
+        
+    </nav>
+
+
+        <!--<nav class="nav-main"><a href="index.php" >
          <img src="./img/brand1-01.svg" alt="Logo Mimascota" class="nav-brand"></a>           
         </nav> 
-        
+        --->
+
+
         <!-- SHOWCASE -->
+        <div class="container">
+
         <div class="grid">
         <div>
              <header class="showcase"> 

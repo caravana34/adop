@@ -50,7 +50,6 @@ if(($_SESSION['id']) != ''){
     <nav class="nav-main"><div class="csesion_btn">
     <a href="../inicio/cerrar.php">Cerrar sesión</a>   
     </div>
-   
     <a href="./../index.php"><img src="../img/brand1-01.svg" alt="Logo Mimascota" class="nav-brand"></a>  
     </nav>
     
@@ -123,10 +122,9 @@ if(($_SESSION['id']) != ''){
           </div>
 
           
-          <footer class="footer">
-    <h3><a href="index.php">Mi mascota copyright</a></h3>
+<footer class="footer">
+     <h3><a href="index.php">Mi mascota copyright</a></h3>
 
-    <div class="footerdatos">
         <ul>
             <li>
                 <h3>Developers</h3> <br>
@@ -144,17 +142,15 @@ if(($_SESSION['id']) != ''){
             </li>
         </ul>
 
-        <a href="./../index.php"><img src="../img/brand1-01.svg" alt="Logo Mimascota" class="nav-brand"></a>  
+        <a href="./../index.php"><img src="../img/brand1-01.svg" alt="Logo Mimascota" class="footer_logos1"></a>  
 
-        <a href=""><img src="../img/brand1-01.svg" alt="Logo Mimascota" class="nav-brand"></a> 
+        <a href=""><img src="../img/1045px-Sena_Colombia_logo.svg.png" alt="Logo Mimascota" class="footer_logos2"></a> 
+         
+        <a href=""><img src="../img/logo-cesde-4.png" alt="Logo Mimascota" class="footer_logos2"></a> 
 
-        <a href=""><img src="../img/brand1-01.svg" alt="Logo Mimascota" class="nav-brand"></a> 
-                    
-               
-            
-    </div>
-
+        <a href=""><img src="../img/logo colombia.png" alt="Logo Mimascota" class="footer_logos3"></a>
 </footer>
+
 
 <!-- scroll reveal -->
 <script src="https://unpkg.com/scrollreveal"></script>
