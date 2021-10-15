@@ -46,14 +46,16 @@ if(($_SESSION['id']) != ''){
     <!--<div class="menu-btn">
         <i class="fas fa-bars"></i>
     </div>-->
+   
+    <nav class="nav-main"><div class="csesion_btn">
+    <a href="../inicio/cerrar.php">Cerrar sesión</a>   
+    </div><a href="./../index.php" > 
 
-    <nav class="nav-main"><a href="./../index.php" >        
-        <img src="../img/brand1-01.svg" alt="Logo Mimascota" class="nav-brand"></a>    
+        <img src="../img/brand1-01.svg" alt="Logo Mimascota" class="nav-brand"></a>  
+        
+
     </nav>
-
-    <div class="csesion">
-        <a href="../inicio/cerrar.php">Cerrar sesión</a>   
-    </div>
+    
 
 
     <div class="container">

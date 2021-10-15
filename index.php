@@ -76,13 +76,8 @@ $totalregistro1=mysqli_num_rows($resultado1)
 
                 <h2>LA IMPORTANCIA DE LA ADOPCIÓN</h2>
                 <p>Adoptar una mascota enriquece la vida y abre las puertas a una época de diversión, descubrimientos, juegos y mimos. Sin embargo, implica  también asumir la responsabilidad de cuidar del animal durante muchos años, proporcionándole comida, un lugar seguro donde vivir, cuidados veterinarios y preocupándonos de satisfacer sus necesidades en cuanto a actividad y cariño.</p>
-    
-    
-            
-        </div>
+            </div>
         
-            
-    
             <div class="carousel">
                 <div class="carousel__contenedor">
                     <button aria-label="Anterior" class="carousel__anterior">
@@ -132,8 +127,7 @@ $totalregistro1=mysqli_num_rows($resultado1)
     
                 <div role="tablist" class="carousel__indicadores"></div>
             </div>
-        
-        
+    
         <div class="gridcan4">
         <div class="">
             <div><h2 class="title-section">CANINOS</h2></div>

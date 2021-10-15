@@ -27,23 +27,29 @@ body {
 .container{
     width: 90%;
     /*margin: auto;*/   
-    justify-content: center;
+    /*justify-content: center;*/
+    margin-left: auto;
+    margin-right: auto;
+
 }
 
 .nav-main {
     font-size: 17px; 
     display: grid;
-    align-items: center;
-    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    /*align-items: center;*/
+    /*justify-content: center;*/
+    
     height: 120px;
     padding: 3px;
     background: white;
 }
 
-.nav-main a{
-    
-  width: 90px;
-  height: 90px;
+.nav-main a {
+  width: 100px;
+  height: 100px;
 
 }
 
@@ -68,29 +74,36 @@ body {
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
     gap: .5em;  
-    padding-left: px;
-    padding-right: px;
+    /*justify-content: center;*/
+    margin-left: auto;
+    margin-right: auto;
+
+    /*padding-left:;
+    padding-right:;*/
     
 }
 
 .grid2 img{
     width:300px;
     height:300px;
-    border-radius: px;
-   
-   
+    
+    /*border-radius: px;*/
+      
 }
 
 
 .nested_grid {
     display: grid;
-    grid-template-columns: 100%;
+    grid-template-columns: 90%;
     /*grid-template-rows: 300px;*/
     gap:em;
     margin-top:5px;
     position: relative;
     background: white;
     padding-left: px;
+    margin-left: auto;
+    margin-right: auto;
+
     /*justify-items: stretch; */
 }
 
@@ -130,7 +143,7 @@ body {
 
 .nested_grid:hover .descripcion{
     transform: translate(0,0);
-    padding: 12px;
+    padding: 6px;
     
 }
 
@@ -143,8 +156,6 @@ body {
     transition:  1.2s;
     position: relative;
 }
-
-
 
 
  .descripcion{
@@ -207,20 +218,50 @@ body {
 
 }
 
-.csesion a {
+.csesion a{
   
     color: rgb(7, 7, 7);
     text-decoration: none;
     font-family: sans-serif;
     font-weight: bold;
+    
 }
 
-.csesion {
-    text-align: right;
+.csesion_btn a {
+  
+  cursor: pointer;
+  /*display: inline-flex;*/
+  border: 0;
+  font-weight: bold;
+  padding: 10px 20px;
+  background: #D96404;
+  color: #ffffff;
+  font-size: 15px;
+  border: 1px solid #ffffff;
+  /*margin: 10px 0px;*/
+    
+  border-radius:4px;
+    
 }
 
+.csesion_btn a {
+    text-decoration: none;
+   
+}
 
+.csesion_btn a:hover {
+    opacity: .7;
+    color: #0FD986; 
+ }
 
+ .csesion_btn {
+     text-align: right;
+     width: 96.6%;
+    padding-top: 0px;
+    
+
+ }
+    
 
 
 
