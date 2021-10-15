@@ -82,7 +82,7 @@ ul{
     
 
 .container4{
-   height: 510px;
+   height: 600px;
 }
 
 
@@ -563,3 +563,19 @@ color: #000000;
     text-align: left;
 }
 /* e l i a s */
+
+
+
+.footer {
+    
+    background: #118C5A;
+    color: #fff;
+    font-size: 12px;
+    padding: 20px 0;
+    text-align: center;
+    position: absolute;
+  bottom: 0;
+    width: 100%;
+    height: 80px;
+    margin-top: 3em;
+}
