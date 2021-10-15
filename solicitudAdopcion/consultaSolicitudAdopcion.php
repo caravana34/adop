@@ -8,11 +8,20 @@
     <title>Consulta Solicitud Adopcion</title>
 </head>
 <body>
+<div class="container5">
 <nav class="nav-main"><a href="../index.php" >
          <img src="../img/brand1-01.svg" alt="Logo Mimascota" class="nav-brand"></a> 
            
         </nav> 
+        <ul class="nav-main">
+            <li ><a href=".././solicitudAdopcion/consultaSolicitudAdopcion.php">Módulo Adopción</a></li>
+            <li><a href=".././registroAnimal/registroAnimal.php">Módulo Animal</a></li>
+            <li><a href=".././FormRegistroUsuario/consultaRegistroCliente.php">Módulo Usuarios</a></li>
+            <li><a href="./formRegistroAdministrador.php">AdminRegister</a></li>
+            
+        </ul>
     <center>
+    <h1>Solicitudes de Adopción</h1>
     <table class="regis" border ="1">
     <thead>
             <tr>
@@ -59,6 +68,7 @@ while($fila=mysqli_fetch_array($resultado)) // ciclo mientras para ordenar en la
     </table>
     <div><a href=".././FormRegistroUsuario/consultaRegistroCliente.php">Volver</a></div>
     </center>
+    <div>
     <footer class="footer">
         <h4><a href="../index.php">Mi mascota copyright</a></h4>
     </footer>
