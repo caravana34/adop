@@ -145,6 +145,10 @@ if(($_SESSION['id']) != ''){
         </ul>
 
         <a href="./../index.php"><img src="../img/brand1-01.svg" alt="Logo Mimascota" class="nav-brand"></a>  
+
+        <a href=""><img src="../img/brand1-01.svg" alt="Logo Mimascota" class="nav-brand"></a> 
+
+        <a href=""><img src="../img/brand1-01.svg" alt="Logo Mimascota" class="nav-brand"></a> 
                     
                
             
