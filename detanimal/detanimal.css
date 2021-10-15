@@ -223,6 +223,11 @@ hr {
     border-radius: 10px;
 }
 
+.animal{
+
+    text-transform:uppercase;
+}
+
 .grid2 img{
     width:300px;
     height:300px;
