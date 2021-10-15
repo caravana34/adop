@@ -3,6 +3,10 @@
     margin: 0;
     padding: 0;
 }
+html {
+    min-height: 100%;
+    position: relative;
+  }
 
 body {
     color: rgb(255, 255, 255);
@@ -37,7 +41,7 @@ body {
 }
 
 .container5{
-    height: auto;
+    height: 900px;
     margin: auto;   
     justify-content:center;
  }
@@ -113,7 +117,7 @@ body {
     font-size: 12px;
     padding: 20px 0;
     text-align: center;
-    
+    position: relative;
     bottom: 0;
     width: 100%;
     height: 80px;

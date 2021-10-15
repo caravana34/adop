@@ -52,13 +52,13 @@
 
                         <div class="textdetanimal">
 
-                            <h2><?php echo $fila['nombre'];?></h2>
+                            <h2 class="animal" ><?php echo $fila['nombre'];?></h2>
                             <p>Edad:<?php echo $fila['edad'];?></p>
                             <p>Sexo:<?php echo $fila['sexo'];?></p>
                             <p>Color:<?php echo $fila['color'];?></p>
                             <p>Raza:<?php echo $fila['idRaza'];?></p>
                             <p>Raza:<?php echo $fila['raza'];?></p>
-                            <p><?php echo $fila['CaracPersonalidad'];?></p>
+                            <p  ><?php echo $fila['CaracPersonalidad'];?></p>
                    </div>
                         <div class="btn11">
                             <a href="../solicitudAdopcion/solicitudAdopcion.php?id=<?php echo $fila['id']; ?>" class="btn"> Adoptar<i class="fas fa-angle-double-right"></i></a>
