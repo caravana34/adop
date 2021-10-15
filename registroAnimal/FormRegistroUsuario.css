@@ -5,15 +5,16 @@
 }
 
 body {
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     background-color: #ffffff;
     font-size: 16px;
     font-family: 'Oswald', sans-serif;
 }
 
+
 .nav-main{
     font-size: 17px; 
-    display: grid;
+    display: flex;
     align-items: center;
     justify-content: center;
     height: 120 px;
@@ -26,6 +27,7 @@ body {
   height: 90px;
 
 }
+
 
 .nav-brand{
     width: 100%;
@@ -207,6 +209,7 @@ body {
     display:grid;
     grid-template-columns:50% 50%;
     gap:10px;
+    padding-top: 30px;
 }
 
 textarea{
@@ -260,7 +263,7 @@ li{
 }
 
 li a{
-    display:block;
+    display:inline;
     color:white;
     text-align: center;
     padding:14px 16px;
@@ -276,6 +279,19 @@ height: 250px;
 .col-12 img{
     width:100%;
 height: auto;
+}
+
+.marginl li{
+    margin-left: 80px;
+}
+
+ul{
+    list-style-type:none;
+    margin:10px 0px 10px 0px;
+    padding:10px;
+    overflow:hidden;
+    background-color:#118C5A;
+    align-content: center;
 }
 
 .marginl li{

@@ -3,9 +3,13 @@
     margin: 0;
     padding: 0;
 }
+html {
+    min-height: 100%;
+    position: relative;
+  }
 
 body {
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     background-color: #ffffff;
     font-size: 16px;
     font-family: 'Oswald', sans-serif;
@@ -13,7 +17,7 @@ body {
 
 .nav-main{
     font-size: 17px; 
-    display: grid;
+    display: flex;
     align-items: center;
     justify-content: center;
     height: 120 px;
@@ -37,17 +41,11 @@ body {
 }
 
 .container5{
-    height:auto;
+    height: 360px;
     margin: auto;   
     justify-content:center;
  }
 
-.grid{
-display:grid;
-grid-template-columns: 50% 50%;
-
-
-}
 
 .menu-btn {
 
@@ -120,6 +118,7 @@ grid-template-columns: 50% 50%;
     padding: 20px 0;
     text-align: center;
     position: relative;
+    bottom: 0;
     width: 100%;
     height: 80px;
     margin-top: 3em;
@@ -192,14 +191,12 @@ grid-template-columns: 50% 50%;
     margin: auto;
     text-align: center;
     background:#0FD986;
-    width: 80%;
+    width: 40%;
     height:auto;
     border:solid rgb(47, 44, 43) 2px;
     padding: 15px;
     border-radius: 4px;
-
 }
-
 
 
 .footer a{
@@ -207,21 +204,52 @@ grid-template-columns: 50% 50%;
     text-decoration: none;
     color: #fff;
     }
-
-    .sectiontitle{
-        color: #000;
-    }
-
-    .parrafoSolicitud{
-        color: black;
-    }
+input::-webkit-input-placeholder {
+        text-align: center
+  }
 
 
-    .pasosSolicitud{ display: grid;
-        align-items: center;
-        justify-content: center;
-        padding-top: 30px;
+ul{
+    list-style-type:none;
+    margin:10px 0px 10px 0px;
+    padding:10px;
+    overflow:hidden;
+    background-color:#118C5A;
+    align-content: center;
+}
 
-    }
+li{
+    float: left;
+}
+
+li a{
+    display:inline;
+    color:white;
+    text-align: center;
+    padding:14px 16px;
+    text-decoration:none;
+}
+
+.center{
+display: inline-block;
+
+justify-content: center;
+align-content: center;
 
 
+}
+
+
+.col-3 img{
+    width:290px;
+height: 250px;
+}
+
+.col-12 img{
+    width:100%;
+height: auto;
+}
+
+.marginl li{
+    margin-left: 80px;
+}
