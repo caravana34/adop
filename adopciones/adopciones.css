@@ -44,13 +44,12 @@ body {
     
     height: 120px;
     padding: 3px;
-    background: white;
+    background: #fff;
 }
 
 .nav-main a {
   width: 100px;
   height: 100px;
-
 }
 
 .nav-brand{
