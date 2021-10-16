@@ -24,7 +24,7 @@
             <li ><a href=".././solicitudAdopcion/consultaSolicitudAdopcion.php">Módulo Adopción</a></li>
             <li><a href=".././registroAnimal/registroAnimal.php">Módulo Animal</a></li>
             <li><a href=".././FormRegistroUsuario/consultaRegistroCliente.php">Módulo Usuarios</a></li>
-            <li><a href="./formRegistroAdministrador.php">AdminRegister</a></li>
+            <li><a href=".././FormRegistroUsuario/formRegistroAdministrador.php">AdminRegister</a></li>
             
         </ul>
         <div class="container5">
