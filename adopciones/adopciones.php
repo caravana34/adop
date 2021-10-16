@@ -121,8 +121,8 @@ if(($_SESSION['id']) != ''){
 
           </div>
 
-          
-<footer class="footer">
+<!--footer-->    
+<footer class="footer_container">
     
      <h3><a href="index.php">Mi mascota copyright</a></h3>
 
@@ -133,33 +133,32 @@ if(($_SESSION['id']) != ''){
      </div> 
 
 
-    <div id="datos">         
-         <h3 >Developers:</h3><p>e l i a s  Rodriguez - Jeikson Gomez</p> <br>
+    <div>         
+        <p>Developers: Elias Rodriguez - Jeikson Gomez</p> <br>
 
-         <h3>Contacto:</h3><p>email: eliasjoserodriguez@hotmail.com - jeikson@gmail.com</p><br>
+         <h3></h3><p>Contacto:  eliasjoserodriguez@hotmail.com  jeikson@gmail.com</p><br>
             
-          <p>WhatsApp:</p><p>3002003328 - 314 8520270</p>
-                             
+          <p>WhatsApp:  3002003328 - 314 8520270</p>                    
     </div>
 
 
-  <div id="instiuciones">
-        
-      <h3>Instituciones:</h3>
+  <div>    
+      <p>Instituciones:</p>
 
-      <div>
+    <div>
       <a href=""><img src="../img/1045px-Sena_Colombia_logo.svg.png" alt="Logo Mimascota" id="footer_logo2"></a>
     </div>
-
-    <div id="footer_logo2">
-      <a href=""><img src="../img/logo-cesde.png" alt="Logo Mimascota" id="footer_logo3"></a>  
-    </div>
-
+      <div>
+        <a href=""><img src="../img/logo-cesde.png" alt="Logo Mimascota" id="footer_logo3"></a>
+      </div>
+  
   </div>
- 
+
 </div>
+<hr>
          
 </footer>
+<!--footer-->   
 
 
 <!-- scroll reveal -->

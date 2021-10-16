@@ -183,11 +183,9 @@ body {
     /*efecto*/
    
 
-
-  
-
-.footer {
-  background: #118C5A;
+/*footer*/
+.footer_container {
+  background: #2e2f2f;
   font-size: 18px;
   padding: 20px 0;
   text-align: center;
@@ -198,7 +196,7 @@ body {
   
 }
 
-.footer a {
+.footer_container a {
     color: #fff;
     text-decoration: none;
 }
@@ -209,6 +207,8 @@ body {
     gap: 30px;  
     justify-content: center;
     padding-top: 80px;
+    font-size: 16px;
+   
    /* margin-left: auto;
     margin-right: auto;
 
@@ -217,30 +217,29 @@ body {
     
 }
 
-
-
 #footer_logo1 {
     width: 250px;
     height: 250px;
- 
 }
 
 #footer_logo2 {
     width: 120px;
     height: 120px;
+    margin-top: 20px;
 }
 
 #footer_logo3 {
     width: 200px;
     height: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
 }
-
-#datos {
-    padding-bottom: 5px;
-
-}
+/*footer*/
 
 
+
+/*cerrar sesion*/
 .csesion_btn a {
   
     color: rgb(7, 7, 7);
@@ -266,6 +265,7 @@ body {
     
 }
 
+
 .csesion_btn a {
     text-decoration: none;
    
@@ -280,10 +280,8 @@ body {
      text-align: right;
      width: 96.6%;
     padding-top: 0px;
-    
-
  }
-    
+/*cerrar sesion*/    
 
 
 
