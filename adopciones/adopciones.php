@@ -123,32 +123,42 @@ if(($_SESSION['id']) != ''){
 
           
 <footer class="footer">
+    
      <h3><a href="index.php">Mi mascota copyright</a></h3>
 
-        <ul>
-            <li>
-                <h3>Developers</h3> <br>
-                <p>e l i a s  Rodriguez - Jeikson Gomez</p><br>
-            </li>
-        </ul>
+<div class="grid3">
+  
+      <div>
+        <a href="./../index.php"><img src="../img/brand1-01.svg" alt="Logo Mimascota" id="footer_logo1"></a>  
+     </div> 
 
-        <ul>
-            <li>
-               <h3>Contactanos</h3> <br>
-               <p>email:<a>eliasjoserodriguez@hotmail.com - </a><a>jeikson@gmail.com</a>
-            </p>  
-            <p>WhatsApp:</p>
-            <p>3002003328 - 314 8520270</p>                    
-            </li>
-        </ul>
 
-        <a href="./../index.php"><img src="../img/brand1-01.svg" alt="Logo Mimascota" class="footer_logos1"></a>  
+    <div id="datos">         
+         <h3 >Developers:</h3><p>e l i a s  Rodriguez - Jeikson Gomez</p> <br>
 
-        <a href=""><img src="../img/1045px-Sena_Colombia_logo.svg.png" alt="Logo Mimascota" class="footer_logos2"></a> 
+         <h3>Contacto:</h3><p>email: eliasjoserodriguez@hotmail.com - jeikson@gmail.com</p><br>
+            
+          <p>WhatsApp:</p><p>3002003328 - 314 8520270</p>
+                             
+    </div>
+
+
+  <div id="instiuciones">
+        
+      <h3>Instituciones:</h3>
+
+      <div>
+      <a href=""><img src="../img/1045px-Sena_Colombia_logo.svg.png" alt="Logo Mimascota" id="footer_logo2"></a>
+    </div>
+
+    <div id="footer_logo2">
+      <a href=""><img src="../img/logo-cesde.png" alt="Logo Mimascota" id="footer_logo3"></a>  
+    </div>
+
+  </div>
+ 
+</div>
          
-        <a href=""><img src="../img/logo-cesde-4.png" alt="Logo Mimascota" class="footer_logos2"></a> 
-
-        <a href=""><img src="../img/logo colombia.png" alt="Logo Mimascota" class="footer_logos3"></a>
 </footer>
 
 
