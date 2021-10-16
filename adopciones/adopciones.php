@@ -123,36 +123,33 @@ if(($_SESSION['id']) != ''){
 
 <!--footer-->    
 <footer class="footer_container">
-    
-     <h3><a href="index.php">Mi mascota copyright</a></h3>
+<hr>
+     
 
 <div class="grid3">
-  
+
+    <div >
+      <a href=""><img src="../img/1045px-Sena_Colombia_logo.svg.png" alt="Logo Mimascota" id="footer_logo2"></a>
+    </div>
+    <div > 
+      
+        <a href=""><img src="../img/logo-cesde.png" alt="Logo Mimascota" id="footer_logo3"></a>
+      </div>
       <div>
         <a href="./../index.php"><img src="../img/brand1-01.svg" alt="Logo Mimascota" id="footer_logo1"></a>  
      </div> 
 
-
+    <div> <p>Developers: <br>Elias Rodriguez<br>JBAD Gómez</p> </div>
     <div>         
-        <p>Developers: Elias Rodriguez - Jeikson Gomez</p> <br>
+       
 
-         <h3></h3><p>Contacto:  eliasjoserodriguez@hotmail.com  jeikson@gmail.com</p><br>
+         <h3></h3><p>Contacto:  <br>eliasjoserodriguez@hotmail.com <br> gomezposadadario@gmail.com</p><br>
             
           <p>WhatsApp:  3002003328 - 314 8520270</p>                    
     </div>
 
 
-  <div>    
-      <p>Instituciones:</p>
-
-    <div>
-      <a href=""><img src="../img/1045px-Sena_Colombia_logo.svg.png" alt="Logo Mimascota" id="footer_logo2"></a>
-    </div>
-      <div>
-        <a href=""><img src="../img/logo-cesde.png" alt="Logo Mimascota" id="footer_logo3"></a>
-      </div>
   
-  </div>
 
 </div>
 <hr>
