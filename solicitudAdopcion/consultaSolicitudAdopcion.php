@@ -17,7 +17,7 @@
             <li ><a href=".././solicitudAdopcion/consultaSolicitudAdopcion.php">Módulo Adopción</a></li>
             <li><a href=".././registroAnimal/registroAnimal.php">Módulo Animal</a></li>
             <li><a href=".././FormRegistroUsuario/consultaRegistroCliente.php">Módulo Usuarios</a></li>
-            <li><a href="./formRegistroAdministrador.php">AdminRegister</a></li>
+            <li><a href=".././FormRegistroUsuario/formRegistroAdministrador.php">AdminRegister</a></li>
             
         </ul>
     <center>
@@ -66,7 +66,7 @@ while($fila=mysqli_fetch_array($resultado)) // ciclo mientras para ordenar en la
         </tbody>
 
     </table>
-    <div><a href=".././FormRegistroUsuario/consultaRegistroCliente.php">Volver</a></div>
+    
     </center>
     <div>
     <footer class="footer">
