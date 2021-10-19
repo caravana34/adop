@@ -68,12 +68,12 @@ if(($_SESSION['id']) != ''){
                       
                 
               <div class="descripcion">
-                   <div class="d1"><h2>Descripción</h2></div><br>
-                    <p>Nomobre:   <?php echo($dato['nombre']);?></p>
+                   
+                    <p style="uppercase">Nombre:   <?php echo($dato['nombre']);?></p>
                     <p>Sexo:     <?php echo($dato['sexo']);?></p>
                     <p>Color:    <?php echo($dato['color']);?></p>
                     <p>Edad:     <?php echo($dato['edad']);?></p>
-                    <p>Tamaño:   <?php echo($dato['tamano']);?></p><br>
+                    <p>Tamaño:   <?php echo($dato['tamano']);?></p>
                     <p>Personalidad:    <?php echo($dato['CaracPersonalidad']);?></p><br>
             
                     <a href="../detanimal/detanimal.php?id=<?php echo $dato['id']; ?>" class="btn">Conocer más<i class="fas fa-angle-double-right"></i></a>
@@ -101,13 +101,13 @@ if(($_SESSION['id']) != ''){
                       
                 
               <div class="descripcion">
-                   <div class="d1"><h2>Descripción</h2></div><br>
-                   <p>Nomobre:  <?php echo($dato['nombre']);?></p>
+                   
+                   <p>Nombre:  <?php echo($dato['nombre']);?></p>
                    <p>Sexo:    <?php echo($dato['sexo']);?></p>
                    <p>Color:  <?php echo($dato['color']);?></p>
                    <p>Edad:   <?php echo($dato['edad']);?></p>
-                   <p>Tamaño:  <?php echo($dato['tamano']);?></p><br>
-                   <p>Personalidad:    <?php echo($dato['CaracPersonalidad']);?></p><br>
+                   <p>Tamaño:  <?php echo($dato['tamano']);?></p>
+                   <p>Personalidad:    <?php echo($dato['CaracPersonalidad']);?></p>
                    
                         <a href="../detanimal/detanimal.php?id=<?php echo $dato['id']; ?>" class="btn">Conocer más<i class="fas fa-angle-double-right"></i></a>
                         

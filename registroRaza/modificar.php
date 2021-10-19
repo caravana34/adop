@@ -10,7 +10,7 @@
 <body>
     <?php include('../config/conexion.php');
     $id=$_REQUEST['id'];
-    $consulta="select * from solicitud where id='$id'";
+    $consulta="select * from raza where id='$id'";
     $resultado=mysqli_query($conexion,$consulta);
     $fila=mysqli_fetch_array($resultado);
     ?>

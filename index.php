@@ -276,7 +276,7 @@ $totalregistro1=mysqli_num_rows($resultado1)
         <a href=""><img src="./img/descarga (1).png" alt="Logo Mimascota" id="footer_logo3"></a>
       </div>
       <div>
-        <a href="./../index.php"><img src="./img/DERECHO-ANIMAL-brand.png" alt="Logo Mimascota" id="footer_logo1"></a>  
+        <a href="index.php"><img src="./img/DERECHO-ANIMAL-brand.png" alt="Logo Mimascota" id="footer_logo1"></a>  
      </div> 
 
     <div> <p>Developers: <br>Elias Rodriguez<br>JBAD Gómez</p> </div>
