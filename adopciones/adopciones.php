@@ -129,29 +129,30 @@ if(($_SESSION['id']) != ''){
 <div class="grid3">
 
     <div >
-      <a href=""><img src="../img/1045px-Sena_Colombia_logo.svg.png" alt="Logo Mimascota" id="footer_logo2"></a>
+      <a href=""><img src="../img/logo-de-Sena-sin-fondo-Blanco-300x300.png" alt="Logo Mimascota" id="footer_logo2"></a>
     </div>
     <div > 
       
-        <a href=""><img src="../img/logo-cesde.png" alt="Logo Mimascota" id="footer_logo3"></a>
+        <a href=""><img src="../img/descarga (1).png" alt="Logo Mimascota" id="footer_logo3"></a>
       </div>
       <div>
-        <a href="./../index.php"><img src="../img/brand1-01.svg" alt="Logo Mimascota" id="footer_logo1"></a>  
+        <a href="./../index.php"><img src="../img/DERECHO-ANIMAL-brand.png" alt="Logo Mimascota" id="footer_logo1"></a>  
      </div> 
 
     <div> <p>Developers: <br>Elias Rodriguez<br>JBAD Gómez</p> </div>
     <div>         
        
 
-         <h3></h3><p>Contacto:  <br>eliasjoserodriguez@hotmail.com <br> gomezposadadario@gmail.com</p><br>
+        <p>Contacto:  <br>eliasjoserodriguez@hotmail.com <br>3002003328 <br> gomezposadadario@gmail.com<br>3148520270</p>
             
-          <p>WhatsApp:  3002003328 - 314 8520270</p>                    
+                            
     </div>
 
 
   
 
 </div>
+<br>
 <hr>
          
 </footer>

@@ -51,7 +51,7 @@ $totalregistro1=mysqli_num_rows($resultado1)
       </div>
       
         <nav class="nav-main">
-        <a href="./../index.php"><img src="./img/brand1-01.svg" alt="Logo Mimascota" class="nav-brand"></a>  
+        <a href="index.php"><img src="./img/brand1-01.svg" alt="Logo Mimascota" class="nav-brand"></a>  
         
     </nav>
 
@@ -144,7 +144,7 @@ $totalregistro1=mysqli_num_rows($resultado1)
         <div class="gridcan4">
         <div class="">
             <div><h2 class="title-section">CANINOS</h2></div>
-            <div class="parrmid"><p>El perro (Canis familiaris o Canis lupus Familiaris), dependiendo si se le considera una especie por derecho propio o una subespecie del lobo), llamado perro doméstico o can. 
+            <div class="parrmid"><p>El perro (Canis familiaris o Canis lupus Familiaris), dependiendo si se le considera una especie por derecho propio o una subespecie del lobo, llamado perro doméstico o can. 
                 El perro es famoso por ser denominado el mejor amigo del hombre, este animal inteligente y leal a sus amos ha estado ligado a hombres y mujeres desde milenios, en el mundo existen gran variedad de razas determinadas por la forma y pelaje del perro.</p>
                 </div> 
                 <div class="gridcanids">
@@ -262,10 +262,41 @@ $totalregistro1=mysqli_num_rows($resultado1)
 </div>
 </div>
 
-<footer class="footer">
-    <h4><a href="index.php">Mi mascota copyright</a></h4>
-</footer>
+<footer class="footer_container">
+<hr>
+     
 
+<div class="grid3">
+
+    <div >
+      <a href=""><img src="./img/logo-de-Sena-sin-fondo-Blanco-300x300.png" alt="Logo Mimascota" id="footer_logo2"></a>
+    </div>
+    <div > 
+      
+        <a href=""><img src="./img/descarga (1).png" alt="Logo Mimascota" id="footer_logo3"></a>
+      </div>
+      <div>
+        <a href="./../index.php"><img src="./img/DERECHO-ANIMAL-brand.png" alt="Logo Mimascota" id="footer_logo1"></a>  
+     </div> 
+
+    <div> <p>Developers: <br>Elias Rodriguez<br>JBAD Gómez</p> </div>
+    <div>         
+       
+
+        <p>Contacto:  <br>eliasjoserodriguez@hotmail.com <br>3002003328 <br> gomezposadadario@gmail.com<br>3148520270</p>
+            
+                            
+    </div>
+
+
+  
+
+</div>
+<br>
+<hr>
+         
+</footer>
+</div>
 <!-- scroll reveal -->
 <script src="https://unpkg.com/scrollreveal"></script>
 

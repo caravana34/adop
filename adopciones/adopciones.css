@@ -223,19 +223,19 @@ body {
 }
 
 #footer_logo1 {
-    width: 40%;
+    width: 60%;
     height: auto;
     margin-top: 20px;
 }
 
 #footer_logo2 {
-    width: 30%;
+    width: 50%;
     height: auto;
     margin-top: 20px;
 }
 
 #footer_logo3 {
-    width: 50%;
+    width: 70%;
     height: auto;
     margin-left: auto;
     margin-right: auto;
