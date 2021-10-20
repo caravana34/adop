@@ -23,6 +23,15 @@
         </nav> 
             <div>
     <center>
+    <div class="pasosSolicitud">
+                   <h1 class="sectiontitle"> Modificar registros de animales</h1>
+                   <p class="parrafoSolicitud">Si quieres modificar un registro debes  seguir estos pasos:</p>
+                   <p class="parrafoSolicitud">1 - Identifica el dato que quieres cambiar</p>
+                   <p class="parrafoSolicitud">2 - Llénalo de manera correcta, los datos están pre diligenciados</p>
+                   <p class="parrafoSolicitud">3 - debes identificar la imagen y cargarla de nuevo. </p>
+                   
+                   </div>
+                   <br><br>
         <form class="regis" action="fun_modificar.php?id=<?php echo $fila['id']; ?>" autocomplete="on" method="POST"   enctype="multipart/form-data">
             Nombre<br><input type="text" name="nombre"  value="<?php echo($fila['nombre']);?>"  required  ><br><br>
            idRaza <br><input type="text" name="idRaza"  value="<?php echo($fila['idRaza']);?>" required><br><br>

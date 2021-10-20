@@ -19,16 +19,18 @@
 <body>
 <?php include('../config/conexion.php');
     $id=$_REQUEST['id'];
-   
     $consulta="select * from animal where id='$id' ";
     $resultado=mysqli_query($conexion,$consulta);
     $fila=mysqli_fetch_array($resultado);
 
-    
+    $nombre=$fila['nombre'];
 
-    $consulta2="select * from raza ";
-    $resultado2=mysqli_query($conexion,$consulta2);
-    $fila2=mysqli_fetch_array($resultado2);?>
+    $consulta3="SELECT count(animal) FROM solicitud WHERE animal='$nombre'";
+    $resultado3=mysqli_query($conexion,$consulta3);
+    $fila3=mysqli_fetch_array($resultado3);
+    
+    
+    ?>
 
     <div class="menu-btn">
         <i class="fas fa-bars"></i>
@@ -53,12 +55,13 @@
                         <div class="textdetanimal">
 
                             <h2 class="animal" ><?php echo $fila['nombre'];?></h2>
-                            <p>Edad:<?php echo $fila['edad'];?></p>
-                            <p>Sexo:<?php echo $fila['sexo'];?></p>
-                            <p>Color:<?php echo $fila['color'];?></p>
-                            <p>Raza:<?php echo $fila['idRaza'];?></p>
-                            <p>Raza:<?php echo $fila['raza'];?></p>
-                            <p  ><?php echo $fila['CaracPersonalidad'];?></p>
+                            <p><b>Edad:</b><?php echo $fila['edad'];?></p>
+                            <p><b>Sexo:</b><?php echo $fila['sexo'];?></p>
+                            <p><b>Color:</b><?php echo $fila['color'];?></p>
+                            <p><b>Raza:</b><?php echo $fila['idRaza'];?></p>
+                            <p><b>Raza:</b><?php echo $fila['raza'];?></p>
+                            <p><b>Número Solicitudes de Adopción:</b><?php echo $fila3['count(animal)'];?></p>
+                            <p><?php echo $fila['CaracPersonalidad'];?></p>
                    </div>
                         <div class="btn11">
                             <a href="../solicitudAdopcion/solicitudAdopcion.php?id=<?php echo $fila['id']; ?>" class="btn"> Adoptar<i class="fas fa-angle-double-right"></i></a>

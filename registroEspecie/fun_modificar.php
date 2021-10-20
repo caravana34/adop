@@ -6,11 +6,11 @@ include("../config/conexion.php");
     
     
     //$idTipoUsuario=$_POST['idTipoUsuario'];
-    $consulta="update especie set id='$id',nombre='$nombre' ";
+    $consulta="update especie set id='$id',nombre='$nombre' WHERE id='$id'";
     $resultado=mysqli_query($conexion,$consulta);
     if($resultado){
     //echo "Guardada";
-    header("location:consultaRegistroAnimal.php");
+    header("location:../registroAnimal/registroAnimal.php");
 }
 else{
     echo "No se guardo";

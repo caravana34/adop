@@ -41,10 +41,42 @@
                  </form>
                    </div>
 
-                   <footer class="footer">
-        <h4><a href="../index.php">Mi mascota copyright</a></h4>
-    </footer>
+                   <!--footer-->    
+<footer class="footer_container">
+<hr>
+     
 
+<div class="grid3">
+
+    <div >
+      <a href="http://oferta.senasofiaplus.edu.co/sofia-oferta/"><img src="../img/logo-de-Sena-sin-fondo-Blanco-300x300.png" alt="Logo Mimascota" id="footer_logo2"></a>
+    </div>
+    <div > 
+      
+        <a href="https://www.cesde.edu.co/"><img src="../img/descarga (1).png" alt="Logo Mimascota" id="footer_logo3"></a>
+      </div>
+      <div>
+        <a href="./../index.php"><img src="../img/DERECHO-ANIMAL-brand.png" alt="Logo Mimascota" id="footer_logo1"></a>  
+     </div> 
+
+    <div> <p>Developers: <br>Elias Rodriguez<br>JBAD Gómez</p> </div>
+    <div>         
+       
+
+        <p>Contacto:  <br>eliasjoserodriguez@hotmail.com <br>3002003328 <br> gomezposadadario@gmail.com<br>3148520270</p>
+            
+                            
+    </div>
+
+
+  
+
+</div>
+<br>
+<hr>
+         
+</footer>
+<!--footer-->  
 
 </body>
 </html>

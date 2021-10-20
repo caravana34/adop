@@ -28,6 +28,16 @@
             
         </ul>
         <div class="container5">
+       <center> <div class="pasosSolicitud">
+                   <h1 class="sectiontitle"> Registrar y consultar animales en mimascota</h1>
+                   <p class="parrafoSolicitud">Si quieres registrar o consultar los animales candidatos a ser adoptados debes  seguir estos pasos:</p>
+                   <p class="parrafoSolicitud">1 - Consulta las tablas de raza(IdRaza, raza) y especie( id en la tabla especie) para llenar el formulario de ingreso animal</p>
+                   <p class="parrafoSolicitud">2 - Ten encuenta seguir la notación Dog para perros y le sumas el número(ej: Dog 1)</p>
+                   
+                   
+                   </div>
+                   <br><br>
+                   </center>
         <div class="tableconsult">
         
             <div>

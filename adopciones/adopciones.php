@@ -74,6 +74,7 @@ if(($_SESSION['id']) != ''){
                     <p>Color:    <?php echo($dato['color']);?></p>
                     <p>Edad:     <?php echo($dato['edad']);?></p>
                     <p>Tamaño:   <?php echo($dato['tamano']);?></p>
+                    <hr>
                     <p>Personalidad:    <?php echo($dato['CaracPersonalidad']);?></p><br>
             
                     <a href="../detanimal/detanimal.php?id=<?php echo $dato['id']; ?>" class="btn">Conocer más<i class="fas fa-angle-double-right"></i></a>
@@ -107,6 +108,7 @@ if(($_SESSION['id']) != ''){
                    <p>Color:  <?php echo($dato['color']);?></p>
                    <p>Edad:   <?php echo($dato['edad']);?></p>
                    <p>Tamaño:  <?php echo($dato['tamano']);?></p>
+                   <hr>
                    <p>Personalidad:    <?php echo($dato['CaracPersonalidad']);?></p>
                    
                         <a href="../detanimal/detanimal.php?id=<?php echo $dato['id']; ?>" class="btn">Conocer más<i class="fas fa-angle-double-right"></i></a>
