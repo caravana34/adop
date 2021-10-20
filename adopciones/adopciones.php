@@ -69,7 +69,7 @@ if(($_SESSION['id']) != ''){
                 
               <div class="descripcion">
                    
-                    <p style="uppercase">Nombre:   <?php echo($dato['nombre']);?></p>
+                    <p>Nombre:   <?php echo($dato['nombre']);?></p>
                     <p>Sexo:     <?php echo($dato['sexo']);?></p>
                     <p>Color:    <?php echo($dato['color']);?></p>
                     <p>Edad:     <?php echo($dato['edad']);?></p>
