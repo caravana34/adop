@@ -28,6 +28,16 @@
             
         </ul>
         <div class="container5">
+       <center> <div class="pasosSolicitud">
+                   <h1 class="sectiontitle"> Registrar y consultar animales en mimascota</h1>
+                   <p class="parrafoSolicitud">Si quieres registrar o consultar los animales candidatos a ser adoptados debes  seguir estos pasos:</p>
+                   <p class="parrafoSolicitud">1 - Identifica el dato que quieres cambiar</p>
+                   <p class="parrafoSolicitud">2 - Llénalo de manera correcta, los datos están pre diligenciados</p>
+                   <p class="parrafoSolicitud">3 - debes identificar la imagen y cargarla de nuevo. </p>
+                   
+                   </div>
+                   <br><br>
+                   </center>
         <div class="tableconsult">
         
             <div>

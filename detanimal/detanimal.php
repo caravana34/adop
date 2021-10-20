@@ -19,16 +19,18 @@
 <body>
 <?php include('../config/conexion.php');
     $id=$_REQUEST['id'];
-   
     $consulta="select * from animal where id='$id' ";
     $resultado=mysqli_query($conexion,$consulta);
     $fila=mysqli_fetch_array($resultado);
 
-    
+    $nombre=$fila['nombre'];
 
-    $consulta2="select * from raza ";
-    $resultado2=mysqli_query($conexion,$consulta2);
-    $fila2=mysqli_fetch_array($resultado2);?>
+    $consulta3="SELECT count(animal) FROM solicitud WHERE animal='$nombre'";
+    $resultado3=mysqli_query($conexion,$consulta3);
+    $fila3=mysqli_fetch_array($resultado3);
+    
+    
+    ?>
 
     <div class="menu-btn">
         <i class="fas fa-bars"></i>
@@ -58,6 +60,7 @@
                             <p>Color:<?php echo $fila['color'];?></p>
                             <p>Raza:<?php echo $fila['idRaza'];?></p>
                             <p>Raza:<?php echo $fila['raza'];?></p>
+                            <p>Número Solicitudes de Adopción:<?php echo $fila3['count(animal)'];?></p>
                             <p  ><?php echo $fila['CaracPersonalidad'];?></p>
                    </div>
                         <div class="btn11">
