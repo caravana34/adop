@@ -24,14 +24,14 @@
             <div>
     <center>
         <form class="regis" action="fun_modificar.php?id=<?php echo $fila['id']; ?>" autocomplete="on" method="POST"   enctype="multipart/form-data">
-            <input type="text" name="identificacion"  value="<?php echo($fila['identificacion']);?>"  required  ><br><br>
-            <input type="text" name="nombre"  value="<?php echo($fila['nombre']);?>" required><br><br>
-             <input type="text" name="ciudad"   value="<?php echo($fila['ciudad']);?>" required><br><br>
-            <input type="text" name="correo"   value="<?php echo($fila['correo']);?>" Required><br><br>
-             <input type="text" name="telefono"   value="<?php echo($fila['telefono']);?>" Required><br><br>
-             <input type="text" name="contrasena"   value="<?php echo($fila['contrasena']);?>" Required><br><br>
-             <input type="text" name="estado"  value="<?php echo($fila['estado']);?>" Required><br><br>
-             <input type="text" name="idTipoUsuario" value="<?php echo($fila['idTipoUsuario']);?>" Required><br><br>
+            <p>Identificación</p><input type="text" name="identificacion"  value="<?php echo($fila['identificacion']);?>"  required  ><br><br>
+            <p>Nombre</p><input type="text" name="nombre"  value="<?php echo($fila['nombre']);?>" required><br><br>
+            <p> Ciudad</p><input type="text" name="ciudad"   value="<?php echo($fila['ciudad']);?>" required><br><br>
+            <p> Email</p><input type="text" name="correo"   value="<?php echo($fila['correo']);?>" Required><br><br>
+            <p> Teléfono</p><input type="text" name="telefono"   value="<?php echo($fila['telefono']);?>" Required><br><br>
+            <p>Contraseña</p><input type="text" name="contrasena"   value="<?php echo($fila['contrasena']);?>" Required><br><br>
+            <p>Departamento </p><input type="text" name="estado"  value="<?php echo($fila['estado']);?>" Required><br><br>
+            <p> Tipo de usuario</p><input type="text" name="idTipoUsuario" value="<?php echo($fila['idTipoUsuario']);?>" Required><br><br>
             
     
             <input class="btn1" type="submit" value="aceptar">
