@@ -20,7 +20,7 @@ $insertardatos="insert into solicitud values ('',
             echo "error en la linea de sql";
         }
 
-        header("location:modificar.php");
+        header("location:../index.php");
 
 
 
