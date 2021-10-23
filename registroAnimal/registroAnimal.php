@@ -1,4 +1,8 @@
-<!DOCTYPE html>
+<?php
+session_start();
+if(($_SESSION['id']) != ''){
+
+?><!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -250,3 +254,9 @@ while($fila=mysqli_fetch_array($resultado)) // ciclo mientras para ordenar en la
 </body>
 
 </html>
+<?php
+}
+else{
+  header("location:../inicio/inicio.php");
+}
+?>

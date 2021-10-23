@@ -47,7 +47,7 @@ $totalregistro1=mysqli_num_rows($resultado1)
 
 
       <div class="csesion_btn">
-        <a href="../inicio/cerrar.php">Cerrar sesión</a>   
+        <a href="./inicio/cerrar.php">Cerrar sesión</a>   
       </div>
       
         <nav class="nav-main">

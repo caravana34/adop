@@ -1,3 +1,10 @@
+
+<?php
+session_start();
+if(($_SESSION['id']) != ''){
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -112,5 +119,10 @@ while($fila=mysqli_fetch_array($resultado)) // ciclo mientras para ordenar en la
 
 <script src="../main.js"></script> 
 </body>
-</html>
+</html><?php
+}
+else{
+  header("location:../inicio/inicio.php");
+}
+?>
 
