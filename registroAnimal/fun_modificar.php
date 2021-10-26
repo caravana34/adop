@@ -17,7 +17,7 @@ include("../config/conexion.php");
     $resultado=mysqli_query($conexion,$consulta);
     if($resultado){
     //echo "Guardada";
-    header("location:consultaRegistroAnimal.php");
+    header("location:registroAnimal.php");
 }
 else{
     echo "No se guardo";

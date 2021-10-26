@@ -6,7 +6,7 @@ $consulta="delete from animal where id='$id'";
 $resultado=mysqli_query($conexion,$consulta);
 if($resultado){
     //echo "eliminada";
-    header("location:./consultaRegistroAnimal.php");
+    header("location:./registroAnimal.php");
 }
 else{
     echo "No se elimino";

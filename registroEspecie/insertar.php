@@ -6,7 +6,7 @@
     $ejecutarinsertar=mysqli_query($conexion,$insertardatos);
     if(!$ejecutarinsertar){
     echo "Error en la linea de sql";}
-    header("location:../FormRegistroUsuario/consultaRegistroCliente.php");
+    header("location:../registroAnimal/registroAnimal.php");
                         
     
 }

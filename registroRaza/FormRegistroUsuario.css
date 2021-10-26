@@ -5,15 +5,16 @@
 }
 
 body {
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     background-color: #ffffff;
     font-size: 16px;
     font-family: 'Oswald', sans-serif;
 }
 
+
 .nav-main{
     font-size: 17px; 
-    display: grid;
+    display: flex;
     align-items: center;
     justify-content: center;
     height: 120 px;
@@ -27,6 +28,7 @@ body {
 
 }
 
+
 .nav-brand{
     width: 100%;
     height: 100%;}
@@ -37,7 +39,7 @@ body {
 }
 
 .container5{
-    height:450px;
+    height:1000;
  }
 
 
@@ -111,7 +113,8 @@ body {
     font-size: 12px;
     padding: 20px 0;
     text-align: center;
-    
+    position: relative;
+  bottom: 0;
     width: 100%;
     height: 80px;
     margin-top: 3em;
@@ -184,7 +187,7 @@ body {
     margin: auto;
     text-align: center;
     background:#0FD986;
-    width: 40%;
+    width: 80%;
     height:auto;
     border:solid rgb(47, 44, 43) 2px;
     padding: 15px;
@@ -202,7 +205,100 @@ body {
   }
 
 
-  .footer_container {
+.tableconsult{
+    display:grid;
+    grid-template-columns:50% 50%;
+    gap:10px;
+    padding-top: 30px;
+}
+
+textarea{
+    width: 450px;
+    height:200px;
+}
+
+*{
+    margin:0;
+    padding:0;
+}
+
+ .container li img{
+width: 200px;
+height: auto;
+
+}
+.container{
+    padding-top: 10px;
+    margin-top:0% ;
+}
+
+.container img{
+    width: 400px;
+    height: 250px;
+
+}
+
+.parrafos{
+    display:grid;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+
+}
+
+.row{
+    padding:5px;
+}
+
+ul{
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    overflow:hidden;
+    background-color:rgb(0, 0, 0);
+}
+
+li{
+    float:left;
+}
+
+li a{
+    display:inline;
+    color:white;
+    text-align: center;
+    padding:14px 16px;
+    text-decoration:none;
+
+}
+
+.col-3 img{
+    width:290px;
+height: 250px;
+}
+
+.col-12 img{
+    width:100%;
+height: auto;
+}
+
+.marginl li{
+    margin-left: 80px;
+}
+
+ul{
+    list-style-type:none;
+    margin:10px 0px 10px 0px;
+    padding:10px;
+    overflow:hidden;
+    background-color:#118C5A;
+    align-content: center;
+}
+
+.marginl li{
+    margin-left: 80px;
+}
+
+.footer_container {
     background: #2e2f2f;
     font-size: 18px;
     padding: 20px 0;
@@ -211,6 +307,7 @@ body {
     width: 100%;
     height:300px;
     margin-top: 3em;
+    color: #fff;
     
   }
   

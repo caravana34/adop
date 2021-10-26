@@ -24,28 +24,106 @@
 
 
     <div class="container5">
-        <nav class="nav-main"><a href="../index.php" >
-         <img src="../img/brand1-01.svg" alt="Logo Mimascota" class="nav-brand"></a> 
+    <nav class="nav-main"><a href="./../index.php" >
+         <img src="./../img/brand1-01.svg" alt="Logo Mimascota" class="nav-brand"></a> 
            
         </nav> 
+        <ul class="nav-main">
+            <li ><a href=".././solicitudAdopcion/consultaSolicitudAdopcion.php">Módulo Adopción</a></li>
+            <li><a href=".././registroAnimal/registroAnimal.php">Módulo Animal</a></li>
+            <li><a href=".././FormRegistroUsuario/consultaRegistroCliente.php">Módulo Usuarios</a></li>
+            <li><a href=".././FormRegistroUsuario/formRegistroAdministrador.php">AdminRegister</a></li>
+            
+        </ul>
         
         
             <div>
+            <center><h1 class="titlerace">Registro Raza</h1></center>
                 <form action="insertar.php" method="POST" class="regis" enctype="multipart/form-data">
                     
-                    Nombre<br><input type="text" name="nombre" size="30" maxlength="50" placeholder="Nombre de la raza"> <br><br>
-                    idEspecie<br><input type="number" name="idEspecie" placeholder="id de la especie"> <br><br>
+                    Nombre<br><input type="text" name="nombre" size="30" maxlength="50" placeholder="Nombre de la raza" required> <br><br>
+                    idEspecie<br><input type="number" name="idEspecie" placeholder="id de la especie" required> <br><br>
                     <input class="btn1" type="submit" name="enviar" value="Enviar">
                  </form>
                    </div>
+                   <center><h1 class="titlerace">Tabla de Especie</h1></center>
+    <table class="regis" border ="1">
+    <thead>
+            <tr>
+            <th>Id</th>
+            <th>Nombre</th>
+            
+            
+            
+</tr>
+        </thead>
+
+        <tbody>
+        
+        <?php 
+        include('../config/conexion.php');
+        $consulta="select * from especie";
+$resultado=mysqli_query($conexion,$consulta);
+while($fila=mysqli_fetch_array($resultado)) // ciclo mientras para ordenar en la estructura los campos
+{
+    echo"<tr>";
+    echo"<td>".$fila['id'];
+    
+    echo"<td>".$fila['nombre'];
+    
+    ?> 
+    
+     </td>
+
+    <th><a href="../registroEspecie/modificar.php?id=<?php echo $fila['id']; ?>"> Modificar </a></th>
+
+    <th><a href="../registroEspecie/eliminar.php?id=<?php echo $fila['id']; ?>"> Eliminar </a></th>
+    
+    <?php echo"<tr>";
+    
+}?>
+        </tbody>
+
+    </table>
 
                    </div>
 
     
 
-    <footer class="footer">
-        <h4><a href="../index.php">Mi mascota copyright</a></h4>
-    </footer>
+                   <footer class="footer_container">
+<hr>
+     
+
+<div class="grid3">
+
+    <div >
+      <a href=""><img src="../img/logo-de-Sena-sin-fondo-Blanco-300x300.png" alt="Logo Mimascota" id="footer_logo2"></a>
+    </div>
+    <div > 
+      
+        <a href=""><img src="../img/descarga (1).png" alt="Logo Mimascota" id="footer_logo3"></a>
+      </div>
+      <div>
+        <a href="index.php"><img src="../img/DERECHO-ANIMAL-brand.png" alt="Logo Mimascota" id="footer_logo1"></a>  
+     </div> 
+
+    <div> <p>Developers: <br>Elias Rodriguez<br>JBAD Gómez</p> </div>
+    <div>         
+       
+
+        <p>Contacto:  <br>eliasjoserodriguez@hotmail.com <br>3002003328 <br> gomezposadadario@gmail.com<br>3148520270</p>
+            
+                            
+    </div>
+
+
+  
+
+</div>
+<br>
+<hr>
+         
+</footer>
 
 <!-- scroll reveal -->
 <script src="https://unpkg.com/scrollreveal"></script>

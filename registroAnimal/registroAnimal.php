@@ -62,7 +62,7 @@ if(($_SESSION['id']) != ''){
                     <input class="btn1" type="submit" name="enviar" value="Enviar">
                  </form>
             </div>
-        <div><center><h1 class="titlerace">Tabla de Raza</h1></center>
+        <div><center><h1 class="titlerace">Tabla de Raza<a href="../registroRaza/registroRaza.php">(Registra una Raza)</a></h1></center>
             <table class="regis" border ="1">
     <thead>
             <tr>
@@ -102,7 +102,7 @@ while($fila=mysqli_fetch_array($resultado)) // ciclo mientras para ordenar en la
 
     </table>
 
-    <center><h1 class="titlerace">Tabla de Especie</h1></center>
+    <center><h1 class="titlerace">Tabla de Especie<a href="../registroEspecie/registroEspecie.php">(Registra una Especie)</a></h1></center>
     <table class="regis" border ="1">
     <thead>
             <tr>
@@ -133,7 +133,7 @@ while($fila=mysqli_fetch_array($resultado)) // ciclo mientras para ordenar en la
 
     <th><a href="../registroEspecie/modificar.php?id=<?php echo $fila['id']; ?>"> Modificar </a></th>
 
-    <th><a href="eliminar.php?id=<?php echo $fila['id']; ?>"> Eliminar </a></th>
+    <th><a href="../registroEspecie/eliminar.php?id=<?php echo $fila['id']; ?>"> Eliminar </a></th>
     
     <?php echo"<tr>";
     
