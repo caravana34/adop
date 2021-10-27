@@ -13,7 +13,7 @@ include("../config/conexion.php");
     $imagen= addslashes(file_get_contents($_FILES['imagen']['tmp_name']));
     
     //$idTipoUsuario=$_POST['idTipoUsuario'];
-    $consulta="update animal set id='$id',nombre='$nombre',idRaza='$idRaza', raza='$raza', color='$color', edad='$edad',tamano='$tamano',CaracPersonalidad='$CaracPersonalidad', imagen='$imagen'  WHERE id='$id'";
+    $consulta="update animal set id='$id',nombre='$nombre',idRaza='$idRaza', raza='$raza', color='$color', edad='$edad',tamano='$tamano',CaracPersonalidad='$CaracPersonalidad',sexo='$sexo', imagen='$imagen'  WHERE id='$id'";
     $resultado=mysqli_query($conexion,$consulta);
     if($resultado){
     //echo "Guardada";
