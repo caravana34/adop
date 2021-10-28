@@ -79,7 +79,7 @@ if(($_SESSION['id']) != ''){
             
                     <a href="../detanimal/detanimal.php?id=<?php echo $dato['id']; ?>" class="btn">Conocer más<i class="fas fa-angle-double-right"></i></a>
                         
-                    <a href="#" class="btn">Comparte<i class="fas fa-angle-double-right"></i></a>   
+                    <a href="https://api.whatsapp.com/send?text=http://localhost/adop/detanimal/detanimal.php?id=<?php echo($dato['id']);?>" target="blank" class="btn">Comparte<i class="fas fa-angle-double-right"></i></a>   
                         
                 </div> 
                 
@@ -113,7 +113,7 @@ if(($_SESSION['id']) != ''){
                    
                         <a href="../detanimal/detanimal.php?id=<?php echo $dato['id']; ?>" class="btn">Conocer más<i class="fas fa-angle-double-right"></i></a>
                         
-                        <a href="#" class="btn">Comparte<i class="fas fa-angle-double-right"></i></a>   
+                        <a href="https://api.whatsapp.com/send?text=http://localhost/adop/detanimal/detanimal.php?id=<?php echo($dato['id']);?>" target="blank" class="btn">Comparte<i class="fas fa-angle-double-right"></i></a>   
                         
                 </div> 
                 

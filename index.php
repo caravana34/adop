@@ -60,7 +60,7 @@ $totalregistro1=mysqli_num_rows($resultado1)
          <img src="./img/brand1-01.svg" alt="Logo Mimascota" class="nav-brand"></a>           
         </nav> 
         --->
-
+        <a href="https://api.whatsapp.com/send?text=http://localhost/adop/index.php" target="blank" id="btn-comp">Compartir este sitio web<i class="fas fa-angle-double-right"></i></a>   
 
         <!-- SHOWCASE -->
         <div class="container">
