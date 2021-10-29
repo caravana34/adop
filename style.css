@@ -337,7 +337,15 @@ margin-bottom: 20px;
     opacity: .7; 
     color: #0FD986;
  }
+ .titlerace{
+    font-weight: lighter;
+    color:black;
+}
+.titlerace a{
+    text-decoration: none;
+    text-size-adjust: 80%;
 
+}
  #btn-comp2:hover {
     opacity: .7; 
     color: #11398C;

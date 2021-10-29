@@ -65,7 +65,7 @@ $totalregistro1=mysqli_num_rows($resultado1)
         <!-- SHOWCASE -->
         <div class="container">
         <a href="https://api.whatsapp.com/send?text=http://localhost/adop/index.php" target="blank" id="btn-comp">Compartir este sitio web<i class="fas fa-angle-double-right"></i></a>
-        <div class="parrmid"><center><h2 >Blog Mimascota</h1></center></div>
+        <div ><center><h2 class= "titlerace" >Blog Mimascota</h1></center></div>
         <div class="grid">
         <div>
              <header class="showcase"> 
@@ -88,7 +88,7 @@ $totalregistro1=mysqli_num_rows($resultado1)
 
             <div class="parrmid">
 
-                <h2>LA IMPORTANCIA DE LA ADOPCIÓN</h2>
+                <h2 class= "titlerace">LA IMPORTANCIA DE LA ADOPCIÓN</h2>
                 <p>Adoptar una mascota enriquece la vida y abre las puertas a una época de diversión, descubrimientos, juegos y mimos. Sin embargo, implica  también asumir la responsabilidad de cuidar del animal durante muchos años, proporcionándole comida, un lugar seguro donde vivir, cuidados veterinarios y preocupándonos de satisfacer sus necesidades en cuanto a actividad y cariño.</p>
             </div>
         
@@ -144,7 +144,7 @@ $totalregistro1=mysqli_num_rows($resultado1)
     
         <div class="gridcan4">
         <div class="">
-            <div><h2 class="title-section">CANINOS</h2></div>
+            <div><h2 class= "titlerace">CANINOS</h2></div>
             <div class="parrmid"><p>El perro (Canis familiaris o Canis lupus Familiaris), dependiendo si se le considera una especie por derecho propio o una subespecie del lobo, llamado perro doméstico o can. 
                 El perro es famoso por ser denominado el mejor amigo del hombre, este animal inteligente y leal a sus amos ha estado ligado a hombres y mujeres desde milenios, en el mundo existen gran variedad de razas determinadas por la forma y pelaje del perro.</p>
                 </div> 
@@ -185,7 +185,7 @@ $totalregistro1=mysqli_num_rows($resultado1)
 
         <div class="gridcan4">
         <div class="">
-            <div><h2 class="title-section">FELINOS</h2></div>
+            <div><h2 class="titlerace">FELINOS</h2></div>
             <div class="parrmid"><p>El gato doméstico (Felis silvestris catus), llamado popularmente gato, es un mamífero carnívoro de la familia Felidae. Es una subespecie domesticada por la convivencia con el ser humano.</p>
                 </div> 
                 <div class="gridcanids">

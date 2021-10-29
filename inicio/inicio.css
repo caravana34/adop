@@ -20,6 +20,18 @@ body {
     padding: 3px;
 
 }
+
+.regis{
+    margin: auto;
+    text-align: center;
+    background:#ffffff;
+    width: 90%;
+    height:auto;
+    padding: 15px;
+    border-radius: 4px;
+    
+    
+}
 .nav-main a{
     
   width: 90px;
@@ -143,17 +155,15 @@ body {
         
 
 }
-
-.regis{
-    margin: auto;
-    text-align: center;
-    background:#0FD986;
-    width: 40%;
-    height:auto;
-    border:solid rgb(47, 44, 43) 2px;
-    padding: 15px;
-    border-radius: 4px;
+.titlerace{
+    font-weight: lighter;
 }
+.titlerace a{
+    text-decoration: none;
+    text-size-adjust: 80%;
+
+}
+
 
 .sectionTitle{
 

@@ -28,7 +28,7 @@
            
         </nav> 
         
-        <div class= "sectionTitle"><h2>Inicia Sesión</h2></div>
+        <div ><center><h2 class= "titlerace">Inicia Sesión</h2></div></center>
         
         
         <div class="regis">

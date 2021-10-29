@@ -44,7 +44,7 @@ if(($_SESSION['id']) != ''){
         <div class="grid">
             <div>
                 <form action="insertar.php" method="POST" class="regis" enctype="multipart/form-data">
-                    
+                <h2 class="titlerace">Solicitud de adopción</h2>
             
                     Usuario<br><input type="text" name="correoElectronico" size="30" maxlength="50" placeholder="Correo Electronico"> <br><br>
                     Cédula<br><input type="file" name="cedula" size="30" maxlength="50" placeholder="Cédula"> <br><br>
