@@ -20,16 +20,16 @@ if(($_SESSION['id']) != ''){
          <img src="../img/brand1-01.svg" alt="Logo Mimascota" class="nav-brand"></a> 
            
         </nav> 
-        <ul class="nav-main">
-            <li ><a href=".././solicitudAdopcion/consultaSolicitudAdopcion.php">Módulo Adopción</a></li>
-            <li><a href=".././registroAnimal/registroAnimal.php">Módulo Animal</a></li>
-            <li><a href=".././FormRegistroUsuario/consultaRegistroCliente.php">Módulo Usuarios</a></li>
-            <li><a href=".././FormRegistroUsuario/formRegistroAdministrador.php">AdminRegister</a></li>
-            
-        </ul>
+        <center>
+    <a href=".././solicitudAdopcion/consultaSolicitudAdopcion.php" id="btn-comp2">Módulo Adopción</a>
+    <a href=".././registroAnimal/registroAnimal.php" id="btn-comp2">Módulo Animal</a>
+    <a href=".././FormRegistroUsuario/consultaRegistroCliente.php" id="btn-comp2">Módulo Usuarios</a>
+    <a href="./formRegistroAdministrador.php" id="btn-comp2">AdminRegister</a>
+    
+        </center>
     <center>
-    <h1>Solicitudes de Adopción</h1>
-    <table class="regis" border ="1">
+    <h1 class="titlerace">Solicitudes de Adopción</h1>
+    <table class="regis" >
     <thead>
             <tr>
             <th>Id</th>
@@ -63,9 +63,9 @@ while($fila=mysqli_fetch_array($resultado)) // ciclo mientras para ordenar en la
     
     
 
-    <th><a href="modificar.php?id=<?php echo $fila['id']; ?>"> Modificar </a></th>
+    <td><a href="modificar.php?id=<?php echo $fila['id']; ?>" class="btn1"> Modificar </a></th>
 
-    <th><a href="eliminar.php?id=<?php echo $fila['id']; ?>"> Eliminar </a></th>
+    <td><a href="eliminar.php?id=<?php echo $fila['id']; ?>" class="btn1"> Eliminar </a></th>
     
     <?php echo"<tr>";
     

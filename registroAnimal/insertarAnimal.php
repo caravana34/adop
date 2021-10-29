@@ -26,7 +26,7 @@
                                 if(!$ejecutarinsertar){
                             echo "Error en la linea de sql";
                                                               }
-                        header("location:./consultaRegistroAnimal.php");
+                        header("location:./registroAnimal.php");
                         
     
 }

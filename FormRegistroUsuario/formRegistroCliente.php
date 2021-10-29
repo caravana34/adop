@@ -36,7 +36,7 @@
                     Contraseña <br><input class="place"  type="password" name="contrasena" size="30" maxlength="50" placeholder="Contraseña"required> <br><br>
                     <!--Estado <br><input class="place"  type="text" name="Estado" size="30" maxlength="50" placeholder="Descripción"> <br><br>-->
                     
-                    <input class="btn1" type="submit" name="enviar" value="Iniciar">
+                    <input class="btn1" type="submit" name="enviar" value="Registrar">
                  </form>
 
 

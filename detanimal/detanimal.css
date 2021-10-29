@@ -6,12 +6,13 @@
 
 body {
     /*background:rgb(255, 0, 0);*/
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     background-color: #ffffff;
    /* background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23383838' fill-opacity='0' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");*/
 font-size: 16px;
-font-family: 'Oswald', sans-serif;
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+
 
 .nav-main{
     font-size: 17px; 
@@ -339,11 +340,16 @@ margin-bottom: 10px;
     gap: 10px;
     align-items: flex-start;
     justify-content: center;
-    color:black;
+    color:rgb(255, 255, 255);
     
 
 }
+.footer-container p {
+    
+    color:rgb(255, 255, 255);
+    
 
+}
 .footer-container ul {
     margin: 0 auto;
 }
@@ -609,6 +615,7 @@ color: #000000;
       align-content: center;
       margin: auto;   
       justify-content:center;
+      color: #ffffff;
      
      /* margin-left: auto;
       margin-right: auto;

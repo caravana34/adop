@@ -24,17 +24,18 @@ if(($_SESSION['id']) != ''){
          <img src="./../img/brand1-01.svg" alt="Logo Mimascota" class="nav-brand"></a> 
            
         </nav> 
-        <ul class="nav-main">
-            <li ><a href=".././solicitudAdopcion/consultaSolicitudAdopcion.php">Módulo Adopción</a></li>
-            <li><a href=".././registroAnimal/registroAnimal.php">Módulo Animal</a></li>
-            <li><a href=".././FormRegistroUsuario/consultaRegistroCliente.php">Módulo Usuarios</a></li>
-            <li><a href=".././FormRegistroUsuario/formRegistroAdministrador.php">AdminRegister</a></li>
-            
-        </ul>
+        
         <div class="container5">
+        <center>
+    <a href=".././solicitudAdopcion/consultaSolicitudAdopcion.php" id="btn-comp2">Módulo Adopción</a>
+    <a href=".././registroAnimal/registroAnimal.php" id="btn-comp2">Módulo Animal</a>
+    <a href=".././FormRegistroUsuario/consultaRegistroCliente.php" id="btn-comp2">Módulo Usuarios</a>
+    <a href="./formRegistroAdministrador.php" id="btn-comp2">AdminRegister</a>
+    
+        </center>
        <center> <div class="pasosSolicitud">
-                   <h1 class="sectiontitle"> Registrar y consultar animales en mimascota</h1>
-                   <p class="parrafoSolicitud">Si quieres registrar o consultar los animales candidatos a ser adoptados debes  seguir estos pasos:</p>
+                   <h1 class="titlerace"> Registrar y consultar animales en mimascota</h1><br>
+                   <p class="parrafoSolicitud">Si quieres registrar o consultar los animales candidatos a ser adoptados debes  seguir estos pasos:</p><br>
                    <p class="parrafoSolicitud">1 - Consulta las tablas de raza(IdRaza, raza) y especie( id en la tabla especie) para llenar el formulario de ingreso animal</p>
                    <p class="parrafoSolicitud">2 - Ten encuenta seguir la notación Dog para perros y le sumas el número(ej: Dog 1)</p>
                    
@@ -42,11 +43,11 @@ if(($_SESSION['id']) != ''){
                    </div>
                    <br><br>
                    </center>
-        <div class="tableconsult">
+        <div class="">
         
             <div>
-            <center><h1>Registro Animal</h1></center>
-                <form class="regis" action="./insertarAnimal.php" method="POST" enctype="multipart/form-data">
+            <center><h1 class="titlerace">Registro Animal</h1></center>
+                <form class="regis1" action="./insertarAnimal.php" method="POST" enctype="multipart/form-data">
                     Nombre <br><input type="text" name="nombre" size="30" maxlength="50" placeholder="Nombre" required> <br><br>
                     idRaza <br><input type="text" name="idRaza" size="30" maxlength="50" placeholder="Id -Raza" required> <br><br>
                     
@@ -63,7 +64,7 @@ if(($_SESSION['id']) != ''){
                  </form>
             </div>
         <div><center><h1 class="titlerace">Tabla de Raza<a href="../registroRaza/registroRaza.php">(Registra una Raza)</a></h1></center>
-            <table class="regis" border ="1">
+            <table class="regis" >
     <thead>
             <tr>
             <th>IdRaza</th>
@@ -91,9 +92,9 @@ while($fila=mysqli_fetch_array($resultado)) // ciclo mientras para ordenar en la
     
      </td>
 
-    <th><a href="../registroRaza/modificar.php?id=<?php echo $fila['id']; ?>"> Modificar </a></th>
+    <td><a href="../registroRaza/modificar.php?id=<?php echo $fila['id']; ?>" class="btn1"> Modificar </a></th>
 
-    <th><a href="eliminar.php?id=<?php echo $fila['id']; ?>"> Eliminar </a></th>
+    <td><a href="eliminar.php?id=<?php echo $fila['id']; ?>" class="btn1"> Eliminar </a></th>
     
     <?php echo"<tr>";
     
@@ -103,7 +104,7 @@ while($fila=mysqli_fetch_array($resultado)) // ciclo mientras para ordenar en la
     </table>
 
     <center><h1 class="titlerace">Tabla de Especie<a href="../registroEspecie/registroEspecie.php">(Registra una Especie)</a></h1></center>
-    <table class="regis" border ="1">
+    <table class="regis" >
     <thead>
             <tr>
             <th>Id</th>
@@ -131,9 +132,9 @@ while($fila=mysqli_fetch_array($resultado)) // ciclo mientras para ordenar en la
     
      </td>
 
-    <th><a href="../registroEspecie/modificar.php?id=<?php echo $fila['id']; ?>"> Modificar </a></th>
+    <td><a href="../registroEspecie/modificar.php?id=<?php echo $fila['id']; ?>" class="btn1"> Modificar </a></th>
 
-    <th><a href="../registroEspecie/eliminar.php?id=<?php echo $fila['id']; ?>"> Eliminar </a></th>
+    <td><a href="../registroEspecie/eliminar.php?id=<?php echo $fila['id']; ?>" class="btn1"> Eliminar </a></th>
     
     <?php echo"<tr>";
     
@@ -153,7 +154,7 @@ while($fila=mysqli_fetch_array($resultado)) // ciclo mientras para ordenar en la
     
     </div>
     <center><h1 class="titlerace">Tabla Consulta de Animales</h1></center>
-    <table class="regis" border ="1">
+    <table class="regis" >
     <thead>
             <tr>
             <th>Id</th>
@@ -198,9 +199,9 @@ while($fila=mysqli_fetch_array($resultado)) // ciclo mientras para ordenar en la
     
      </td>
 
-    <th><a href="modificarRegistroAnimal.php?id=<?php echo $fila['id']; ?>"> Modificar </a></th>
+    <td><a href="modificarRegistroAnimal.php?id=<?php echo $fila['id']; ?>" class="btn1"> Modificar </a></th>
 
-    <th><a href="eliminar.php?id=<?php echo $fila['id']; ?>"> Eliminar </a></th>
+    <td><a href="eliminar.php?id=<?php echo $fila['id']; ?>" class="btn1"> Eliminar </a></th>
     
     <?php echo"<tr>";
     

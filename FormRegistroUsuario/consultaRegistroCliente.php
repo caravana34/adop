@@ -16,18 +16,20 @@
             </a> 
         </nav> 
         
-        <ul class="nav-main">
-            <li ><a href=".././solicitudAdopcion/consultaSolicitudAdopcion.php">Módulo Adopción</a></li>
-            <li><a href=".././registroAnimal/registroAnimal.php">Módulo Animal</a></li>
-            <li><a href=".././FormRegistroUsuario/consultaRegistroCliente.php">Módulo Usuarios</a></li>
-            <li><a href="./formRegistroAdministrador.php">AdminRegister</a></li>
-            
-        </ul>
+        
 
     <div class="container5">
     <center>
-        <h1>Usuarios Registrados</h1>
-    <table class="regis" border ="1">
+    <a href=".././solicitudAdopcion/consultaSolicitudAdopcion.php" id="btn-comp2">Módulo Adopción</a>
+    <a href=".././registroAnimal/registroAnimal.php" id="btn-comp2">Módulo Animal</a>
+    <a href=".././FormRegistroUsuario/consultaRegistroCliente.php" id="btn-comp2">Módulo Usuarios</a>
+    <a href="./formRegistroAdministrador.php" id="btn-comp2">AdminRegister</a>
+    
+        </center>
+   
+        <h3 class="user">Usuarios Registrados</h3>
+        <center>
+    <table class="regis" >
     <thead>
             <tr>
             <th>Id</th>
@@ -36,10 +38,10 @@
             <th>Ciudad</th>
             <th>Correo</th>
             <th>Teléfono</th>
-            <th>estado</th>
-            <th>contrasena</th>
+            <th>Departamento</th>
+            <th>Contraseña</th>
             <th>IdTipoUsuario</th>
-            <th colspan="2">Operacion</th>
+            <th colspan="2">Operación</th>
             
 </tr>
         </thead>
@@ -64,9 +66,9 @@ while($fila=mysqli_fetch_array($resultado)) // ciclo mientras para ordenar en la
     echo"<td>".$fila['idTipoUsuario'];
      ?>  </td>
 
-    <th><a href="modificarRegistroCliente.php?id=<?php echo $fila['id'];?>"> Modificar </a></th>
+    <td><a href="modificarRegistroCliente.php?id=<?php echo $fila['id'];?>" class="btn1"> Modificar </a></th>
 
-    <th><a href="eliminar.php?id=<?php echo $fila['id'];?>"> Eliminar </a></th>
+    <td><a href="eliminar.php?id=<?php echo $fila['id'];?>" class="btn1"> Eliminar </a></th>
     
     <?php echo"<tr>";
     
