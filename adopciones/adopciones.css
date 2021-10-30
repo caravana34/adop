@@ -309,6 +309,10 @@ body {
 .overlay.active {
     visibility: visible;
 }
+.categorias .titlerace{
+    font-weight: lighter;
+    color:black;
+}
 
 
 

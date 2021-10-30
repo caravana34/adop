@@ -60,7 +60,7 @@ if(($_SESSION['id']) != ''){
     <div class="container">
     
      <div class="categorias">
-        <h2>Elige tu dog amigo</h2>
+        <h2 class="titlerace">Elige tu dog amigo</h2>
      </div>             
        
             <div class="grid2"><!--grilla de 2 columnas-->
@@ -92,7 +92,7 @@ if(($_SESSION['id']) != ''){
 
 
           <div class="categorias">
-            <h2>Elige tu cat amigo</h2>
+            <h2 class="titlerace">Elige tu cat amigo</h2>
     </div>             
 
 
