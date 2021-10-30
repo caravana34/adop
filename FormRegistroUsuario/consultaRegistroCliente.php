@@ -28,6 +28,28 @@
         </center>
    
         <h3 class="user">Usuarios Registrados</h3>
+        <form action="" method="get">
+            <input type="text" name="busqueda">
+            <input type="submit" name="enviar" value="buscar">
+        </form>
+        <br><br><br>
+        <?php
+         $host = "localhost";
+         $user = "root";
+         $pw = "";
+         $bd = "mimascota";
+         
+         $conexion = new mysqli($host,$user,$pw,$bd);
+         mysqli_set_charset($conexion,"utf8mb4");
+        if(isset($_GET['enviar'])){
+            $busqueda=$_GET['busqueda'];
+            $consulta4 = $conexion->query("select * from usuario where correo LIKE '%$busqueda%'");
+            while ($row = $consulta4->fetch_array()){
+                echo $row['correo'].'<br>';
+                echo $row['identificacion'];
+            }
+        }
+        ?>
         <center>
     <table class="regis" >
     <thead>
