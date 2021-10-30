@@ -38,8 +38,10 @@ if(($_SESSION['id']) != ''){
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adopciones</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
     <link rel="stylesheet" href="adopciones.css">
+    <title>Adopciones</title>
+    
 </head>
 <body>
  
@@ -79,8 +81,8 @@ if(($_SESSION['id']) != ''){
             
                     <a href="../detanimal/detanimal.php?id=<?php echo $dato['id']; ?>" class="btn">Conocer más<i class="fas fa-angle-double-right"></i></a>
                         
-                    <a href="https://api.whatsapp.com/send?text=http://localhost/adop/detanimal/detanimal.php?id=<?php echo($dato['id']);?>" target="blank" class="btn">Comparte<i class="fas fa-angle-double-right"></i></a>   
-                        
+                    <a  class="btn-abrir-popup" id="btn-abrir-popup">Comparte</a>   
+                
                 </div> 
                 
                 </div>
@@ -120,6 +122,31 @@ if(($_SESSION['id']) != ''){
                 </div>
                 <?php endforeach?>
           </div>
+               
+
+ <!--ventana ememrgente compartir -->
+
+ <div class="overlay" id="overlay">
+    <div class="popup" id="popup">
+        <a href="http://localhost/adop/adopciones/adopciones.php" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
+                
+                <div id="iconos1">
+                 
+                  <a href="https://api.whatsapp.com/send?text=http://localhost/adop/detanimal/detanimal.php?id=<?php echo($dato['id']);?>" target="blank" ><i class="fab fa-whatsapp"></i></a>
+                  <p>whatsapp</p>
+                </div>
+
+                <div id="iconos2">
+                  <a href="http://wwwfacebook.com/sharer?u=http://localhost/adop/detanimal/detanimal.php?id=<?php echo($dato['id']);?>" target="blank"><i class="fab fa-facebook-f"></i></a>
+                  <p>facebook</p>
+                </div>
+                
+    </div>
+
+ </div>
+ <!--ventana ememrgente compartir -->
+
+
 
           </div>
 
@@ -161,12 +188,20 @@ if(($_SESSION['id']) != ''){
 <!--footer-->   
 
 
+<!--ventana emergente-->
+<script src="popup.js"></script>
+
+<!--ventana emergente-->
+
+
 <!-- scroll reveal -->
-<script src="https://unpkg.com/scrollreveal"></script>
+
+<!--<script src="https://unpkg.com/scrollreveal"></script>-->
 
 <!-- custom js -->
-<script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.7/glider.js"></script>
-<script src="main.js"></script>
+<!---<script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.7/glider.js"></script>
+<script src="main.js"></script>-->
+
 
 
 </body>
