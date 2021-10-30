@@ -106,4 +106,94 @@ if(($_SESSION['id']) != ''){
                    
                    <p>Nombre:  <?php echo($dato['nombre']);?></p>
                    <p>Sexo:    <?php echo($dato['sexo']);?></p>
-                …
+                   <p>Color:  <?php echo($dato['color']);?></p>
+                   <p>Edad:   <?php echo($dato['edad']);?></p>
+                   <p>Tamaño:  <?php echo($dato['tamano']);?></p>
+                   <hr>
+                   <p>Personalidad:    <?php echo($dato['CaracPersonalidad']);?></p>
+                   
+                        <a href="../detanimal/detanimal.php?id=<?php echo $dato['id']; ?>" class="btn">Conocer más<i class="fas fa-angle-double-right"></i></a>
+                        
+                        <a href="https://api.whatsapp.com/send?text=http://localhost/adop/detanimal/detanimal.php?id=<?php echo($dato['id']);?>" target="blank" class="btn">Comparte<i class="fas fa-angle-double-right"></i></a>   
+                        
+                </div> 
+                
+                </div>
+                <?php endforeach?>
+          </div>
+               
+
+ <!--ventana ememrgente compartir -->
+ 
+ 
+ <!--ventana ememrgente compartir -->
+
+
+
+          </div>
+
+<!--footer-->    
+<footer class="footer_container">
+<hr>
+     
+
+<div class="grid3">
+
+    <div >
+      <a href="http://oferta.senasofiaplus.edu.co/sofia-oferta/"><img src="../img/logo-de-Sena-sin-fondo-Blanco-300x300.png" alt="Logo Mimascota" id="footer_logo2"></a>
+    </div>
+    <div > 
+      
+        <a href="https://www.cesde.edu.co/"><img src="../img/descarga (1).png" alt="Logo Mimascota" id="footer_logo3"></a>
+      </div>
+      <div>
+        <a href="./../index.php"><img src="../img/DERECHO-ANIMAL-brand.png" alt="Logo Mimascota" id="footer_logo1"></a>  
+     </div> 
+
+    <div> <p>Developers: <br>Elias Rodriguez<br>JBAD Gómez</p> </div>
+    <div>         
+       
+
+        <p>Contacto:  <br>eliasjoserodriguez@hotmail.com <br>3002003328 <br> gomezposadadario@gmail.com<br>3148520270</p>
+            
+                            
+    </div>
+
+
+  
+
+</div>
+<br>
+<hr>
+         
+</footer>
+<!--footer-->   
+
+
+<!--ventana emergente-->
+
+
+<!--ventana emergente-->
+
+
+<!-- scroll reveal -->
+
+<!--<script src="https://unpkg.com/scrollreveal"></script>-->
+
+<!-- custom js -->
+<!---<script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.7/glider.js"></script>
+<script src="main.js"></script>-->
+
+
+<script src="popup.js">
+
+</script>
+</body>
+</html>
+
+<?php
+}
+else{
+  header("location:../inicio/inicio.php");
+}
+?>
