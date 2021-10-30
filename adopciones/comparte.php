@@ -27,7 +27,7 @@
     <a id="btn-abrir-popup" class="btn-abrir-popup">Abrir Ventana Emergente</a></div>-->
 <div class="overlay" id="overlay">
     <div class="popup" id="popup">
-        <a href="http://localhost/adop/adopciones/adopciones.php" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
+      <!--  <a href="http://localhost/adop/adopciones/adopciones.php" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>-->
                 
                 <div id="iconos1">
                  
