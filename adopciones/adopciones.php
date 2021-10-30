@@ -81,7 +81,7 @@ if(($_SESSION['id']) != ''){
             
                     <a href="../detanimal/detanimal.php?id=<?php echo $dato['id']; ?>" class="btn">Conocer más<i class="fas fa-angle-double-right"></i></a>
                         
-                    <a  class="btn-abrir-popup" id="btn-abrir-popup">Comparte</a>   
+                    <a  id="btn-abrir-popup" class="btn-abrir-popup" >Comparte</a>   
                 
                 </div> 
                 
@@ -137,7 +137,7 @@ if(($_SESSION['id']) != ''){
                 </div>
 
                 <div id="iconos2">
-                  <a href="http://wwwfacebook.com/sharer?u=http://localhost/adop/detanimal/detanimal.php?id=<?php echo($dato['id']);?>" target="blank"><i class="fab fa-facebook-f"></i></a>
+                  <a href="https://www.facebook.com/sharer?u=http://localhost/adop/detanimal/detanimal.php?id=<?php echo($dato['id']);?>" target="blank"><i class="fab fa-facebook-f"></i></a>
                   <p>facebook</p>
                 </div>
                 
