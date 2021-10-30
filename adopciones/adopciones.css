@@ -26,8 +26,8 @@ body {
 
 .container{
     width: 90%;
-    /*margin: auto;*/   
-    /*justify-content: center;*/
+    /*margin: auto;/   
+    /justify-content: center;*/
     margin-left: auto;
     margin-right: auto;
 
@@ -40,8 +40,8 @@ body {
     margin-left: auto;
     margin-right: auto;
     display: block;
-    /*align-items: center;*/
-    /*justify-content: center;*/
+    /*align-items: center;/
+    /justify-content: center;*/
     
     height: 120px;
     padding: 3px;
@@ -303,11 +303,15 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    /*visibility: hidden;*/
+    
 }
 
-.overlay.avtive {
+.overlay.active {
     visibility: visible;
+}
+.categorias .titlerace{
+    font-weight: lighter;
+    color:black;
 }
 
 
