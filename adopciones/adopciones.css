@@ -397,7 +397,10 @@ body {
  }
 
 
-
+.compimg img{
+    width: 100px;
+    height: auto;
+}
 
 
 

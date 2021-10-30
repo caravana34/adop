@@ -81,7 +81,7 @@ if(($_SESSION['id']) != ''){
                     <p>Personalidad:    <?php echo($dato['CaracPersonalidad']);?></p><br>
             
                     <a href="../detanimal/detanimal.php?id=<?php echo $dato['id'];?>" class="btn">Conocer más<i class="fas fa-angle-double-right"></i></a>
-                    <a href="comparte.php?id=<?php echo $dato['id'];?>" id="btn-abrir-popup" class="btn-abrir-popup" target="popup" onclick="window.open('http://localhost/adop/adopciones/comparte.php?id=<?php echo $dato['id'];?>','popup','width=600,height=600'); return false;">Comparte</a>   
+                    <a href="comparte.php?id=<?php echo $dato['id'];?>" id="btn-abrir-popup" class="btn-abrir-popup" target="" onclick="window.open('http://localhost/adop/adopciones/comparte.php?id=<?php echo $dato['id'];?>','popup','width=600,height=600'); return false;">Comparte</a>   
                     
                 </div> 
                 
