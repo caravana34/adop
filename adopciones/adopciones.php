@@ -79,11 +79,20 @@ if(($_SESSION['id']) != ''){
                     <hr>
                     <p>Personalidad:    <?php echo($dato['CaracPersonalidad']);?></p><br>
             
-                    <a href="../detanimal/detanimal.php?id=<?php echo $dato['id'];?>" class="btn">Conocer más<i class="fas fa-angle-double-right"></i></a>
-                    <a href="comparte.php?id=<?php echo $dato['id'];?>" id="btn-abrir-popup" class="btn-abrir-popup" target="" onclick="window.open('http://localhost/adop/adopciones/comparte.php?id=<?php echo $dato['id'];?>','popup','width=600,height=600'); return false;">Comparte</a>   
-                    
                 </div> 
                 
+
+                <div>
+          <a href="../detanimal/detanimal.php?id=<?php echo $dato['id'];?>" class="btn">Conocer más</a>
+                    <a href="comparte.php?id=<?php echo $dato['id'];?>" id="btn-abrir-popup" class="btn-abrir-popup" target="" onclick="window.open('http://localhost/adop/adopciones/comparte.php?id=<?php echo $dato['id'];?>','popup','width=600,height=600'); return false;">Comparte</a>       
+
+          </div>
+
+
+
+
+
+
                 </div>
                 
                 <?php endforeach?>
@@ -112,12 +121,15 @@ if(($_SESSION['id']) != ''){
                    <hr>
                    <p>Personalidad:    <?php echo($dato['CaracPersonalidad']);?></p>
                    
-                        <a href="../detanimal/detanimal.php?id=<?php echo $dato['id']; ?>" class="btn">Conocer más<i class="fas fa-angle-double-right"></i></a>
-                        
-                        <a href="https://api.whatsapp.com/send?text=http://localhost/adop/detanimal/detanimal.php?id=<?php echo($dato['id']);?>" target="blank" class="btn">Comparte<i class="fas fa-angle-double-right"></i></a>   
-                        
+                      
                 </div> 
                 
+                <div>
+                <a href="../detanimal/detanimal.php?id=<?php echo $dato['id']; ?>" class="btn">Conocer más</a>
+                <a href="https://api.whatsapp.com/send?text=http://localhost/adop/detanimal/detanimal.php?id=<?php echo($dato['id']);?>" target="blank" class="btn">Comparte</a>   
+                        
+                </div>
+
                 </div>
                 <?php endforeach?>
           </div>
