@@ -70,6 +70,7 @@ if(($_SESSION['id']) != ''){
             <th>IdRaza</th>
             <th>Nombre</th>
             <th>IdEspecie</th>
+            <th colspan="2">Operacion</th>
             
             
 </tr>
@@ -109,7 +110,7 @@ while($fila=mysqli_fetch_array($resultado)) // ciclo mientras para ordenar en la
             <tr>
             <th>Id</th>
             <th>Nombre</th>
-            
+            <th colspan="2">Operacion</th>
             
             
 </tr>
