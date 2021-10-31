@@ -136,18 +136,18 @@ body {
 .nested_grid {
     position: relative;
     overflow: hidden;
-  
+    
 }
 
 
 .nested_grid:hover .descripcion{
     transform: translate(0,0);
-    padding: 6px;
+    
     
 }
 
 .nested_grid:hover .img{
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 
@@ -158,27 +158,30 @@ body {
 
 
  .descripcion{
-    bottom: 0;
+    /*bottom:;*/
     background: rgba(0,0,0,0.5);
-    transform: translate(0,-200%);
+    transform: translate(0,-155%);
     transition: all 1.5s ease-out;
     position: absolute;
-    
+  
+     
  }
 
 
-.descripcion h2{
-    color: white;
-    margin-top: 20px;
-   
+.descripcion h3{
+  color: white;
+  padding-top: 10px;
+  padding-left: 7px;
+
+    
 }
     
 .descripcion p{
-        color: white;
-        bottom: 0;
-     
-       
+    color: white;
+    /*bottom: 20px;*/
+    padding: 9.3px;  
     }
+
     /*efecto*/
    
 
@@ -374,6 +377,11 @@ body {
 }
 
 
+.textbtn {
+    text-align: right;
+    margin-top: -8px;
+}
+
 #btn-abrir-popup{
     cursor: pointer;
     display: inline-block;
@@ -383,12 +391,16 @@ body {
     /*background: #D96404;*/
     color: #000000;
     font-size: 15px;
-    border: 1px solid #ffffff;
+    /*border: 1px solid #ffffff;*/
     margin: 10px 0px; 
     text-decoration: none;
     border-radius:4px;
+    
 }
 
+#btn-abrir-popup a{
+    padding-right: 1px;
+}
 
 #btn-abrir-popup:hover {
     opacity: .7; 

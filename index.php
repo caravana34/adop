@@ -64,7 +64,7 @@ $totalregistro1=mysqli_num_rows($resultado1)
 
         <!-- SHOWCASE -->
         <div class="container">
-            <center>
+        <center>
         <a href="https://api.whatsapp.com/send?text=http://localhost/adop/index.php" target="blank" id="btn-comp2">Compartir este sitio web</a>
         <a href="blog.php" target="blank" id="btn-comp2">Blog Mimascota</a>
         <a href="./adopciones/adopciones.php" id="btn-comp2">Adopciones </a>

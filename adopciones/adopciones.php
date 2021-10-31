@@ -70,23 +70,23 @@ if(($_SESSION['id']) != ''){
                       
                 
               <div class="descripcion">
-                   
-                    <p>Nombre:   <?php echo($dato['nombre']);?></p>
-                    <p>Sexo:     <?php echo($dato['sexo']);?></p>
-                    <p>Color:    <?php echo($dato['color']);?></p>
-                    <p>Edad:     <?php echo($dato['edad']);?></p>
-                    <p>Tamaño:   <?php echo($dato['tamano']);?></p>
-                    <hr>
-                    <p>Personalidad:    <?php echo($dato['CaracPersonalidad']);?></p><br>
-            
+                <div>
+                    <h3>Descripcion</h3>     
+                </div>
+                    <p>Nombre: <?php echo($dato['nombre']);?></p>
+                    <p>Sexo:   <?php echo($dato['sexo']);?></p>
+                    <p>Color:  <?php echo($dato['color']);?></p>
+                    <p>Edad:   <?php echo($dato['edad']);?></p>
+                    <p>Tamaño: <?php echo($dato['tamano']);?></p>
+                    <p>Personalidad: <?php echo($dato['CaracPersonalidad']);?></p>
                 </div> 
                 
 
-                <div>
-          <a href="../detanimal/detanimal.php?id=<?php echo $dato['id'];?>" class="btn">Conocer más</a>
+                <div class="textbtn">
+                    <a href="../detanimal/detanimal.php?id=<?php echo $dato['id'];?>" class="btn">Conocer más</a>
                     <a href="comparte.php?id=<?php echo $dato['id'];?>" id="btn-abrir-popup" class="btn-abrir-popup" target="" onclick="window.open('http://localhost/adop/adopciones/comparte.php?id=<?php echo $dato['id'];?>','popup','width=600,height=600'); return false;">Comparte</a>       
 
-          </div>
+                </div>
 
 
 
@@ -112,19 +112,22 @@ if(($_SESSION['id']) != ''){
                       
                 
               <div class="descripcion">
+
+              <div>
+                    <h3>Descripcion</h3>     
+                </div>
                    
                    <p>Nombre:  <?php echo($dato['nombre']);?></p>
                    <p>Sexo:    <?php echo($dato['sexo']);?></p>
                    <p>Color:  <?php echo($dato['color']);?></p>
                    <p>Edad:   <?php echo($dato['edad']);?></p>
                    <p>Tamaño:  <?php echo($dato['tamano']);?></p>
-                   <hr>
                    <p>Personalidad:    <?php echo($dato['CaracPersonalidad']);?></p>
                    
                       
                 </div> 
                 
-                <div>
+                <div class="textbtn">
                 <a href="../detanimal/detanimal.php?id=<?php echo $dato['id']; ?>" class="btn">Conocer más</a>
                 <a href="https://api.whatsapp.com/send?text=http://localhost/adop/detanimal/detanimal.php?id=<?php echo($dato['id']);?>" target="blank" class="btn">Comparte</a>   
                         
