@@ -28,31 +28,31 @@
          <img src="./../img/brand1-01.svg" alt="Logo Mimascota" class="nav-brand"></a> 
            
         </nav> 
-        <ul class="nav-main">
-            <li ><a href=".././solicitudAdopcion/consultaSolicitudAdopcion.php">Módulo Adopción</a></li>
-            <li><a href=".././registroAnimal/registroAnimal.php">Módulo Animal</a></li>
-            <li><a href=".././FormRegistroUsuario/consultaRegistroCliente.php">Módulo Usuarios</a></li>
-            <li><a href=".././FormRegistroUsuario/formRegistroAdministrador.php">AdminRegister</a></li>
-            
-        </ul>
+        <center>
+    <a href=".././solicitudAdopcion/consultaSolicitudAdopcion.php" id="btn-comp2">Módulo Adopción</a>
+    <a href=".././registroAnimal/registroAnimal.php" id="btn-comp2">Módulo Animal</a>
+    <a href=".././FormRegistroUsuario/consultaRegistroCliente.php" id="btn-comp2">Módulo Usuarios</a>
+    <a href=".././FormRegistroUsuario/formRegistroAdministrador.php" id="btn-comp2">AdminRegister</a>
+    
+        </center>
         
         
             <div>
-            <center><h1 class="titlerace">Registro Raza</h1></center>
-                <form action="insertar.php" method="POST" class="regis" enctype="multipart/form-data">
+            <center><h2 class="titlerace">Registro Raza</h1>
+                <form action="insertar.php" method="POST" class="regis1" enctype="multipart/form-data">
                     
                     Nombre<br><input type="text" name="nombre" size="30" maxlength="50" placeholder="Nombre de la raza" required> <br><br>
                     idEspecie<br><input type="number" name="idEspecie" placeholder="id de la especie" required> <br><br>
                     <input class="btn1" type="submit" name="enviar" value="Enviar">
-                 </form>
-                   </div>
-                   <center><h1 class="titlerace">Tabla de Especie</h1></center>
-    <table class="regis" border ="1">
+                 </form></center>
+                   </div><br><br>
+                   <center><h2 class="titlerace">Tabla de Especie</h2>
+    <table class="regis" >
     <thead>
             <tr>
             <th>Id</th>
             <th>Nombre</th>
-            
+            <th colspan="2">Operacion</th>
             
             
 </tr>
@@ -75,9 +75,9 @@ while($fila=mysqli_fetch_array($resultado)) // ciclo mientras para ordenar en la
     
      </td>
 
-    <th><a href="../registroEspecie/modificar.php?id=<?php echo $fila['id']; ?>"> Modificar </a></th>
+    <td><a class="btn1" href="../registroEspecie/modificar.php?id=<?php echo $fila['id']; ?>"> Modificar </a></th>
 
-    <th><a href="../registroEspecie/eliminar.php?id=<?php echo $fila['id']; ?>"> Eliminar </a></th>
+    <td><a class="btn1" href="../registroEspecie/eliminar.php?id=<?php echo $fila['id']; ?>"> Eliminar </a></th>
     
     <?php echo"<tr>";
     
@@ -85,7 +85,7 @@ while($fila=mysqli_fetch_array($resultado)) // ciclo mientras para ordenar en la
         </tbody>
 
     </table>
-
+    </center>
                    </div>
 
     

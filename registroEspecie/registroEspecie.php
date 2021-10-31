@@ -14,7 +14,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
 
     <!-- CUSTOM CSS -->
-    <link rel="stylesheet" href="./FormRegistroUsuario.css">
+    <link rel="stylesheet" href="FormRegistroUsuario.css">
 </head>
 <body>
 <div class="menu-btn">
@@ -28,17 +28,17 @@
          <img src="./../img/brand1-01.svg" alt="Logo Mimascota" class="nav-brand"></a> 
            
         </nav> 
-        <ul class="nav-main">
-            <li ><a href=".././solicitudAdopcion/consultaSolicitudAdopcion.php">Módulo Adopción</a></li>
-            <li><a href=".././registroAnimal/registroAnimal.php">Módulo Animal</a></li>
-            <li><a href=".././FormRegistroUsuario/consultaRegistroCliente.php">Módulo Usuarios</a></li>
-            <li><a href=".././FormRegistroUsuario/formRegistroAdministrador.php">AdminRegister</a></li>
-            
-        </ul>
+        <center>
+    <a href=".././solicitudAdopcion/consultaSolicitudAdopcion.php" id="btn-comp2">Módulo Adopción</a>
+    <a href=".././registroAnimal/registroAnimal.php" id="btn-comp2">Módulo Animal</a>
+    <a href=".././FormRegistroUsuario/consultaRegistroCliente.php" id="btn-comp2">Módulo Usuarios</a>
+    <a href=".././FormRegistroUsuario/formRegistroAdministrador.php" id="btn-comp2">AdminRegister</a>
+    
+        </center>
         
         
-            <div>
-                <form action="insertar.php" method="POST" class="regis" enctype="multipart/form-data">
+            <div class="regis">
+                <form action="insertar.php" method="POST"  enctype="multipart/form-data">
                     
             
                     Especie<br><input type="text" name="nombre" size="30" maxlength="50" placeholder="Canino o Felino" required> <br><br>

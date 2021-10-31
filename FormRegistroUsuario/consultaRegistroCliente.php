@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="./FormRegistroUsuario.css">
-    <title>Consulta registro Usario</title>
+    <title>Consulta registro Usuario</title>
 </head>
 <body><div class="menu-btn">
         <i class="fas fa-bars"></i>
@@ -26,12 +26,13 @@
     <a href="./formRegistroAdministrador.php" id="btn-comp2">AdminRegister</a>
     
         </center>
-   
-        <h3 class="user">Usuarios Registrados</h3>
+        <center>
+        <center><h3 class="user">Usuarios Registrados</h3></center><br>
         <form action="" method="get">
             <input type="text" name="busqueda">
             <input type="submit" name="enviar" value="buscar">
         </form>
+        </center>
         <br><br><br>
         <?php
          $host = "localhost";
