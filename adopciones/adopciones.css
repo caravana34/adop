@@ -327,7 +327,7 @@ body {
     padding: 20px;
     text-align: center;
     width: 500px;
-    height: 400px;
+    height: 550px;
 
 
 }
@@ -408,8 +408,19 @@ body {
  }
 
 
+#p1 {
+    font-size: 30px;
+    font-weight: lighter;
+}
+
+#p2 {
+    font-size: 25px;
+    font-weight: lighter;
+}
+
+
 .compimg img{
-    width: 100px;
+    width: 150px;
     height: auto;
 }
 

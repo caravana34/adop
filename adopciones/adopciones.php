@@ -129,8 +129,8 @@ if(($_SESSION['id']) != ''){
                 
                 <div class="textbtn">
                 <a href="../detanimal/detanimal.php?id=<?php echo $dato['id']; ?>" class="btn">Conocer más</a>
-                <a href="https://api.whatsapp.com/send?text=http://localhost/adop/detanimal/detanimal.php?id=<?php echo($dato['id']);?>" target="blank" class="btn">Comparte</a>   
-                        
+                <a href="comparte.php?id=<?php echo $dato['id'];?>" id="btn-abrir-popup" class="btn-abrir-popup" target="" onclick="window.open('http://localhost/adop/adopciones/comparte.php?id=<?php echo $dato['id'];?>','popup','width=600,height=600'); return false;">Comparte</a>       
+
                 </div>
 
                 </div>

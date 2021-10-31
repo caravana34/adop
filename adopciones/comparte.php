@@ -31,6 +31,15 @@
       <div class="compimg"><img src="data:image/jpg;base64,
                 <?php echo base64_encode($fila['imagen']);?>" alt=""></div> 
                 <div id="iconos1">
+
+                <div>
+                  <p id="p1">Hola!</p>
+                </div>
+
+                <div>
+                  <p id="p2">Ayudanos a compartir con tus contactos este maravilloso peludo</p>
+                </div>
+
                  
                   <a href="https://api.whatsapp.com/send?text=http://localhost/adop/detanimal/detanimal.php?id=<?php echo($fila['id']);?>" target="blank" ><i class="fab fa-whatsapp"></i></a>
                   <p>whatsapp</p>
