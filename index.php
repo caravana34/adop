@@ -66,7 +66,7 @@ $totalregistro1=mysqli_num_rows($resultado1)
         <div class="container">
         <center>
         <a href="https://api.whatsapp.com/send?text=http://localhost/adop/index.php" target="blank" id="btn-comp2">Compartir este sitio web</a>
-        <a href="blog.php" target="blank" id="btn-comp2">Blog Mimascota</a>
+        <a href="./blog/blog.php" target="blank" id="btn-comp2">Blog Mimascota</a>
         <a href="./adopciones/adopciones.php" id="btn-comp2">Adopciones </a>
         <a href="./FormRegistroUsuario/formRegistroCliente.php" id="btn-comp2"> Registro </a>
         <a href="../adop/inicio/inicio.php" id="btn-comp2">Iniciar Sesión</a>
@@ -90,7 +90,7 @@ $totalregistro1=mysqli_num_rows($resultado1)
                 <div class="textbtn">
                     
                     <a href="./detanimal/detanimal.php?id=<?php echo $dato['id']; ?>" id="btn-comp2">Conocer más</a>               
-                    <a href="https://api.whatsapp.com/send?text=http://localhost/adop/detanimal/detanimal.php?id=<?php echo($dato['id']);?>" target="blank"  id="btn-comp2">Comparte</a> 
+                    <a href="comparte.php?id=<?php echo $dato['id'];?>" id="btn-abrir-popup" class="btn-abrir-popup" target="" onclick="window.open('http://localhost/adop/adopciones/comparte.php?id=<?php echo $dato['id'];?>','popup','width=600,height=600'); return false;">Comparte</a> 
                     
                 </div>
             </div>
@@ -113,7 +113,7 @@ $totalregistro1=mysqli_num_rows($resultado1)
                 <div class="textbtn">
                     
                     <a href="./detanimal/detanimal.php?id=<?php echo $dato['id']; ?>" id="btn-comp2">Conocer más</a>               
-                    <a href="https://api.whatsapp.com/send?text=http://localhost/adop/detanimal/detanimal.php?id=<?php echo($dato['id']);?>" target="blank"  id="btn-comp2">Comparte</a> 
+                    <a href="comparte.php?id=<?php echo $dato['id'];?>" id="btn-abrir-popup" class="btn-abrir-popup" target="" onclick="window.open('http://localhost/adop/adopciones/comparte.php?id=<?php echo $dato['id'];?>','popup','width=600,height=600'); return false;">Comparte</a> 
                     
                 </div>
             </div>

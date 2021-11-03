@@ -1,5 +1,5 @@
 
-<?php include("./config/conexion.php");
+<?php include("../config/conexion.php");
 //$consulta="select*from articulo";
 //$resultado= mysqli_query($conexion, $consulta);
 //$fila=mysqli_fetch_array($resultado);
@@ -37,7 +37,7 @@ $totalregistro1=mysqli_num_rows($resultado1)
 
     <!-- CUSTOM CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.7/glider.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
 </head>
 <body>
 
@@ -51,7 +51,7 @@ $totalregistro1=mysqli_num_rows($resultado1)
       </div>
       
         <nav class="nav-main">
-        <a href="index.php"><img src="./img/brand1-01.svg" alt="Logo Mimascota" class="nav-brand"></a>  
+        <a href="../index.php"><img src="../img/brand1-01.svg" alt="Logo Mimascota" class="nav-brand"></a>  
         
     </nav>
 
@@ -65,26 +65,7 @@ $totalregistro1=mysqli_num_rows($resultado1)
         <!-- SHOWCASE -->
         <div class="container">
         <a href="https://api.whatsapp.com/send?text=http://localhost/adop/index.php" target="blank" id="btn-comp">Compartir este sitio web<i class="fas fa-angle-double-right"></i></a>
-        <div ><center><h2 class= "titlerace" >Blog Mimascota</h1></center></div>
-        <div class="grid">
-        <div>
-             <header class="showcase"> 
-                <a href="./adopciones/adopciones.php" class="btn1">Adopciones<i class="fas fa-angle-double-right"></i> </a>
-             </header>       
-         </div>
-
-             <div>
-                <header class="showcase1"> 
-                    <a href="./FormRegistroUsuario/formRegistroCliente.php" class="btn1"> Registro <i class="fas fa-angle-double-right"></i> </a>
-                </header>           
-            </div>
-
-                <div>
-                    <header class="showcase2"> 
-                        <a href="../adop/inicio/inicio.php" class="btn1">Iniciar Sesión<i class="fas fa-angle-double-right"></i></a>
-                    </header>               
-                </div>
-            </div>
+        
 
             <div class="parrmid">
 
@@ -100,36 +81,36 @@ $totalregistro1=mysqli_num_rows($resultado1)
     
                     <div class="carousel__lista">
                         <div class="carousel__elemento">
-                            <img src="./img/animales/dogs/dog1.webp" alt="Canino">
+                            <img src="../img/animales/dogs/dog1.webp" alt="Canino">
                             <p></p>
                         </div>
                         <div class="carousel__elemento">
-                            <img src="./img/animales/dogs/dog2.webp" alt="Canino">
+                            <img src="../img/animales/dogs/dog2.webp" alt="Canino">
                             <p></p>
                         </div>
                         <div class="carousel__elemento">
-                            <img src="./img/animales/dogs/dog3.webp" alt="Canino">
+                            <img src="../img/animales/dogs/dog3.webp" alt="Canino">
                             <p></p>
                         </div>
                         <div class="carousel__elemento">
-                            <img src="./img/animales/dogs/dog4.webp" alt="Canino">
+                            <img src="../img/animales/dogs/dog4.webp" alt="Canino">
                             <p></p>
                         </div>
         
                         <div class="carousel__elemento">
-                            <img src="./img/animales/dogs/dog5.webp" alt="Canino">
+                            <img src="../img/animales/dogs/dog5.webp" alt="Canino">
                             <p></p>
                         </div>
                         <div class="carousel__elemento">
-                            <img src="./img/animales/dogs/dog6.webp" alt="Canino">
+                            <img src="../img/animales/dogs/dog6.webp" alt="Canino">
                             <p></p>
                         </div>
                         <div class="carousel__elemento">
-                            <img src="./img/animales/dogs/dog7.webp" alt="Canino">
+                            <img src="../img/animales/dogs/dog7.webp" alt="Canino">
                             <p></p>
                         </div>
                         <div class="carousel__elemento">
-                            <img src="./img/animales/dogs/dog8.webp" alt="Canino">
+                            <img src="../img/animales/dogs/dog8.webp" alt="Canino">
                             <p></p>
                         </div>
                     </div>
@@ -149,9 +130,9 @@ $totalregistro1=mysqli_num_rows($resultado1)
                 El perro es famoso por ser denominado el mejor amigo del hombre, este animal inteligente y leal a sus amos ha estado ligado a hombres y mujeres desde milenios, en el mundo existen gran variedad de razas determinadas por la forma y pelaje del perro.</p>
                 </div> 
                 <div class="gridcanids">
-                    <div clas=""><img src="./img/animals3.webp" alt=""></div>
-                    <div class=""><img src="./img/animals4.webp" alt=""></div>
-                    <div class=""><img src="./img/animals.webp" alt=""></div>
+                    <div clas=""><img src="../img/animals3.webp" alt=""></div>
+                    <div class=""><img src="../img/animals4.webp" alt=""></div>
+                    <div class=""><img src="../img/animals.webp" alt=""></div>
                 </div>
                
                 <div class="caresdogs">
@@ -168,7 +149,7 @@ $totalregistro1=mysqli_num_rows($resultado1)
                 </div>
 
                 <div class="cares1">
-                  <div><img clas="row" src="./img/animals5.png" alt=""></div>
+                  <div><img clas="row" src="../img/animals5.png" alt=""></div>
                  <!-- <div><img clas="row" src="./img/animals4.webp" alt=""></div>-->
                   
                   
@@ -189,9 +170,9 @@ $totalregistro1=mysqli_num_rows($resultado1)
             <div class="parrmid"><p>El gato doméstico (Felis silvestris catus), llamado popularmente gato, es un mamífero carnívoro de la familia Felidae. Es una subespecie domesticada por la convivencia con el ser humano.</p>
                 </div> 
                 <div class="gridcanids">
-                    <div clas=""><img src="./img/animals6.webp" alt=""></div>
-                    <div class=""><img src="./img/animals8.webp" alt=""></div>
-                    <div class=""><img src="./img/animals7.webp" alt=""></div>
+                    <div clas=""><img src="../img/animals6.webp" alt=""></div>
+                    <div class=""><img src="../img/animals8.webp" alt=""></div>
+                    <div class=""><img src="../img/animals7.webp" alt=""></div>
                 </div>
                
                 <div class="caresdogs">
@@ -208,7 +189,7 @@ $totalregistro1=mysqli_num_rows($resultado1)
                 </div>
 
                 <div class="cares1">
-                  <div><img clas="row" src="./img/animals9.png" alt=""></div>
+                  <div><img clas="row" src="../img/animals9.png" alt=""></div>
                  <!-- <div><img clas="row" src="./img/animals4.webp" alt=""></div>-->
                   
                   
@@ -237,14 +218,14 @@ $totalregistro1=mysqli_num_rows($resultado1)
 <div class="grid3">
 
     <div >
-      <a href="http://oferta.senasofiaplus.edu.co" target="blank"><img src="./img/logo-de-Sena-sin-fondo-Blanco-300x300.png" alt="Logo Mimascota" id="footer_logo2"></a>
+      <a href="http://oferta.senasofiaplus.edu.co" target="blank"><img src="../img/logo-de-Sena-sin-fondo-Blanco-300x300.png" alt="Logo Mimascota" id="footer_logo2"></a>
     </div>
     <div > 
       
-        <a href="https://www.cesde.edu.co/" target="blank"><img src="./img/descarga (1).png" alt="Logo Mimascota" id="footer_logo3"></a>
+        <a href="https://www.cesde.edu.co/" target="blank"><img src="../img/descarga (1).png" alt="Logo Mimascota" id="footer_logo3"></a>
       </div>
       <div>
-        <a href="index.php"><img src="./img/DERECHO-ANIMAL-brand.png" alt="Logo Mimascota" id="footer_logo1"></a>  
+        <a href="../index.php"><img src="../img/DERECHO-ANIMAL-brand.png" alt="Logo Mimascota" id="footer_logo1"></a>  
      </div> 
 
     <div> <p>Developers: <br>Elias Rodriguez<br>JBAD Gómez</p> </div>
@@ -269,7 +250,7 @@ $totalregistro1=mysqli_num_rows($resultado1)
 
 <!-- custom js -->
 <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.7/glider.js"></script>
-<script src="main.js"></script>
+<script src="../main.js"></script>
 
 </body>
 
