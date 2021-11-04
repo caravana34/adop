@@ -23,7 +23,9 @@
     <a href=".././solicitudAdopcion/consultaSolicitudAdopcion.php" id="btn-comp2">Módulo Adopción</a>
     <a href=".././registroAnimal/registroAnimal.php" id="btn-comp2">Módulo Animal</a>
     <a href=".././FormRegistroUsuario/consultaRegistroCliente.php" id="btn-comp2">Módulo Usuarios</a>
+    <a href=".././blog/blogform.php" id="btn-comp2">Blog</a>
     <a href="./formRegistroAdministrador.php" id="btn-comp2">AdminRegister</a>
+
     
         </center>
         <center>
@@ -34,6 +36,26 @@
         </form>
         </center>
         <br><br><br>
+        <center>
+    <table class="regis" >
+    <thead>
+            <tr>
+            <th>Id</th>
+            <th>Identificación</th>
+            <th>Nombre</th>
+            <th>Ciudad</th>
+            <th>Correo</th>
+            <th>Teléfono</th>
+            <th>Departamento</th>
+            <th>Contraseña</th>
+            <th>IdTipoUsuario</th>
+            <th colspan="2">Operación</th>
+            
+</tr>
+        </thead>
+
+        <tbody>
+        
         <?php
          $host = "localhost";
          $user = "root";
@@ -46,11 +68,30 @@
             $busqueda=$_GET['busqueda'];
             $consulta4 = $conexion->query("select * from usuario where correo LIKE '%$busqueda%'");
             while ($row = $consulta4->fetch_array()){
-                echo $row['correo'].'<br>';
-                echo $row['identificacion'];
-            }
-        }
-        ?>
+                echo"<tr>";
+    echo"<td>".$row['id'];
+    echo"<td>".$row['identificacion'];
+    echo"<td>".$row['nombre'];
+    echo"<td>".$row['ciudad'];
+    echo"<td>".$row['correo'];
+    echo"<td>".$row['telefono'];
+    echo"<td>".$row['estado'];
+    echo"<td>".$row['contrasena'];
+    echo"<td>".$row['idTipoUsuario'];
+            
+        
+        ?>  </td>
+
+    <td><a href="modificarRegistroCliente.php?id=<?php echo $fila['id'];?>" class="btn1"> Modificar </a></th>
+
+    <td><a href="eliminar.php?id=<?php echo $fila['id'];?>" class="btn1"> Eliminar </a></th>
+    
+    <?php echo"<tr>";
+    
+    }?>
+        </tbody>
+
+    </table></center>
         <center>
     <table class="regis" >
     <thead>
@@ -95,14 +136,14 @@ while($fila=mysqli_fetch_array($resultado)) // ciclo mientras para ordenar en la
     
     <?php echo"<tr>";
     
-}?>
+}}?>
         </tbody>
 
     </table></center>
 
     
     </div>
-    <<footer class="footer_container">
+    <footer class="footer_container">
 <hr>
      
 

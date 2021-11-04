@@ -8,16 +8,14 @@ if(isset($_GET['mimascota'])){
     $pagina=$_GET['mimascota'];
 
 }else{
-    $pagina=1;
+    $pagina=3;
 }
 $inicio=($pagina-1)*$pagina;
-$consulta="select * from animal where idEspecie=8 order by id desc limit $inicio,$porpagina";
+$consulta="select * from blog ";
 $resultado=mysqli_query($conexion,$consulta);
 $totalregistro=mysqli_num_rows($resultado);
 $totalpagina=ceil($totalregistro/$porpagina);
-$consulta1="select * from animal where idEspecie=9 order by id desc limit $inicio,$porpagina";
-$resultado1=mysqli_query($conexion,$consulta1);
-$totalregistro1=mysqli_num_rows($resultado1)
+
 ?>
 
 <!DOCTYPE html>
@@ -37,7 +35,7 @@ $totalregistro1=mysqli_num_rows($resultado1)
 
     <!-- CUSTOM CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.7/glider.min.css">
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -64,36 +62,33 @@ $totalregistro1=mysqli_num_rows($resultado1)
 
         <!-- SHOWCASE -->
         <div class="container">
-        <a href="https://api.whatsapp.com/send?text=http://localhost/adop/index.php" target="blank" id="btn-comp">Compartir este sitio web<i class="fas fa-angle-double-right"></i></a>
-        <div ><center><h2 class= "titlerace" >Blog Mimascota</h1></center></div>
-        <div class="grid">
-        <div>
-             <header class="showcase"> 
-                <a href="./importanciaadopcion.php" class="btn1">Adoptar es importante<i class="fas fa-angle-double-right"></i> </a>
-             </header>       
-         </div>
-
-             <div>
-                <header class="showcase1"> 
-                    <a href="./FormRegistroUsuario/formRegistroCliente.php" class="btn1"> Registro <i class="fas fa-angle-double-right"></i> </a>
-                </header>           
-            </div>
-
-                <div>
-                    <header class="showcase2"> 
-                        <a href="../adop/inicio/inicio.php" class="btn1">Iniciar Sesión<i class="fas fa-angle-double-right"></i></a>
-                    </header>               
+                <a href="https://api.whatsapp.com/send?text=http://localhost/adop/index.php" target="blank" id="btn-comp2">Compartir este sitio web</a>
+                <
+                <?php foreach($resultado as $dato):?>
+                
+                <div class="grid">
+                <div class="animal1">
+                 <img src="data:image/webp;base64,
+                            <?php echo base64_encode($dato['imagen']);?>" >
                 </div>
-            </div>
-
+                    <div>
+                    <h2 class="animal" ><?php echo $dato['titulo'];?></h2>
+                        <a href="plantilla1blog.php?id=<?php echo $dato['id']; ?>"  id="btn-comp2"><?php echo $dato['titulo'];?></a>
+                        <p class="animal" ><?php echo $dato['parrafo1'];?></p>
+                        
+                    </div>
+                    <div>
+                   
+                        
+                    </div>
+                
             
-                </div>
-                </div>
+                 </div>
+                 
+                 <?php endforeach?>
         </div>
-        
-    </div>
-</div>
-</div>
+                
+       
 
 <footer class="footer_container">
 <hr>

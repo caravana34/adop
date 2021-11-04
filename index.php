@@ -17,7 +17,10 @@ $totalregistro=mysqli_num_rows($resultado);
 $totalpagina=ceil($totalregistro/$porpagina);
 $consulta1="select * from animal where idEspecie=9 order by id desc limit $inicio,$porpagina";
 $resultado1=mysqli_query($conexion,$consulta1);
-$totalregistro1=mysqli_num_rows($resultado1)
+$totalregistro1=mysqli_num_rows($resultado1);
+$consulta2="select * from blog limit $inicio,$porpagina";
+$resultado2=mysqli_query($conexion,$consulta2);
+$totalregistro2=mysqli_num_rows($resultado2)
 ?>
 
 <!DOCTYPE html>
@@ -41,20 +44,18 @@ $totalregistro1=mysqli_num_rows($resultado1)
 </head>
 <body>
 
-    <div class="menu-btn">
-        <i class="fas fa-bars"></i>
-    </div>
+    
 
 
       <div class="csesion_btn">
-        <a href="./inicio/cerrar.php">Cerrar sesión</a>   
+        <a href="./inicio/cerrar.php">Cerrarsesión</a>   
       </div>
       
         <nav class="nav-main">
         <a href="index.php"><img src="./img/brand1-01.svg" alt="Logo Mimascota" class="nav-brand"></a>  
         
     </nav>
-
+    
 
         <!--<nav class="nav-main"><a href="index.php" >
          <img src="./img/brand1-01.svg" alt="Logo Mimascota" class="nav-brand"></a>           
@@ -64,6 +65,7 @@ $totalregistro1=mysqli_num_rows($resultado1)
 
         <!-- SHOWCASE -->
         <div class="container">
+            
         <center>
         <a href="https://api.whatsapp.com/send?text=http://localhost/adop/index.php" target="blank" id="btn-comp2">Compartir este sitio web</a>
         <a href="./blog/blog.php" target="blank" id="btn-comp2">Blog Mimascota</a>
@@ -71,7 +73,7 @@ $totalregistro1=mysqli_num_rows($resultado1)
         <a href="./FormRegistroUsuario/formRegistroCliente.php" id="btn-comp2"> Registro </a>
         <a href="../adop/inicio/inicio.php" id="btn-comp2">Iniciar Sesión</a>
         </center>
-
+        
             
        <!-- <div><img src="./img/animales/dogs/dog11.jpg" alt=""></div>-->
 
@@ -84,7 +86,7 @@ $totalregistro1=mysqli_num_rows($resultado1)
                      
                 <div class="animal1">
                  <img src="data:image/webp;base64,
-    <?php echo base64_encode($dato['imagen']);?>" >
+                       <?php echo base64_encode($dato['imagen']);?>" >
                 </div>
                 
                 <div class="textbtn">
@@ -122,7 +124,28 @@ $totalregistro1=mysqli_num_rows($resultado1)
 
         </div>
                 
+        <div class="parrmid"><h3>Blog más recientes</h3></div>
+        <div class="adopindex"><!--grilla de 2 columnas-->
+
+        <?php foreach($resultado2 as $dato):?>  
+            <div class="grid4">   
+                     
+                <div class="animal1">
+                 <img src="data:image/webp;base64,
+    <?php echo base64_encode($dato['imagen']);?>" >
+                </div>
                 
+                <div class="textbtn">
+                    
+                    <a href="./blog/plantilla1blog.php?id=<?php echo $dato['id']; ?>" id="btn-comp2">Conocer más</a>               
+                    <a href="comparte1.php?id=<?php echo $dato['id'];?>" id="btn-abrir-popup" class="btn-abrir-popup" target="" onclick="window.open('http://localhost/adop/comparte1.php?id=<?php echo $dato['id'];?>','popup','width=600,height=600'); return false;">Comparte</a> 
+                    
+                </div>
+            </div>
+            <?php endforeach?>
+            
+
+        </div>
            
            <div class="pcta">
 
@@ -130,7 +153,7 @@ $totalregistro1=mysqli_num_rows($resultado1)
     </div> 
 </div>
 </div>
-
+</div>
 <footer class="footer_container">
 <hr>
      

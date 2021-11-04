@@ -24,6 +24,7 @@ if(($_SESSION['id']) != ''){
     <a href=".././solicitudAdopcion/consultaSolicitudAdopcion.php" id="btn-comp2">Módulo Adopción</a>
     <a href=".././registroAnimal/registroAnimal.php" id="btn-comp2">Módulo Animal</a>
     <a href=".././FormRegistroUsuario/consultaRegistroCliente.php" id="btn-comp2">Módulo Usuarios</a>
+    <a href=".././blog/blogform.php" id="btn-comp2">Blog</a>
     <a href=".././FormRegistroUsuario/formRegistroAdministrador.php" id="btn-comp2">AdminRegister</a>
     
         </center>

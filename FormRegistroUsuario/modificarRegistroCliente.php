@@ -72,6 +72,7 @@
 <hr>
          
 </footer>
+</div>
 <!--footer-->   
 </body>
 </html>

@@ -231,7 +231,7 @@ hr {
 
 .grid{
     display: grid;
-    grid-template-columns: 33% 33% 33%;
+    grid-template-columns: 50% 50% ;
     gap:10px;
     width: 98.5%;
     padding-bottom: 20px;
@@ -756,6 +756,17 @@ color: #000000;
 .animal1 img:hover{
     border:2px solid #ffffff;
 }
+
+.animal1 img{
+    width: 500px;
+    height:auto;
+}
+
+.animal {
+    color: #000000;
+    word-break: break-all;
+}
+
 .caresdogs{
     display:grid;
     grid-template-columns:60% 40%;
@@ -830,14 +841,8 @@ padding-bottom: 20px;
        text-align: right;
        width: 90%;
       padding-top: 0px;
- 
-   }
-
-   .nain{
-    z-index:3;
-    position:fixed;
-    top:0;
-       
+      
+  
    }
    .footer_container {
     background: #2e2f2f;
@@ -969,3 +974,12 @@ padding-bottom: 20px;
     opacity: .7; 
     color: #11398C;
  }
+
+ .textdetanimal{
+    color:#000000;
+    display: grid;
+    align-content: center;
+    justify-content:center;
+    size-adjust: auto;
+    word-break: break-all;
+}
