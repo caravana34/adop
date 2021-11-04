@@ -139,7 +139,7 @@ while($fila=mysqli_fetch_array($resultado)) // ciclo mientras para ordenar en la
 }}?>
         </tbody>
 
-    </table></center>-->
+    </table></center>
 
     
     </div>
